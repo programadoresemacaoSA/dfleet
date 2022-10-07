@@ -129,19 +129,15 @@ class _DetalhesJornadaDescricaoWidgetState
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
-                                  Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        30, 0, 0, 0),
-                                    child: Text(
-                                      'Ano:',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyText1
-                                          .override(
-                                            fontFamily: 'Poppins',
-                                            color: Colors.white,
-                                            fontSize: 22,
-                                          ),
-                                    ),
+                                  Text(
+                                    'Ano:',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Poppins',
+                                          color: Colors.white,
+                                          fontSize: 22,
+                                        ),
                                   ),
                                 ],
                               ),
@@ -149,15 +145,19 @@ class _DetalhesJornadaDescricaoWidgetState
                             Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
-                                Text(
-                                  '2022',
-                                  style: FlutterFlowTheme.of(context)
-                                      .bodyText1
-                                      .override(
-                                        fontFamily: 'Poppins',
-                                        color: Colors.white,
-                                        fontSize: 22,
-                                      ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      8, 0, 0, 0),
+                                  child: Text(
+                                    '2022',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Poppins',
+                                          color: Colors.white,
+                                          fontSize: 22,
+                                        ),
+                                  ),
                                 ),
                               ],
                             ),

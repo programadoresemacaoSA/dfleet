@@ -4,6 +4,7 @@ import '../flutter_flow/flutter_flow_icon_button.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
+import '../foto_cupom_viagem/foto_cupom_viagem_widget.dart';
 import '../homeapp/homeapp_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
@@ -1521,67 +1522,92 @@ class _LancamentoDeViagemWidgetState extends State<LancamentoDeViagemWidget>
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 0, 8, 0),
-                                      child: Column(
-                                        mainAxisSize: MainAxisSize.max,
-                                        children: [
-                                          FlutterFlowIconButton(
-                                            borderColor: Colors.transparent,
-                                            borderRadius: 30,
-                                            borderWidth: 1,
-                                            buttonSize: 60,
-                                            icon: Icon(
-                                              Icons.photo_camera,
-                                              color: Color(0xFFF8F8F8),
-                                              size: 40,
+                                      child: InkWell(
+                                        onTap: () async {
+                                          await Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                              builder: (context) =>
+                                                  FotoCupomViagemWidget(),
                                             ),
-                                            onPressed: () {
-                                              print('IconButton pressed ...');
-                                            },
-                                          ),
-                                          Text(
-                                            'Foto do cupom',
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyText1
-                                                .override(
-                                                  fontFamily: 'Poppins',
-                                                  color: Colors.white,
-                                                ),
-                                          ),
-                                        ],
+                                          );
+                                        },
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          children: [
+                                            FlutterFlowIconButton(
+                                              borderColor: Colors.transparent,
+                                              borderRadius: 30,
+                                              borderWidth: 1,
+                                              buttonSize: 60,
+                                              icon: Icon(
+                                                Icons.photo_camera,
+                                                color: Color(0xFFF8F8F8),
+                                                size: 40,
+                                              ),
+                                              onPressed: () {
+                                                print('IconButton pressed ...');
+                                              },
+                                            ),
+                                            Text(
+                                              'Foto do cupom',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Poppins',
+                                                        color: Colors.white,
+                                                      ),
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 0, 8, 0),
-                                      child: Column(
-                                        mainAxisSize: MainAxisSize.max,
-                                        children: [
-                                          FlutterFlowIconButton(
-                                            borderColor: Colors.transparent,
-                                            borderRadius: 30,
-                                            borderWidth: 1,
-                                            buttonSize: 60,
-                                            icon: Icon(
-                                              Icons.remove_red_eye_rounded,
-                                              color: Color(0xFFF8F8F8),
-                                              size: 40,
+                                      child: InkWell(
+                                        onTap: () async {
+                                          await Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                              builder: (context) =>
+                                                  FotoCupomViagemWidget(),
                                             ),
-                                            onPressed: () {
-                                              print('IconButton pressed ...');
-                                            },
-                                          ),
-                                          Text(
-                                            'Visualizar',
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyText1
-                                                .override(
-                                                  fontFamily: 'Poppins',
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .primaryBtnText,
-                                                ),
-                                          ),
-                                        ],
+                                          );
+                                        },
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          children: [
+                                            FlutterFlowIconButton(
+                                              borderColor: Colors.transparent,
+                                              borderRadius: 30,
+                                              borderWidth: 1,
+                                              buttonSize: 60,
+                                              icon: Icon(
+                                                Icons.remove_red_eye_rounded,
+                                                color: Color(0xFFF8F8F8),
+                                                size: 40,
+                                              ),
+                                              onPressed: () {
+                                                print('IconButton pressed ...');
+                                              },
+                                            ),
+                                            Text(
+                                              'Visualizar',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Poppins',
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryBtnText,
+                                                      ),
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                     ),
                                     Column(

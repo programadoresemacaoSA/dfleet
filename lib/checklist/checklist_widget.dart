@@ -2,6 +2,7 @@ import '../flutter_flow/flutter_flow_icon_button.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
+import '../item_checklist/item_checklist_widget.dart';
 import '../menu_checklist/menu_checklist_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -173,8 +174,14 @@ class _ChecklistWidgetState extends State<ChecklistWidget> {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 8, 0, 0),
                                       child: FFButtonWidget(
-                                        onPressed: () {
-                                          print('Button pressed ...');
+                                        onPressed: () async {
+                                          await Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                              builder: (context) =>
+                                                  ItemChecklistWidget(),
+                                            ),
+                                          );
                                         },
                                         text: 'Editar',
                                         options: FFButtonOptions(
@@ -282,8 +289,14 @@ class _ChecklistWidgetState extends State<ChecklistWidget> {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 8, 0, 0),
                                       child: FFButtonWidget(
-                                        onPressed: () {
-                                          print('Button pressed ...');
+                                        onPressed: () async {
+                                          await Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                              builder: (context) =>
+                                                  ItemChecklistWidget(),
+                                            ),
+                                          );
                                         },
                                         text: 'Editar',
                                         options: FFButtonOptions(
@@ -391,8 +404,14 @@ class _ChecklistWidgetState extends State<ChecklistWidget> {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 8, 0, 0),
                                       child: FFButtonWidget(
-                                        onPressed: () {
-                                          print('Button pressed ...');
+                                        onPressed: () async {
+                                          await Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                              builder: (context) =>
+                                                  ItemChecklistWidget(),
+                                            ),
+                                          );
                                         },
                                         text: 'Editar',
                                         options: FFButtonOptions(

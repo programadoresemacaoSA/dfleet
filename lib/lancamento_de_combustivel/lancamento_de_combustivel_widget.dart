@@ -4,6 +4,9 @@ import '../flutter_flow/flutter_flow_icon_button.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
+import '../foto_abastecimento_cupomfiscal/foto_abastecimento_cupomfiscal_widget.dart';
+import '../foto_abastecimento_odometro/foto_abastecimento_odometro_widget.dart';
+import '../foto_abastecimento_visordabomba/foto_abastecimento_visordabomba_widget.dart';
 import '../homeapp/homeapp_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
@@ -1234,43 +1237,57 @@ class _LancamentoDeCombustivelWidgetState
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0, 0, 15, 0),
-                                          child: Container(
-                                            width: 100,
-                                            height: 90,
-                                            decoration: BoxDecoration(
-                                              color: Color(0xFFF1F4F8),
-                                              borderRadius:
-                                                  BorderRadius.circular(15),
-                                            ),
-                                            child: Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(12, 12, 12, 12),
-                                              child: Column(
-                                                mainAxisSize: MainAxisSize.max,
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.center,
-                                                children: [
-                                                  Icon(
-                                                    Icons.photo_camera,
-                                                    color: Color(0xFF242424),
-                                                    size: 40,
-                                                  ),
-                                                  Text(
-                                                    'Odometro',
-                                                    textAlign: TextAlign.center,
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .title1
-                                                        .override(
-                                                          fontFamily: 'Outfit',
-                                                          color:
-                                                              Color(0xFF101213),
-                                                          fontSize: 15,
-                                                          fontWeight:
-                                                              FontWeight.w600,
-                                                        ),
-                                                  ),
-                                                ],
+                                          child: InkWell(
+                                            onTap: () async {
+                                              await Navigator.push(
+                                                context,
+                                                MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      FotoAbastecimentoOdometroWidget(),
+                                                ),
+                                              );
+                                            },
+                                            child: Container(
+                                              width: 100,
+                                              height: 90,
+                                              decoration: BoxDecoration(
+                                                color: Color(0xFFF1F4F8),
+                                                borderRadius:
+                                                    BorderRadius.circular(15),
+                                              ),
+                                              child: Padding(
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(12, 12, 12, 12),
+                                                child: Column(
+                                                  mainAxisSize:
+                                                      MainAxisSize.max,
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.center,
+                                                  children: [
+                                                    Icon(
+                                                      Icons.photo_camera,
+                                                      color: Color(0xFF242424),
+                                                      size: 40,
+                                                    ),
+                                                    Text(
+                                                      'Odometro',
+                                                      textAlign:
+                                                          TextAlign.center,
+                                                      style: FlutterFlowTheme
+                                                              .of(context)
+                                                          .title1
+                                                          .override(
+                                                            fontFamily:
+                                                                'Outfit',
+                                                            color: Color(
+                                                                0xFF101213),
+                                                            fontSize: 15,
+                                                            fontWeight:
+                                                                FontWeight.w600,
+                                                          ),
+                                                    ),
+                                                  ],
+                                                ),
                                               ),
                                             ),
                                           ).animateOnPageLoad(animationsMap[
@@ -1284,68 +1301,16 @@ class _LancamentoDeCombustivelWidgetState
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
-                                          Container(
-                                            width: 100,
-                                            height: 90,
-                                            decoration: BoxDecoration(
-                                              color: Color(0xFFF1F4F8),
-                                              borderRadius:
-                                                  BorderRadius.circular(15),
-                                            ),
-                                            child: Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(12, 12, 12, 12),
-                                              child: Column(
-                                                mainAxisSize: MainAxisSize.max,
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.center,
-                                                children: [
-                                                  Icon(
-                                                    Icons.photo_camera,
-                                                    color: Color(0xFF242424),
-                                                    size: 44,
-                                                  ),
-                                                  Padding(
-                                                    padding:
-                                                        EdgeInsetsDirectional
-                                                            .fromSTEB(
-                                                                0, 0, 0, 4),
-                                                    child: Text(
-                                                      'Cupom Fiscal',
-                                                      textAlign:
-                                                          TextAlign.center,
-                                                      style: FlutterFlowTheme
-                                                              .of(context)
-                                                          .title1
-                                                          .override(
-                                                            fontFamily:
-                                                                'Outfit',
-                                                            color: Color(
-                                                                0xFF101213),
-                                                            fontSize: 13,
-                                                            fontWeight:
-                                                                FontWeight.w600,
-                                                          ),
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                          ).animateOnPageLoad(animationsMap[
-                                              'containerOnPageLoadAnimation2']!),
-                                        ],
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          10, 0, 0, 0),
-                                      child: Column(
-                                        mainAxisSize: MainAxisSize.max,
-                                        children: [
-                                          Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    15, 0, 0, 0),
+                                          InkWell(
+                                            onTap: () async {
+                                              await Navigator.push(
+                                                context,
+                                                MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      FotoAbastecimentoCupomfiscalWidget(),
+                                                ),
+                                              );
+                                            },
                                             child: Container(
                                               width: 100,
                                               height: 90,
@@ -1374,7 +1339,7 @@ class _LancamentoDeCombustivelWidgetState
                                                               .fromSTEB(
                                                                   0, 0, 0, 4),
                                                       child: Text(
-                                                        'Visor \nBomba',
+                                                        'Cupom Fiscal',
                                                         textAlign:
                                                             TextAlign.center,
                                                         style:
@@ -1394,6 +1359,84 @@ class _LancamentoDeCombustivelWidgetState
                                                       ),
                                                     ),
                                                   ],
+                                                ),
+                                              ),
+                                            ),
+                                          ).animateOnPageLoad(animationsMap[
+                                              'containerOnPageLoadAnimation2']!),
+                                        ],
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          10, 0, 0, 0),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        children: [
+                                          Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    15, 0, 0, 0),
+                                            child: InkWell(
+                                              onTap: () async {
+                                                await Navigator.push(
+                                                  context,
+                                                  MaterialPageRoute(
+                                                    builder: (context) =>
+                                                        FotoAbastecimentoVisordabombaWidget(),
+                                                  ),
+                                                );
+                                              },
+                                              child: Container(
+                                                width: 100,
+                                                height: 90,
+                                                decoration: BoxDecoration(
+                                                  color: Color(0xFFF1F4F8),
+                                                  borderRadius:
+                                                      BorderRadius.circular(15),
+                                                ),
+                                                child: Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(12, 12, 12, 12),
+                                                  child: Column(
+                                                    mainAxisSize:
+                                                        MainAxisSize.max,
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment
+                                                            .center,
+                                                    children: [
+                                                      Icon(
+                                                        Icons.photo_camera,
+                                                        color:
+                                                            Color(0xFF242424),
+                                                        size: 44,
+                                                      ),
+                                                      Padding(
+                                                        padding:
+                                                            EdgeInsetsDirectional
+                                                                .fromSTEB(
+                                                                    0, 0, 0, 4),
+                                                        child: Text(
+                                                          'Visor \nBomba',
+                                                          textAlign:
+                                                              TextAlign.center,
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .title1
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Outfit',
+                                                                color: Color(
+                                                                    0xFF101213),
+                                                                fontSize: 13,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .w600,
+                                                              ),
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
                                                 ),
                                               ),
                                             ).animateOnPageLoad(animationsMap[

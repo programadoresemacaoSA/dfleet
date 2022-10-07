@@ -4,7 +4,10 @@ import '../flutter_flow/flutter_flow_icon_button.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
+import '../foto_sinistro/foto_sinistro_widget.dart';
 import '../homeapp/homeapp_widget.dart';
+import '../siniastro_avaria_pessoa/siniastro_avaria_pessoa_widget.dart';
+import '../siniastro_avaria_veiculo_terceiro/siniastro_avaria_veiculo_terceiro_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -1398,7 +1401,18 @@ class _SiniastroAvariaWidgetState extends State<SiniastroAvariaWidget> {
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Expanded(
-                                    child: RegistrarfotoveiculoWidget(),
+                                    child: InkWell(
+                                      onTap: () async {
+                                        await Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                FotoSinistroWidget(),
+                                          ),
+                                        );
+                                      },
+                                      child: RegistrarfotoveiculoWidget(),
+                                    ),
                                   ),
                                 ],
                               ),
@@ -1463,8 +1477,14 @@ class _SiniastroAvariaWidgetState extends State<SiniastroAvariaWidget> {
                                                 color: Color(0xFFF8F8F8),
                                                 size: 40,
                                               ),
-                                              onPressed: () {
-                                                print('IconButton pressed ...');
+                                              onPressed: () async {
+                                                await Navigator.push(
+                                                  context,
+                                                  MaterialPageRoute(
+                                                    builder: (context) =>
+                                                        SiniastroAvariaPessoaWidget(),
+                                                  ),
+                                                );
                                               },
                                             ),
                                             Text(
@@ -1486,35 +1506,52 @@ class _SiniastroAvariaWidgetState extends State<SiniastroAvariaWidget> {
                                       child: Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             2, 0, 5, 0),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          children: [
-                                            FlutterFlowIconButton(
-                                              borderColor: Colors.transparent,
-                                              borderRadius: 30,
-                                              borderWidth: 1,
-                                              buttonSize: 60,
-                                              icon: Icon(
-                                                Icons.electric_car_sharp,
-                                                color: Color(0xFFF8F8F8),
-                                                size: 40,
+                                        child: InkWell(
+                                          onTap: () async {
+                                            await Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (context) =>
+                                                    SiniastroAvariaVeiculoTerceiroWidget(),
                                               ),
-                                              onPressed: () {
-                                                print('IconButton pressed ...');
-                                              },
-                                            ),
-                                            Text(
-                                              'V. Envolvido',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        color:
-                                                            Color(0xFFF8F8F8),
-                                                      ),
-                                            ),
-                                          ],
+                                            );
+                                          },
+                                          child: Column(
+                                            mainAxisSize: MainAxisSize.max,
+                                            children: [
+                                              FlutterFlowIconButton(
+                                                borderColor: Colors.transparent,
+                                                borderRadius: 30,
+                                                borderWidth: 1,
+                                                buttonSize: 60,
+                                                icon: Icon(
+                                                  Icons.electric_car_sharp,
+                                                  color: Color(0xFFF8F8F8),
+                                                  size: 40,
+                                                ),
+                                                onPressed: () async {
+                                                  await Navigator.push(
+                                                    context,
+                                                    MaterialPageRoute(
+                                                      builder: (context) =>
+                                                          SiniastroAvariaVeiculoTerceiroWidget(),
+                                                    ),
+                                                  );
+                                                },
+                                              ),
+                                              Text(
+                                                'V. Envolvido',
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText1
+                                                        .override(
+                                                          fontFamily: 'Poppins',
+                                                          color:
+                                                              Color(0xFFF8F8F8),
+                                                        ),
+                                              ),
+                                            ],
+                                          ),
                                         ),
                                       ),
                                     ),

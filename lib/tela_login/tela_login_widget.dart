@@ -3,6 +3,7 @@ import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
 import '../homeapp/homeapp_widget.dart';
 import '../reset_de_senha/reset_de_senha_widget.dart';
+import '../splashscreen/splashscreen_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -329,7 +330,13 @@ class _TelaLoginWidgetState extends State<TelaLoginWidget> {
                                       0, 8, 0, 30),
                                   child: FFButtonWidget(
                                     onPressed: () async {
-                                      Navigator.pop(context);
+                                      await Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                              SplashscreenWidget(),
+                                        ),
+                                      );
                                     },
                                     text: 'Sair',
                                     options: FFButtonOptions(

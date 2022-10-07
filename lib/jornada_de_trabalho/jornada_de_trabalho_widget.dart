@@ -288,6 +288,31 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                         ],
                       ),
                     ),
+                    Column(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        FlutterFlowIconButton(
+                          borderColor: Colors.transparent,
+                          borderRadius: 30,
+                          borderWidth: 1,
+                          buttonSize: 60,
+                          icon: FaIcon(
+                            FontAwesomeIcons.alignJustify,
+                            color: Colors.white,
+                            size: 30,
+                          ),
+                          onPressed: () async {
+                            await Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) =>
+                                    InformacoesJornadaDeTrabalhoWidget(),
+                              ),
+                            );
+                          },
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),
@@ -305,7 +330,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                 ],
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
+                padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
                 child: Container(
                   width: MediaQuery.of(context).size.width,
                   height: 800,
@@ -398,87 +423,46 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                         ],
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 3),
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 25, 0, 12),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  Text(
-                                    'Inicio jornada',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Poppins',
-                                          color: Color(0xFF4AFF00),
-                                        ),
+                            Text(
+                              'Inicio jornada',
+                              style: FlutterFlowTheme.of(context)
+                                  .bodyText1
+                                  .override(
+                                    fontFamily: 'Poppins',
+                                    color: Color(0xFF4AFF00),
                                   ),
-                                ],
-                              ),
                             ),
-                            Column(
-                              mainAxisSize: MainAxisSize.max,
-                              children: [
-                                Text(
-                                  'Fim jornada',
-                                  style: FlutterFlowTheme.of(context)
-                                      .bodyText1
-                                      .override(
-                                        fontFamily: 'Poppins',
-                                        color: Color(0xFFFFCD00),
-                                      ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 1, 0, 12),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  Text(
-                                    '10:56',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Poppins',
-                                          color: Color(0xFF4AFF00),
-                                        ),
+                            Text(
+                              '10:56',
+                              style: FlutterFlowTheme.of(context)
+                                  .bodyText1
+                                  .override(
+                                    fontFamily: 'Poppins',
+                                    color: Color(0xFF4AFF00),
                                   ),
-                                ],
-                              ),
                             ),
-                            Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  Text(
-                                    '17:56',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText1
-                                        .override(
-                                          fontFamily: 'Poppins',
-                                          color: Color(0xFFFFCD00),
-                                        ),
+                            Text(
+                              'Fim jornada',
+                              style: FlutterFlowTheme.of(context)
+                                  .bodyText1
+                                  .override(
+                                    fontFamily: 'Poppins',
+                                    color: Color(0xFFFFCD00),
                                   ),
-                                ],
-                              ),
+                            ),
+                            Text(
+                              '17:56',
+                              style: FlutterFlowTheme.of(context)
+                                  .bodyText1
+                                  .override(
+                                    fontFamily: 'Poppins',
+                                    color: Color(0xFFFFCD00),
+                                  ),
                             ),
                           ],
                         ),
@@ -1033,32 +1017,8 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                         padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
+                          mainAxisAlignment: MainAxisAlignment.end,
                           children: [
-                            Column(
-                              mainAxisSize: MainAxisSize.max,
-                              children: [
-                                FlutterFlowIconButton(
-                                  borderColor: Colors.transparent,
-                                  borderRadius: 30,
-                                  borderWidth: 1,
-                                  buttonSize: 60,
-                                  icon: FaIcon(
-                                    FontAwesomeIcons.alignJustify,
-                                    color: Colors.white,
-                                    size: 30,
-                                  ),
-                                  onPressed: () async {
-                                    await Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) =>
-                                            InformacoesJornadaDeTrabalhoWidget(),
-                                      ),
-                                    );
-                                  },
-                                ),
-                              ],
-                            ),
                             Padding(
                               padding:
                                   EdgeInsetsDirectional.fromSTEB(120, 0, 0, 0),
@@ -1066,35 +1026,40 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.end,
                                 children: [
-                                  FFButtonWidget(
-                                    onPressed: () async {
-                                      await Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) => HomeappWidget(),
-                                        ),
-                                      );
-                                    },
-                                    text: 'Sair',
-                                    icon: Icon(
-                                      Icons.exit_to_app,
-                                      size: 15,
-                                    ),
-                                    options: FFButtonOptions(
-                                      width: 130,
-                                      height: 40,
-                                      color: Color(0xFFAF0000),
-                                      textStyle: FlutterFlowTheme.of(context)
-                                          .subtitle2
-                                          .override(
-                                            fontFamily: 'Poppins',
-                                            color: Colors.white,
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0, 20, 25, 0),
+                                    child: FFButtonWidget(
+                                      onPressed: () async {
+                                        await Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                HomeappWidget(),
                                           ),
-                                      borderSide: BorderSide(
-                                        color: Colors.transparent,
-                                        width: 1,
+                                        );
+                                      },
+                                      text: 'Sair',
+                                      icon: Icon(
+                                        Icons.exit_to_app,
+                                        size: 15,
                                       ),
-                                      borderRadius: BorderRadius.circular(8),
+                                      options: FFButtonOptions(
+                                        width: 130,
+                                        height: 40,
+                                        color: Color(0xFFAF0000),
+                                        textStyle: FlutterFlowTheme.of(context)
+                                            .subtitle2
+                                            .override(
+                                              fontFamily: 'Poppins',
+                                              color: Colors.white,
+                                            ),
+                                        borderSide: BorderSide(
+                                          color: Colors.transparent,
+                                          width: 1,
+                                        ),
+                                        borderRadius: BorderRadius.circular(8),
+                                      ),
                                     ),
                                   ),
                                 ],

@@ -287,13 +287,229 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                         padding: EdgeInsetsDirectional.fromSTEB(0, 15, 0, 0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Column(
+                            Expanded(
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        8, 8, 4, 12),
+                                    child: Container(
+                                      width: 150,
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.15,
+                                      decoration: BoxDecoration(
+                                        color: Colors.white,
+                                        boxShadow: [
+                                          BoxShadow(
+                                            blurRadius: 4,
+                                            color: Color(0x2B202529),
+                                            offset: Offset(0, 2),
+                                          )
+                                        ],
+                                        borderRadius: BorderRadius.circular(12),
+                                      ),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        children: [
+                                          Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0, 20, 0, 0),
+                                            child: Row(
+                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.center,
+                                              children: [
+                                                Expanded(
+                                                  child: Padding(
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(
+                                                                0, 15, 0, 4),
+                                                    child: Column(
+                                                      mainAxisSize:
+                                                          MainAxisSize.max,
+                                                      mainAxisAlignment:
+                                                          MainAxisAlignment
+                                                              .center,
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .center,
+                                                      children: [
+                                                        Text(
+                                                          'Freadas bruscas',
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyText2
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Outfit',
+                                                                color: Color(
+                                                                    0xFF57636C),
+                                                                fontSize: 18,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .normal,
+                                                              ),
+                                                        ),
+                                                        Padding(
+                                                          padding:
+                                                              EdgeInsetsDirectional
+                                                                  .fromSTEB(0,
+                                                                      4, 0, 0),
+                                                          child: Text(
+                                                            '12',
+                                                            style: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .subtitle1
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Outfit',
+                                                                  color: Color(
+                                                                      0xFF1390FF),
+                                                                  fontSize: 40,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w500,
+                                                                ),
+                                                          ),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ).animateOnPageLoad(animationsMap[
+                                        'containerOnPageLoadAnimation1']!),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Expanded(
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        4, 8, 8, 12),
+                                    child: Container(
+                                      width: 150,
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.15,
+                                      decoration: BoxDecoration(
+                                        color: Colors.white,
+                                        boxShadow: [
+                                          BoxShadow(
+                                            blurRadius: 4,
+                                            color: Color(0x2B202529),
+                                            offset: Offset(0, 2),
+                                          )
+                                        ],
+                                        borderRadius: BorderRadius.circular(12),
+                                      ),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        children: [
+                                          Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0, 20, 0, 0),
+                                            child: Row(
+                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.center,
+                                              children: [
+                                                Expanded(
+                                                  child: Padding(
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(
+                                                                0, 15, 0, 4),
+                                                    child: Column(
+                                                      mainAxisSize:
+                                                          MainAxisSize.max,
+                                                      mainAxisAlignment:
+                                                          MainAxisAlignment
+                                                              .center,
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .center,
+                                                      children: [
+                                                        Text(
+                                                          'Aceleração brusca',
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyText2
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Outfit',
+                                                                color: Color(
+                                                                    0xFF57636C),
+                                                                fontSize: 17,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .normal,
+                                                              ),
+                                                        ),
+                                                        Padding(
+                                                          padding:
+                                                              EdgeInsetsDirectional
+                                                                  .fromSTEB(0,
+                                                                      4, 0, 0),
+                                                          child: Text(
+                                                            '12',
+                                                            style: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .subtitle1
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Outfit',
+                                                                  color: Color(
+                                                                      0xFF018120),
+                                                                  fontSize: 40,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w500,
+                                                                ),
+                                                          ),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ).animateOnPageLoad(animationsMap[
+                                        'containerOnPageLoadAnimation2']!),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Expanded(
+                            child: Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      16, 8, 16, 12),
+                                      8, 8, 4, 12),
                                   child: Container(
                                     width: 150,
                                     height: MediaQuery.of(context).size.height *
@@ -336,7 +552,7 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                                                             .center,
                                                     children: [
                                                       Text(
-                                                        'Freadas bruscas',
+                                                        'Exames vencidos',
                                                         style:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -366,7 +582,7 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                                                                 fontFamily:
                                                                     'Outfit',
                                                                 color: Color(
-                                                                    0xFF1390FF),
+                                                                    0xFFAF0000),
                                                                 fontSize: 40,
                                                                 fontWeight:
                                                                     FontWeight
@@ -384,16 +600,18 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                                       ],
                                     ),
                                   ).animateOnPageLoad(animationsMap[
-                                      'containerOnPageLoadAnimation1']!),
+                                      'containerOnPageLoadAnimation3']!),
                                 ),
                               ],
                             ),
-                            Column(
+                          ),
+                          Expanded(
+                            child: Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      16, 8, 16, 12),
+                                      4, 8, 8, 12),
                                   child: Container(
                                     width: 150,
                                     height: MediaQuery.of(context).size.height *
@@ -436,7 +654,7 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                                                             .center,
                                                     children: [
                                                       Text(
-                                                        'Aceleração brusca',
+                                                        'Curva brusca',
                                                         style:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -446,7 +664,7 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                                                                       'Outfit',
                                                                   color: Color(
                                                                       0xFF57636C),
-                                                                  fontSize: 17,
+                                                                  fontSize: 18,
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .normal,
@@ -466,7 +684,7 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                                                                 fontFamily:
                                                                     'Outfit',
                                                                 color: Color(
-                                                                    0xFF018120),
+                                                                    0xFFAF0000),
                                                                 fontSize: 40,
                                                                 fontWeight:
                                                                     FontWeight
@@ -484,412 +702,219 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                                       ],
                                     ),
                                   ).animateOnPageLoad(animationsMap[
-                                      'containerOnPageLoadAnimation2']!),
+                                      'containerOnPageLoadAnimation4']!),
                                 ),
                               ],
                             ),
-                          ],
-                        ),
-                      ),
-                      Row(
-                        mainAxisSize: MainAxisSize.max,
-                        children: [
-                          Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    16, 8, 16, 12),
-                                child: Container(
-                                  width: 150,
-                                  height:
-                                      MediaQuery.of(context).size.height * 0.15,
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    boxShadow: [
-                                      BoxShadow(
-                                        blurRadius: 4,
-                                        color: Color(0x2B202529),
-                                        offset: Offset(0, 2),
-                                      )
-                                    ],
-                                    borderRadius: BorderRadius.circular(12),
-                                  ),
-                                  child: Column(
-                                    mainAxisSize: MainAxisSize.max,
-                                    children: [
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 20, 0, 0),
-                                        child: Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          children: [
-                                            Expanded(
-                                              child: Padding(
-                                                padding: EdgeInsetsDirectional
-                                                    .fromSTEB(0, 15, 0, 4),
-                                                child: Column(
-                                                  mainAxisSize:
-                                                      MainAxisSize.max,
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment.center,
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.center,
-                                                  children: [
-                                                    Text(
-                                                      'Exames vencidos',
-                                                      style:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyText2
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Outfit',
-                                                                color: Color(
-                                                                    0xFF57636C),
-                                                                fontSize: 18,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .normal,
-                                                              ),
-                                                    ),
-                                                    Padding(
-                                                      padding:
-                                                          EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  0, 4, 0, 0),
-                                                      child: Text(
-                                                        '12',
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .subtitle1
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Outfit',
-                                                                  color: Color(
-                                                                      0xFFAF0000),
-                                                                  fontSize: 40,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w500,
-                                                                ),
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ).animateOnPageLoad(animationsMap[
-                                    'containerOnPageLoadAnimation3']!),
-                              ),
-                            ],
-                          ),
-                          Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    16, 8, 16, 12),
-                                child: Container(
-                                  width: 150,
-                                  height:
-                                      MediaQuery.of(context).size.height * 0.15,
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    boxShadow: [
-                                      BoxShadow(
-                                        blurRadius: 4,
-                                        color: Color(0x2B202529),
-                                        offset: Offset(0, 2),
-                                      )
-                                    ],
-                                    borderRadius: BorderRadius.circular(12),
-                                  ),
-                                  child: Column(
-                                    mainAxisSize: MainAxisSize.max,
-                                    children: [
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 20, 0, 0),
-                                        child: Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          children: [
-                                            Expanded(
-                                              child: Padding(
-                                                padding: EdgeInsetsDirectional
-                                                    .fromSTEB(0, 15, 0, 4),
-                                                child: Column(
-                                                  mainAxisSize:
-                                                      MainAxisSize.max,
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment.center,
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.center,
-                                                  children: [
-                                                    Text(
-                                                      'Curva brusca',
-                                                      style:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyText2
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Outfit',
-                                                                color: Color(
-                                                                    0xFF57636C),
-                                                                fontSize: 18,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .normal,
-                                                              ),
-                                                    ),
-                                                    Padding(
-                                                      padding:
-                                                          EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  0, 4, 0, 0),
-                                                      child: Text(
-                                                        '12',
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .subtitle1
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Outfit',
-                                                                  color: Color(
-                                                                      0xFFAF0000),
-                                                                  fontSize: 40,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w500,
-                                                                ),
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ).animateOnPageLoad(animationsMap[
-                                    'containerOnPageLoadAnimation4']!),
-                              ),
-                            ],
                           ),
                         ],
                       ),
                       Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
-                          Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    16, 8, 16, 12),
-                                child: Container(
-                                  width: 150,
-                                  height:
-                                      MediaQuery.of(context).size.height * 0.15,
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    boxShadow: [
-                                      BoxShadow(
-                                        blurRadius: 4,
-                                        color: Color(0x2B202529),
-                                        offset: Offset(0, 2),
-                                      )
-                                    ],
-                                    borderRadius: BorderRadius.circular(12),
-                                  ),
-                                  child: Column(
-                                    mainAxisSize: MainAxisSize.max,
-                                    children: [
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 20, 0, 0),
-                                        child: Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          children: [
-                                            Expanded(
-                                              child: Padding(
-                                                padding: EdgeInsetsDirectional
-                                                    .fromSTEB(0, 15, 0, 4),
-                                                child: Column(
-                                                  mainAxisSize:
-                                                      MainAxisSize.max,
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment.center,
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.center,
-                                                  children: [
-                                                    Text(
-                                                      'Total de sinistros',
-                                                      style:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyText2
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Outfit',
-                                                                color: Color(
-                                                                    0xFF57636C),
-                                                                fontSize: 18,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .normal,
-                                                              ),
-                                                    ),
-                                                    Padding(
-                                                      padding:
-                                                          EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  0, 4, 0, 0),
-                                                      child: Text(
-                                                        '12',
+                          Expanded(
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      8, 8, 4, 12),
+                                  child: Container(
+                                    width: 150,
+                                    height: MediaQuery.of(context).size.height *
+                                        0.15,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      boxShadow: [
+                                        BoxShadow(
+                                          blurRadius: 4,
+                                          color: Color(0x2B202529),
+                                          offset: Offset(0, 2),
+                                        )
+                                      ],
+                                      borderRadius: BorderRadius.circular(12),
+                                    ),
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0, 20, 0, 0),
+                                          child: Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            children: [
+                                              Expanded(
+                                                child: Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(0, 15, 0, 4),
+                                                  child: Column(
+                                                    mainAxisSize:
+                                                        MainAxisSize.max,
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment
+                                                            .center,
+                                                    crossAxisAlignment:
+                                                        CrossAxisAlignment
+                                                            .center,
+                                                    children: [
+                                                      Text(
+                                                        'Total de sinistros',
                                                         style:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .subtitle1
+                                                                .bodyText2
                                                                 .override(
                                                                   fontFamily:
                                                                       'Outfit',
                                                                   color: Color(
-                                                                      0xFFAF0000),
-                                                                  fontSize: 40,
+                                                                      0xFF57636C),
+                                                                  fontSize: 18,
                                                                   fontWeight:
                                                                       FontWeight
-                                                                          .w500,
+                                                                          .normal,
                                                                 ),
                                                       ),
-                                                    ),
-                                                  ],
+                                                      Padding(
+                                                        padding:
+                                                            EdgeInsetsDirectional
+                                                                .fromSTEB(
+                                                                    0, 4, 0, 0),
+                                                        child: Text(
+                                                          '12',
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .subtitle1
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Outfit',
+                                                                color: Color(
+                                                                    0xFFAF0000),
+                                                                fontSize: 40,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .w500,
+                                                              ),
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
                                                 ),
                                               ),
-                                            ),
-                                          ],
+                                            ],
+                                          ),
                                         ),
-                                      ),
-                                    ],
-                                  ),
-                                ).animateOnPageLoad(animationsMap[
-                                    'containerOnPageLoadAnimation5']!),
-                              ),
-                            ],
+                                      ],
+                                    ),
+                                  ).animateOnPageLoad(animationsMap[
+                                      'containerOnPageLoadAnimation5']!),
+                                ),
+                              ],
+                            ),
                           ),
-                          Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    16, 8, 16, 12),
-                                child: Container(
-                                  width: 150,
-                                  height:
-                                      MediaQuery.of(context).size.height * 0.15,
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    boxShadow: [
-                                      BoxShadow(
-                                        blurRadius: 4,
-                                        color: Color(0x2B202529),
-                                        offset: Offset(0, 2),
-                                      )
-                                    ],
-                                    borderRadius: BorderRadius.circular(12),
-                                  ),
-                                  child: Column(
-                                    mainAxisSize: MainAxisSize.max,
-                                    children: [
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 20, 0, 0),
-                                        child: Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          children: [
-                                            Expanded(
-                                              child: Padding(
-                                                padding: EdgeInsetsDirectional
-                                                    .fromSTEB(0, 15, 0, 4),
-                                                child: Column(
-                                                  mainAxisSize:
-                                                      MainAxisSize.max,
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment.center,
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.center,
-                                                  children: [
-                                                    Text(
-                                                      'Total pontuação',
-                                                      style:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyText2
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Outfit',
-                                                                color: Color(
-                                                                    0xFF57636C),
-                                                                fontSize: 18,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .normal,
-                                                              ),
-                                                    ),
-                                                    Padding(
-                                                      padding:
-                                                          EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  0, 4, 0, 0),
-                                                      child: Text(
-                                                        '12',
+                          Expanded(
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      4, 8, 8, 12),
+                                  child: Container(
+                                    width: 150,
+                                    height: MediaQuery.of(context).size.height *
+                                        0.15,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      boxShadow: [
+                                        BoxShadow(
+                                          blurRadius: 4,
+                                          color: Color(0x2B202529),
+                                          offset: Offset(0, 2),
+                                        )
+                                      ],
+                                      borderRadius: BorderRadius.circular(12),
+                                    ),
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0, 20, 0, 0),
+                                          child: Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            children: [
+                                              Expanded(
+                                                child: Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(0, 15, 0, 4),
+                                                  child: Column(
+                                                    mainAxisSize:
+                                                        MainAxisSize.max,
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment
+                                                            .center,
+                                                    crossAxisAlignment:
+                                                        CrossAxisAlignment
+                                                            .center,
+                                                    children: [
+                                                      Text(
+                                                        'Total pontuação',
                                                         style:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .subtitle1
+                                                                .bodyText2
                                                                 .override(
                                                                   fontFamily:
                                                                       'Outfit',
                                                                   color: Color(
-                                                                      0xFFECA642),
-                                                                  fontSize: 40,
+                                                                      0xFF57636C),
+                                                                  fontSize: 18,
                                                                   fontWeight:
                                                                       FontWeight
-                                                                          .w500,
+                                                                          .normal,
                                                                 ),
                                                       ),
-                                                    ),
-                                                  ],
+                                                      Padding(
+                                                        padding:
+                                                            EdgeInsetsDirectional
+                                                                .fromSTEB(
+                                                                    0, 4, 0, 0),
+                                                        child: Text(
+                                                          '12',
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .subtitle1
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Outfit',
+                                                                color: Color(
+                                                                    0xFFECA642),
+                                                                fontSize: 40,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .w500,
+                                                              ),
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
                                                 ),
                                               ),
-                                            ),
-                                          ],
+                                            ],
+                                          ),
                                         ),
-                                      ),
-                                    ],
-                                  ),
-                                ).animateOnPageLoad(animationsMap[
-                                    'containerOnPageLoadAnimation6']!),
-                              ),
-                            ],
+                                      ],
+                                    ),
+                                  ).animateOnPageLoad(animationsMap[
+                                      'containerOnPageLoadAnimation6']!),
+                                ),
+                              ],
+                            ),
                           ),
                         ],
                       ),

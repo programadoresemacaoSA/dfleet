@@ -258,8 +258,14 @@ class _InformacoesJornadaDeTrabalhoWidgetState
                                       color: Color(0xFF033F5D),
                                       size: 40,
                                     ),
-                                    onPressed: () {
-                                      print('IconButton pressed ...');
+                                    onPressed: () async {
+                                      await Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                              DetalhesJornadaDescricaoWidget(),
+                                        ),
+                                      );
                                     },
                                   ),
                                 ],
