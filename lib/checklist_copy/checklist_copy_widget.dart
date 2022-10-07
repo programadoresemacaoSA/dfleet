@@ -14,7 +14,6 @@ class ChecklistCopyWidget extends StatefulWidget {
 }
 
 class _ChecklistCopyWidgetState extends State<ChecklistCopyWidget> {
-  bool? checkboxListTileValue;
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
@@ -639,106 +638,6 @@ class _ChecklistCopyWidgetState extends State<ChecklistCopyWidget> {
                                 ),
                               ),
                             ],
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(16, 12, 16, 0),
-                        child: Container(
-                          width: double.infinity,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            boxShadow: [
-                              BoxShadow(
-                                blurRadius: 5,
-                                color: Color(0x34111417),
-                                offset: Offset(0, 2),
-                              )
-                            ],
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                          child: Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 12),
-                            child: Column(
-                              mainAxisSize: MainAxisSize.max,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      12, 0, 12, 0),
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.only(
-                                      bottomLeft: Radius.circular(0),
-                                      bottomRight: Radius.circular(0),
-                                      topLeft: Radius.circular(12),
-                                      topRight: Radius.circular(12),
-                                    ),
-                                    child: Theme(
-                                      data: ThemeData(
-                                        checkboxTheme: CheckboxThemeData(
-                                          shape: RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(25),
-                                          ),
-                                        ),
-                                        unselectedWidgetColor:
-                                            Color(0xFF95A1AC),
-                                      ),
-                                      child: CheckboxListTile(
-                                        value: checkboxListTileValue ??= false,
-                                        onChanged: (newValue) => setState(() =>
-                                            checkboxListTileValue = newValue!),
-                                        title: Text(
-                                          'Annual (save \$12)',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText2
-                                              .override(
-                                                fontFamily: 'Outfit',
-                                                color: Color(0xFF57636C),
-                                                fontSize: 14,
-                                                fontWeight: FontWeight.normal,
-                                              ),
-                                        ),
-                                        subtitle: Text(
-                                          '\$180/yr',
-                                          style: FlutterFlowTheme.of(context)
-                                              .title3
-                                              .override(
-                                                fontFamily: 'Outfit',
-                                                color: Color(0xFF101213),
-                                                fontSize: 20,
-                                                fontWeight: FontWeight.w500,
-                                              ),
-                                        ),
-                                        tileColor: Color(0xFFF1F4F8),
-                                        activeColor: Color(0xFF4B39EF),
-                                        checkColor: Colors.white,
-                                        dense: false,
-                                        controlAffinity:
-                                            ListTileControlAffinity.trailing,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      12, 0, 24, 0),
-                                  child: Text(
-                                    'Gain unlimited access to all the content we have to offer! ',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyText2
-                                        .override(
-                                          fontFamily: 'Outfit',
-                                          color: Color(0xFF57636C),
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.normal,
-                                        ),
-                                  ),
-                                ),
-                              ],
-                            ),
                           ),
                         ),
                       ),

@@ -54,8 +54,8 @@ class _TelaLoginWidgetState extends State<TelaLoginWidget> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Image.asset(
-                    'assets/images/img_login_copiar.png',
+                  Image.network(
+                    'https://programadoresemacao.com.br/imagens_app_dfleet/img_login.png',
                     width: MediaQuery.of(context).size.width,
                     height: MediaQuery.of(context).size.height * 0.5,
                     fit: BoxFit.fitHeight,

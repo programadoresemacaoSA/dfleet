@@ -39,8 +39,8 @@ class _SplashscreenWidgetState extends State<SplashscreenWidget> {
                       (r) => false,
                     );
                   },
-                  child: Image.asset(
-                    'assets/images/splashscreen.jpg',
+                  child: Image.network(
+                    'https://programadoresemacao.com.br/imagens_app_dfleet/splashscreen.jpg',
                     width: 1000,
                     height: 100,
                     fit: BoxFit.cover,

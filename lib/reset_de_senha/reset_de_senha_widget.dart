@@ -48,8 +48,8 @@ class _ResetDeSenhaWidgetState extends State<ResetDeSenhaWidget> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Image.asset(
-                    'assets/images/logo_novo_dfleet_copiar.png',
+                  Image.network(
+                    'https://programadoresemacao.com.br/imagens_app_dfleet/logo_novo_dfleet.png',
                     width: 300,
                     height: 400,
                     fit: BoxFit.contain,
