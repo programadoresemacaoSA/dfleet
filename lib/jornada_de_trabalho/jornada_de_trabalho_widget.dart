@@ -21,12 +21,211 @@ class JornadaDeTrabalhoWidget extends StatefulWidget {
 
 class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
     with TickerProviderStateMixin {
+  final animationsMap = {
+    'containerOnPageLoadAnimation1': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: 0,
+          end: 1,
+        ),
+        MoveEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: Offset(0, 90),
+          end: Offset(0, 0),
+        ),
+      ],
+    ),
+    'containerOnPageLoadAnimation2': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: 0,
+          end: 1,
+        ),
+        MoveEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: Offset(0, 90),
+          end: Offset(0, 0),
+        ),
+      ],
+    ),
+    'containerOnPageLoadAnimation3': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: 0,
+          end: 1,
+        ),
+        MoveEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: Offset(0, 90),
+          end: Offset(0, 0),
+        ),
+      ],
+    ),
+    'containerOnPageLoadAnimation4': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: 0,
+          end: 1,
+        ),
+        MoveEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: Offset(0, 90),
+          end: Offset(0, 0),
+        ),
+      ],
+    ),
+    'containerOnPageLoadAnimation5': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: 0,
+          end: 1,
+        ),
+        MoveEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: Offset(0, 90),
+          end: Offset(0, 0),
+        ),
+      ],
+    ),
+    'containerOnPageLoadAnimation6': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: 0,
+          end: 1,
+        ),
+        MoveEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: Offset(0, 90),
+          end: Offset(0, 0),
+        ),
+      ],
+    ),
+    'containerOnPageLoadAnimation7': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: 0,
+          end: 1,
+        ),
+        MoveEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: Offset(0, 90),
+          end: Offset(0, 0),
+        ),
+      ],
+    ),
+    'containerOnPageLoadAnimation8': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: 0,
+          end: 1,
+        ),
+        MoveEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: Offset(0, 90),
+          end: Offset(0, 0),
+        ),
+      ],
+    ),
+    'containerOnPageLoadAnimation9': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: 0,
+          end: 1,
+        ),
+        MoveEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: Offset(0, 90),
+          end: Offset(0, 0),
+        ),
+      ],
+    ),
+    'containerOnPageLoadAnimation10': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: 0,
+          end: 1,
+        ),
+        MoveEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: Offset(0, 90),
+          end: Offset(0, 0),
+        ),
+      ],
+    ),
+  };
   TextEditingController? textController;
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
+    setupAnimations(
+      animationsMap.values.where((anim) =>
+          anim.trigger == AnimationTrigger.onActionTrigger ||
+          !anim.applyInitialState),
+      this,
+    );
+
     textController = TextEditingController();
   }
 
@@ -334,7 +533,8 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                       ],
                                     ),
                                   ),
-                                ),
+                                ).animateOnPageLoad(animationsMap[
+                                    'containerOnPageLoadAnimation1']!),
                               ],
                             ),
                           ),
@@ -384,7 +584,8 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                       ],
                                     ),
                                   ),
-                                ),
+                                ).animateOnPageLoad(animationsMap[
+                                    'containerOnPageLoadAnimation2']!),
                               ],
                             ),
                           ),
@@ -429,7 +630,8 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                     ],
                                   ),
                                 ),
-                              ),
+                              ).animateOnPageLoad(animationsMap[
+                                  'containerOnPageLoadAnimation3']!),
                             ],
                           ),
                         ],
@@ -489,7 +691,8 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                         ],
                                       ),
                                     ),
-                                  ),
+                                  ).animateOnPageLoad(animationsMap[
+                                      'containerOnPageLoadAnimation4']!),
                                 ],
                               ),
                             ),
@@ -542,7 +745,8 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                         ],
                                       ),
                                     ),
-                                  ),
+                                  ).animateOnPageLoad(animationsMap[
+                                      'containerOnPageLoadAnimation5']!),
                                 ],
                               ),
                             ),
@@ -590,7 +794,8 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                       ],
                                     ),
                                   ),
-                                ),
+                                ).animateOnPageLoad(animationsMap[
+                                    'containerOnPageLoadAnimation6']!),
                               ],
                             ),
                           ],
@@ -651,7 +856,8 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                         ],
                                       ),
                                     ),
-                                  ),
+                                  ).animateOnPageLoad(animationsMap[
+                                      'containerOnPageLoadAnimation7']!),
                                 ],
                               ),
                             ),
@@ -704,7 +910,8 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                         ],
                                       ),
                                     ),
-                                  ),
+                                  ).animateOnPageLoad(animationsMap[
+                                      'containerOnPageLoadAnimation8']!),
                                 ],
                               ),
                             ),
@@ -752,7 +959,8 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                       ],
                                     ),
                                   ),
-                                ),
+                                ).animateOnPageLoad(animationsMap[
+                                    'containerOnPageLoadAnimation9']!),
                               ],
                             ),
                           ],
@@ -813,7 +1021,8 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                         ],
                                       ),
                                     ),
-                                  ),
+                                  ).animateOnPageLoad(animationsMap[
+                                      'containerOnPageLoadAnimation10']!),
                                 ],
                               ),
                             ),

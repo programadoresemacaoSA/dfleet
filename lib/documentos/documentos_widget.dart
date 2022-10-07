@@ -29,7 +29,7 @@ class _DocumentosWidgetState extends State<DocumentosWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16, 20, 16, 0),
+                padding: EdgeInsetsDirectional.fromSTEB(16, 15, 16, 0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -109,290 +109,344 @@ class _DocumentosWidgetState extends State<DocumentosWidget> {
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 0),
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(16, 10, 16, 0),
                           child: Container(
-                            width: MediaQuery.of(context).size.width * 0.92,
-                            height: 75,
+                            width: double.infinity,
+                            height: MediaQuery.of(context).size.height * 0.1,
                             decoration: BoxDecoration(
-                              color: Color(0xFFF1F4F8),
+                              color: Colors.white,
+                              boxShadow: [
+                                BoxShadow(
+                                  blurRadius: 7,
+                                  color: Color(0x2F1D2429),
+                                  offset: Offset(0, 3),
+                                )
+                              ],
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              children: [
-                                Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  children: [
-                                    FlutterFlowIconButton(
-                                      borderColor: Colors.transparent,
-                                      borderRadius: 30,
-                                      borderWidth: 1,
-                                      buttonSize: 60,
+                            child: Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(12, 8, 12, 8),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Icon(
+                                    Icons.folder_special,
+                                    color: Color(0xFF1390FF),
+                                    size: 32,
+                                  ),
+                                  Expanded(
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          12, 0, 8, 0),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            'CRLV do Veiculo',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyText1
+                                                .override(
+                                                  fontFamily: 'Outfit',
+                                                  color: Color(0xFF101213),
+                                                  fontSize: 18,
+                                                  fontWeight: FontWeight.normal,
+                                                ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0, 0, 4, 0),
+                                    child: FlutterFlowIconButton(
+                                      borderColor: Color(0xFFF1F4F8),
+                                      borderRadius: 8,
+                                      borderWidth: 2,
+                                      buttonSize: 40,
                                       icon: Icon(
-                                        Icons.folder_special,
-                                        color: Color(0xFF1390FF),
-                                        size: 40,
+                                        Icons.cloud_download_outlined,
+                                        color: Color(0xFF57636C),
+                                        size: 20,
                                       ),
                                       onPressed: () {
                                         print('IconButton pressed ...');
                                       },
                                     ),
-                                  ],
-                                ),
-                                Expanded(
-                                  child: Padding(
+                                  ),
+                                  Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        12, 0, 5, 0),
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          'CRLV do Veiculo',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1
-                                              .override(
-                                                fontFamily: 'Poppins',
-                                                color: Color(0xFF033F5D),
-                                              ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 0, 15, 0),
-                                  child: Column(
-                                    mainAxisSize: MainAxisSize.max,
-                                    children: [
-                                      FlutterFlowIconButton(
-                                        borderColor: Colors.transparent,
-                                        borderRadius: 30,
-                                        borderWidth: 1,
-                                        buttonSize: 50,
-                                        icon: Icon(
-                                          Icons.cloud_upload,
-                                          color: Color(0xFF033F5D),
-                                          size: 40,
-                                        ),
-                                        onPressed: () {
-                                          print('IconButton pressed ...');
-                                        },
-                                      ),
-                                      Text(
-                                        'Enviar',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText1
-                                            .override(
-                                              fontFamily: 'Poppins',
-                                              color: Color(0xFF033F5D),
-                                            ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 0),
-                          child: Container(
-                            width: MediaQuery.of(context).size.width * 0.92,
-                            height: 75,
-                            decoration: BoxDecoration(
-                              color: Color(0xFFF1F4F8),
-                              borderRadius: BorderRadius.circular(8),
-                            ),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              children: [
-                                Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  children: [
-                                    FlutterFlowIconButton(
-                                      borderColor: Colors.transparent,
-                                      borderRadius: 30,
-                                      borderWidth: 1,
-                                      buttonSize: 60,
+                                        0, 0, 4, 0),
+                                    child: FlutterFlowIconButton(
+                                      borderColor: Color(0xFFF1F4F8),
+                                      borderRadius: 8,
+                                      borderWidth: 2,
+                                      buttonSize: 40,
                                       icon: Icon(
-                                        Icons.location_history_outlined,
-                                        color: Color(0xFF018120),
-                                        size: 40,
+                                        Icons.ios_share,
+                                        color: Color(0xFF57636C),
+                                        size: 20,
                                       ),
                                       onPressed: () {
                                         print('IconButton pressed ...');
                                       },
                                     ),
-                                  ],
-                                ),
-                                Expanded(
-                                  child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        12, 0, 5, 0),
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          'CNH Digital',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1
-                                              .override(
-                                                fontFamily: 'Poppins',
-                                                color: Color(0xFF033F5D),
-                                              ),
-                                        ),
-                                      ],
+                                  ),
+                                  FlutterFlowIconButton(
+                                    borderColor: Color(0xFFF1F4F8),
+                                    borderRadius: 8,
+                                    borderWidth: 2,
+                                    buttonSize: 40,
+                                    icon: FaIcon(
+                                      FontAwesomeIcons.solidEye,
+                                      color: Color(0xFF57636C),
+                                      size: 20,
                                     ),
+                                    onPressed: () {
+                                      print('IconButton pressed ...');
+                                    },
                                   ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 0, 15, 0),
-                                  child: Column(
-                                    mainAxisSize: MainAxisSize.max,
-                                    children: [
-                                      FlutterFlowIconButton(
-                                        borderColor: Colors.transparent,
-                                        borderRadius: 30,
-                                        borderWidth: 1,
-                                        buttonSize: 50,
-                                        icon: Icon(
-                                          Icons.cloud_upload,
-                                          color: Color(0xFF033F5D),
-                                          size: 40,
-                                        ),
-                                        onPressed: () {
-                                          print('IconButton pressed ...');
-                                        },
-                                      ),
-                                      Text(
-                                        'Enviar',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText1
-                                            .override(
-                                              fontFamily: 'Poppins',
-                                              color: Color(0xFF033F5D),
-                                            ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 0),
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(16, 10, 16, 0),
                           child: Container(
-                            width: MediaQuery.of(context).size.width * 0.92,
-                            height: 75,
+                            width: double.infinity,
+                            height: MediaQuery.of(context).size.height * 0.1,
                             decoration: BoxDecoration(
-                              color: Color(0xFFF1F4F8),
+                              color: Colors.white,
+                              boxShadow: [
+                                BoxShadow(
+                                  blurRadius: 7,
+                                  color: Color(0x2F1D2429),
+                                  offset: Offset(0, 3),
+                                )
+                              ],
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              children: [
-                                Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  children: [
-                                    FlutterFlowIconButton(
-                                      borderColor: Colors.transparent,
-                                      borderRadius: 30,
-                                      borderWidth: 1,
-                                      buttonSize: 60,
-                                      icon: FaIcon(
-                                        FontAwesomeIcons.fileInvoice,
-                                        color: Color(0xFF414141),
-                                        size: 40,
+                            child: Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(12, 8, 12, 8),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Icon(
+                                    Icons.location_history_rounded,
+                                    color: Color(0xFF018120),
+                                    size: 32,
+                                  ),
+                                  Expanded(
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          12, 0, 8, 0),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            'CNH Digital',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyText1
+                                                .override(
+                                                  fontFamily: 'Outfit',
+                                                  color: Color(0xFF101213),
+                                                  fontSize: 18,
+                                                  fontWeight: FontWeight.normal,
+                                                ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0, 0, 4, 0),
+                                    child: FlutterFlowIconButton(
+                                      borderColor: Color(0xFFF1F4F8),
+                                      borderRadius: 8,
+                                      borderWidth: 2,
+                                      buttonSize: 40,
+                                      icon: Icon(
+                                        Icons.cloud_download_outlined,
+                                        color: Color(0xFF57636C),
+                                        size: 20,
                                       ),
                                       onPressed: () {
                                         print('IconButton pressed ...');
                                       },
                                     ),
-                                  ],
-                                ),
-                                Expanded(
-                                  child: Padding(
+                                  ),
+                                  Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        12, 0, 5, 0),
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          'Outros documentos',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyText1
-                                              .override(
-                                                fontFamily: 'Poppins',
-                                                color: Color(0xFF033F5D),
-                                              ),
-                                        ),
-                                      ],
+                                        0, 0, 4, 0),
+                                    child: FlutterFlowIconButton(
+                                      borderColor: Color(0xFFF1F4F8),
+                                      borderRadius: 8,
+                                      borderWidth: 2,
+                                      buttonSize: 40,
+                                      icon: Icon(
+                                        Icons.ios_share,
+                                        color: Color(0xFF57636C),
+                                        size: 20,
+                                      ),
+                                      onPressed: () {
+                                        print('IconButton pressed ...');
+                                      },
                                     ),
                                   ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 0, 15, 0),
-                                  child: Column(
-                                    mainAxisSize: MainAxisSize.max,
-                                    children: [
-                                      FlutterFlowIconButton(
-                                        borderColor: Colors.transparent,
-                                        borderRadius: 30,
-                                        borderWidth: 1,
-                                        buttonSize: 50,
-                                        icon: Icon(
-                                          Icons.cloud_upload,
-                                          color: Color(0xFF033F5D),
-                                          size: 40,
-                                        ),
-                                        onPressed: () {
-                                          print('IconButton pressed ...');
-                                        },
-                                      ),
-                                      Text(
-                                        'Enviar',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText1
-                                            .override(
-                                              fontFamily: 'Poppins',
-                                              color: Color(0xFF033F5D),
-                                            ),
-                                      ),
-                                    ],
+                                  FlutterFlowIconButton(
+                                    borderColor: Color(0xFFF1F4F8),
+                                    borderRadius: 8,
+                                    borderWidth: 2,
+                                    buttonSize: 40,
+                                    icon: FaIcon(
+                                      FontAwesomeIcons.solidEye,
+                                      color: Color(0xFF57636C),
+                                      size: 20,
+                                    ),
+                                    onPressed: () {
+                                      print('IconButton pressed ...');
+                                    },
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 310, 0, 0),
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(16, 10, 16, 0),
+                          child: Container(
+                            width: double.infinity,
+                            height: MediaQuery.of(context).size.height * 0.1,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              boxShadow: [
+                                BoxShadow(
+                                  blurRadius: 7,
+                                  color: Color(0x2F1D2429),
+                                  offset: Offset(0, 3),
+                                )
+                              ],
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(12, 8, 12, 8),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  FaIcon(
+                                    FontAwesomeIcons.fileInvoice,
+                                    color: Color(0xFF242424),
+                                    size: 32,
+                                  ),
+                                  Expanded(
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          12, 0, 8, 0),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            'Doc. extras',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyText1
+                                                .override(
+                                                  fontFamily: 'Outfit',
+                                                  color: Color(0xFF101213),
+                                                  fontSize: 18,
+                                                  fontWeight: FontWeight.normal,
+                                                ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0, 0, 4, 0),
+                                    child: FlutterFlowIconButton(
+                                      borderColor: Color(0xFFF1F4F8),
+                                      borderRadius: 8,
+                                      borderWidth: 2,
+                                      buttonSize: 40,
+                                      icon: Icon(
+                                        Icons.cloud_download_outlined,
+                                        color: Color(0xFF57636C),
+                                        size: 20,
+                                      ),
+                                      onPressed: () {
+                                        print('IconButton pressed ...');
+                                      },
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0, 0, 4, 0),
+                                    child: FlutterFlowIconButton(
+                                      borderColor: Color(0xFFF1F4F8),
+                                      borderRadius: 8,
+                                      borderWidth: 2,
+                                      buttonSize: 40,
+                                      icon: Icon(
+                                        Icons.ios_share,
+                                        color: Color(0xFF57636C),
+                                        size: 20,
+                                      ),
+                                      onPressed: () {
+                                        print('IconButton pressed ...');
+                                      },
+                                    ),
+                                  ),
+                                  FlutterFlowIconButton(
+                                    borderColor: Color(0xFFF1F4F8),
+                                    borderRadius: 8,
+                                    borderWidth: 2,
+                                    buttonSize: 40,
+                                    icon: FaIcon(
+                                      FontAwesomeIcons.solidEye,
+                                      color: Color(0xFF57636C),
+                                      size: 20,
+                                    ),
+                                    onPressed: () {
+                                      print('IconButton pressed ...');
+                                    },
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                        Expanded(
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.end,
                             crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
                               Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 18, 0),
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    0, 0, 18, 20),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.end,
                                   children: [
                                     FFButtonWidget(
                                       onPressed: () async {

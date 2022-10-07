@@ -35,3 +35,6 @@ export 'informacoes_jornada_de_trabalho/informacoes_jornada_de_trabalho_widget.d
     show InformacoesJornadaDeTrabalhoWidget;
 export 'detalhes_jornada_descricao/detalhes_jornada_descricao_widget.dart'
     show DetalhesJornadaDescricaoWidget;
+export 'checklist_copy/checklist_copy_widget.dart' show ChecklistCopyWidget;
+export 'item_checklist_copy/item_checklist_copy_widget.dart'
+    show ItemChecklistCopyWidget;

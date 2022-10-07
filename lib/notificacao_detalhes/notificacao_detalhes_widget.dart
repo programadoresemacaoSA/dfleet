@@ -19,7 +19,39 @@ class NotificacaoDetalhesWidget extends StatefulWidget {
 
 class _NotificacaoDetalhesWidgetState extends State<NotificacaoDetalhesWidget>
     with TickerProviderStateMixin {
+  final animationsMap = {
+    'containerOnPageLoadAnimation': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: 0,
+          end: 1,
+        ),
+        MoveEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: Offset(0, 90),
+          end: Offset(0, 0),
+        ),
+      ],
+    ),
+  };
   final scaffoldKey = GlobalKey<ScaffoldState>();
+
+  @override
+  void initState() {
+    super.initState();
+    setupAnimations(
+      animationsMap.values.where((anim) =>
+          anim.trigger == AnimationTrigger.onActionTrigger ||
+          !anim.applyInitialState),
+      this,
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -139,7 +171,8 @@ class _NotificacaoDetalhesWidgetState extends State<NotificacaoDetalhesWidget>
                               ],
                             ),
                           ),
-                        ),
+                        ).animateOnPageLoad(
+                            animationsMap['containerOnPageLoadAnimation']!),
                       ],
                     ),
                   ),

@@ -432,8 +432,7 @@ class _NotificacoesWidgetState extends State<NotificacoesWidget> {
                           ),
                         ),
                       ),
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 290, 0, 0),
+                      Expanded(
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.end,
@@ -443,32 +442,37 @@ class _NotificacoesWidgetState extends State<NotificacoesWidget> {
                               padding:
                                   EdgeInsetsDirectional.fromSTEB(0, 0, 20, 0),
                               child: Column(
-                                mainAxisSize: MainAxisSize.max,
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.end,
                                 children: [
-                                  FFButtonWidget(
-                                    onPressed: () {
-                                      print('Button pressed ...');
-                                    },
-                                    text: 'Sair',
-                                    icon: Icon(
-                                      Icons.exit_to_app,
-                                      size: 15,
-                                    ),
-                                    options: FFButtonOptions(
-                                      width: 150,
-                                      height: 40,
-                                      color: Color(0xFFAF0000),
-                                      textStyle: FlutterFlowTheme.of(context)
-                                          .subtitle2
-                                          .override(
-                                            fontFamily: 'Poppins',
-                                            color: Colors.white,
-                                          ),
-                                      borderSide: BorderSide(
-                                        color: Colors.transparent,
-                                        width: 1,
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0, 0, 0, 20),
+                                    child: FFButtonWidget(
+                                      onPressed: () {
+                                        print('Button pressed ...');
+                                      },
+                                      text: 'Sair',
+                                      icon: Icon(
+                                        Icons.exit_to_app,
+                                        size: 15,
                                       ),
-                                      borderRadius: BorderRadius.circular(25),
+                                      options: FFButtonOptions(
+                                        width: 150,
+                                        height: 40,
+                                        color: Color(0xFFAF0000),
+                                        textStyle: FlutterFlowTheme.of(context)
+                                            .subtitle2
+                                            .override(
+                                              fontFamily: 'Poppins',
+                                              color: Colors.white,
+                                            ),
+                                        borderSide: BorderSide(
+                                          color: Colors.transparent,
+                                          width: 1,
+                                        ),
+                                        borderRadius: BorderRadius.circular(25),
+                                      ),
                                     ),
                                   ),
                                 ],

@@ -30,7 +30,7 @@ class _MenuChecklistWidgetState extends State<MenuChecklistWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0, 3, 0, 0),
+                padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -78,7 +78,7 @@ class _MenuChecklistWidgetState extends State<MenuChecklistWidget> {
                 padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
                 child: Container(
                   width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.height * 0.8,
+                  height: MediaQuery.of(context).size.height * 1,
                   decoration: BoxDecoration(
                     color: Color(0xFF033F5D),
                     boxShadow: [
@@ -95,24 +95,30 @@ class _MenuChecklistWidgetState extends State<MenuChecklistWidget> {
                       topRight: Radius.circular(16),
                     ),
                   ),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      Expanded(
-                        child: SingleChildScrollView(
+                  child: SingleChildScrollView(
+                    child: Column(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        SingleChildScrollView(
                           scrollDirection: Axis.horizontal,
                           child: Row(
-                            mainAxisSize: MainAxisSize.max,
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Column(
                                 mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
                                   Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        12, 25, 0, 0),
+                                        12, 25, 0, 20),
                                     child: Container(
                                       width: MediaQuery.of(context).size.width *
                                           0.8,
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.3,
                                       decoration: BoxDecoration(
                                         color: Color(0xFFF8F8F8),
                                         boxShadow: [
@@ -138,9 +144,9 @@ class _MenuChecklistWidgetState extends State<MenuChecklistWidget> {
                                           );
                                         },
                                         child: Column(
-                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisSize: MainAxisSize.min,
                                           mainAxisAlignment:
-                                              MainAxisAlignment.spaceBetween,
+                                              MainAxisAlignment.start,
                                           children: [
                                             FlutterFlowIconButton(
                                               borderColor: Colors.transparent,
@@ -179,98 +185,54 @@ class _MenuChecklistWidgetState extends State<MenuChecklistWidget> {
                                                               FontWeight.normal,
                                                         ),
                                                   ),
-                                                  Row(
-                                                    mainAxisSize:
-                                                        MainAxisSize.max,
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment
-                                                            .center,
-                                                    children: [
-                                                      Padding(
-                                                        padding:
-                                                            EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                    0, 0, 2, 0),
-                                                        child: Text(
-                                                          '20',
-                                                          style: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .bodyText2
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Outfit',
-                                                                color: Color(
-                                                                    0xFF95A1AC),
-                                                                fontSize: 12,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .normal,
-                                                              ),
-                                                        ),
-                                                      ),
-                                                      Text(
-                                                        'Pendencias',
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyText2
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Outfit',
-                                                                  color: Color(
-                                                                      0xFF95A1AC),
-                                                                  fontSize: 12,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .normal,
-                                                                ),
-                                                      ),
-                                                    ],
-                                                  ),
                                                 ],
                                               ),
                                             ),
-                                            InkWell(
-                                              onTap: () async {
-                                                await Navigator.push(
-                                                  context,
-                                                  MaterialPageRoute(
-                                                    builder: (context) =>
-                                                        ChecklistWidget(),
+                                            Expanded(
+                                              child: InkWell(
+                                                onTap: () async {
+                                                  await Navigator.push(
+                                                    context,
+                                                    MaterialPageRoute(
+                                                      builder: (context) =>
+                                                          ChecklistWidget(),
+                                                    ),
+                                                  );
+                                                },
+                                                child: Container(
+                                                  width: double.infinity,
+                                                  height: 44,
+                                                  decoration: BoxDecoration(
+                                                    color: Color(0xFFFFCD00),
+                                                    borderRadius:
+                                                        BorderRadius.only(
+                                                      bottomLeft:
+                                                          Radius.circular(12),
+                                                      bottomRight:
+                                                          Radius.circular(12),
+                                                      topLeft:
+                                                          Radius.circular(0),
+                                                      topRight:
+                                                          Radius.circular(0),
+                                                    ),
                                                   ),
-                                                );
-                                              },
-                                              child: Container(
-                                                width: double.infinity,
-                                                height: 44,
-                                                decoration: BoxDecoration(
-                                                  color: Color(0xFFFFCD00),
-                                                  borderRadius:
-                                                      BorderRadius.only(
-                                                    bottomLeft:
-                                                        Radius.circular(12),
-                                                    bottomRight:
-                                                        Radius.circular(12),
-                                                    topLeft: Radius.circular(0),
-                                                    topRight:
-                                                        Radius.circular(0),
+                                                  alignment:
+                                                      AlignmentDirectional(
+                                                          0, 0),
+                                                  child: Text(
+                                                    'visualizar',
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyText1
+                                                        .override(
+                                                          fontFamily: 'Outfit',
+                                                          color:
+                                                              Color(0xFF242424),
+                                                          fontSize: 20,
+                                                          fontWeight:
+                                                              FontWeight.normal,
+                                                        ),
                                                   ),
-                                                ),
-                                                alignment:
-                                                    AlignmentDirectional(0, 0),
-                                                child: Text(
-                                                  'visualizar',
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily: 'Outfit',
-                                                        color:
-                                                            Color(0xFF242424),
-                                                        fontSize: 20,
-                                                        fontWeight:
-                                                            FontWeight.normal,
-                                                      ),
                                                 ),
                                               ),
                                             ),
@@ -284,22 +246,22 @@ class _MenuChecklistWidgetState extends State<MenuChecklistWidget> {
                             ],
                           ),
                         ),
-                      ),
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 60),
-                        child: Row(
+                        Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      12, 0, 0, 0),
+                                      12, 20, 0, 20),
                                   child: Container(
                                     width:
                                         MediaQuery.of(context).size.width * 0.8,
+                                    height: MediaQuery.of(context).size.height *
+                                        0.3,
                                     decoration: BoxDecoration(
                                       color: Color(0xFFF8F8F8),
                                       boxShadow: [
@@ -327,7 +289,7 @@ class _MenuChecklistWidgetState extends State<MenuChecklistWidget> {
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
-                                            MainAxisAlignment.spaceBetween,
+                                            MainAxisAlignment.end,
                                         children: [
                                           FlutterFlowIconButton(
                                             borderColor: Colors.transparent,
@@ -368,95 +330,54 @@ class _MenuChecklistWidgetState extends State<MenuChecklistWidget> {
                                                             FontWeight.normal,
                                                       ),
                                                 ),
-                                                Row(
-                                                  mainAxisSize:
-                                                      MainAxisSize.max,
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment.center,
-                                                  children: [
-                                                    Padding(
-                                                      padding:
-                                                          EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  0, 0, 2, 0),
-                                                      child: Text(
-                                                        '20',
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyText2
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Outfit',
-                                                                  color: Color(
-                                                                      0xFF95A1AC),
-                                                                  fontSize: 12,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .normal,
-                                                                ),
-                                                      ),
-                                                    ),
-                                                    Text(
-                                                      'Realizados',
-                                                      style:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyText2
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Outfit',
-                                                                color: Color(
-                                                                    0xFF95A1AC),
-                                                                fontSize: 12,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .normal,
-                                                              ),
-                                                    ),
-                                                  ],
-                                                ),
                                               ],
                                             ),
                                           ),
-                                          InkWell(
-                                            onTap: () async {
-                                              await Navigator.push(
-                                                context,
-                                                MaterialPageRoute(
-                                                  builder: (context) =>
-                                                      ChecklistRealizadosWidget(),
+                                          Expanded(
+                                            child: InkWell(
+                                              onTap: () async {
+                                                await Navigator.push(
+                                                  context,
+                                                  MaterialPageRoute(
+                                                    builder: (context) =>
+                                                        ChecklistRealizadosWidget(),
+                                                  ),
+                                                );
+                                              },
+                                              child: Container(
+                                                width: double.infinity,
+                                                height: MediaQuery.of(context)
+                                                        .size
+                                                        .height *
+                                                    1,
+                                                decoration: BoxDecoration(
+                                                  color: Color(0xFF018120),
+                                                  borderRadius:
+                                                      BorderRadius.only(
+                                                    bottomLeft:
+                                                        Radius.circular(12),
+                                                    bottomRight:
+                                                        Radius.circular(12),
+                                                    topLeft: Radius.circular(0),
+                                                    topRight:
+                                                        Radius.circular(0),
+                                                  ),
                                                 ),
-                                              );
-                                            },
-                                            child: Container(
-                                              width: double.infinity,
-                                              height: 44,
-                                              decoration: BoxDecoration(
-                                                color: Color(0xFF018120),
-                                                borderRadius: BorderRadius.only(
-                                                  bottomLeft:
-                                                      Radius.circular(12),
-                                                  bottomRight:
-                                                      Radius.circular(12),
-                                                  topLeft: Radius.circular(0),
-                                                  topRight: Radius.circular(0),
+                                                alignment:
+                                                    AlignmentDirectional(0, 0),
+                                                child: Text(
+                                                  'Visualizar',
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Outfit',
+                                                        color: Colors.white,
+                                                        fontSize: 20,
+                                                        fontWeight:
+                                                            FontWeight.normal,
+                                                      ),
                                                 ),
-                                              ),
-                                              alignment:
-                                                  AlignmentDirectional(0, 0),
-                                              child: Text(
-                                                'Visualizar',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyText1
-                                                        .override(
-                                                          fontFamily: 'Outfit',
-                                                          color: Colors.white,
-                                                          fontSize: 20,
-                                                          fontWeight:
-                                                              FontWeight.normal,
-                                                        ),
                                               ),
                                             ),
                                           ),
@@ -469,53 +390,55 @@ class _MenuChecklistWidgetState extends State<MenuChecklistWidget> {
                             ),
                           ],
                         ),
-                      ),
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 0, 25, 13),
-                        child: Row(
+                        Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.end,
+                          crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
                             Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
-                                FFButtonWidget(
-                                  onPressed: () async {
-                                    await Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) => HomeappWidget(),
-                                      ),
-                                    );
-                                  },
-                                  text: 'Sair',
-                                  icon: Icon(
-                                    Icons.exit_to_app_rounded,
-                                    size: 15,
-                                  ),
-                                  options: FFButtonOptions(
-                                    width: 130,
-                                    height: 40,
-                                    color: Color(0xFFAF0000),
-                                    textStyle: FlutterFlowTheme.of(context)
-                                        .subtitle2
-                                        .override(
-                                          fontFamily: 'Poppins',
-                                          color: Colors.white,
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0, 0, 25, 0),
+                                  child: FFButtonWidget(
+                                    onPressed: () async {
+                                      await Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => HomeappWidget(),
                                         ),
-                                    borderSide: BorderSide(
-                                      color: Colors.transparent,
-                                      width: 1,
+                                      );
+                                    },
+                                    text: 'Sair',
+                                    icon: Icon(
+                                      Icons.exit_to_app_rounded,
+                                      size: 15,
                                     ),
-                                    borderRadius: BorderRadius.circular(8),
+                                    options: FFButtonOptions(
+                                      width: 130,
+                                      height: 40,
+                                      color: Color(0xFFAF0000),
+                                      textStyle: FlutterFlowTheme.of(context)
+                                          .subtitle2
+                                          .override(
+                                            fontFamily: 'Poppins',
+                                            color: Colors.white,
+                                          ),
+                                      borderSide: BorderSide(
+                                        color: Colors.transparent,
+                                        width: 1,
+                                      ),
+                                      borderRadius: BorderRadius.circular(8),
+                                    ),
                                   ),
                                 ),
                               ],
                             ),
                           ],
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               ),

@@ -18,7 +18,172 @@ class InformacoesCondutorWidget extends StatefulWidget {
 
 class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
     with TickerProviderStateMixin {
+  final animationsMap = {
+    'containerOnPageLoadAnimation1': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: 0,
+          end: 1,
+        ),
+        MoveEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: Offset(0, 70),
+          end: Offset(0, 0),
+        ),
+      ],
+    ),
+    'containerOnPageLoadAnimation2': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: 0,
+          end: 1,
+        ),
+        MoveEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: Offset(0, 70),
+          end: Offset(0, 0),
+        ),
+      ],
+    ),
+    'containerOnPageLoadAnimation3': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: 0,
+          end: 1,
+        ),
+        MoveEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: Offset(0, 70),
+          end: Offset(0, 0),
+        ),
+      ],
+    ),
+    'containerOnPageLoadAnimation4': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: 0,
+          end: 1,
+        ),
+        MoveEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: Offset(0, 70),
+          end: Offset(0, 0),
+        ),
+      ],
+    ),
+    'containerOnPageLoadAnimation5': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: 0,
+          end: 1,
+        ),
+        MoveEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: Offset(0, 70),
+          end: Offset(0, 0),
+        ),
+      ],
+    ),
+    'containerOnPageLoadAnimation6': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: 0,
+          end: 1,
+        ),
+        MoveEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: Offset(0, 70),
+          end: Offset(0, 0),
+        ),
+      ],
+    ),
+    'containerOnPageLoadAnimation7': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: 0,
+          end: 1,
+        ),
+        MoveEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: Offset(0, 70),
+          end: Offset(0, 0),
+        ),
+      ],
+    ),
+    'containerOnPageLoadAnimation8': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: 0,
+          end: 1,
+        ),
+        MoveEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: Offset(0, 70),
+          end: Offset(0, 0),
+        ),
+      ],
+    ),
+  };
   final scaffoldKey = GlobalKey<ScaffoldState>();
+
+  @override
+  void initState() {
+    super.initState();
+    setupAnimations(
+      animationsMap.values.where((anim) =>
+          anim.trigger == AnimationTrigger.onActionTrigger ||
+          !anim.applyInitialState),
+      this,
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -218,7 +383,8 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                                         ),
                                       ],
                                     ),
-                                  ),
+                                  ).animateOnPageLoad(animationsMap[
+                                      'containerOnPageLoadAnimation1']!),
                                 ),
                               ],
                             ),
@@ -317,7 +483,8 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                                         ),
                                       ],
                                     ),
-                                  ),
+                                  ).animateOnPageLoad(animationsMap[
+                                      'containerOnPageLoadAnimation2']!),
                                 ),
                               ],
                             ),
@@ -420,7 +587,8 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                                       ),
                                     ],
                                   ),
-                                ),
+                                ).animateOnPageLoad(animationsMap[
+                                    'containerOnPageLoadAnimation3']!),
                               ),
                             ],
                           ),
@@ -517,7 +685,8 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                                       ),
                                     ],
                                   ),
-                                ),
+                                ).animateOnPageLoad(animationsMap[
+                                    'containerOnPageLoadAnimation4']!),
                               ),
                             ],
                           ),
@@ -619,7 +788,8 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                                       ),
                                     ],
                                   ),
-                                ),
+                                ).animateOnPageLoad(animationsMap[
+                                    'containerOnPageLoadAnimation5']!),
                               ),
                             ],
                           ),
@@ -716,7 +886,8 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                                       ),
                                     ],
                                   ),
-                                ),
+                                ).animateOnPageLoad(animationsMap[
+                                    'containerOnPageLoadAnimation6']!),
                               ),
                             ],
                           ),
@@ -818,7 +989,8 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                               ),
                             ],
                           ),
-                        ),
+                        ).animateOnPageLoad(
+                            animationsMap['containerOnPageLoadAnimation7']!),
                       ),
                       Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(16, 8, 16, 25),
@@ -917,7 +1089,8 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                               ),
                             ],
                           ),
-                        ),
+                        ).animateOnPageLoad(
+                            animationsMap['containerOnPageLoadAnimation8']!),
                       ),
                       Row(
                         mainAxisSize: MainAxisSize.max,
