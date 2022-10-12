@@ -31,10 +31,10 @@ export 'siniastro_avaria_pessoa/siniastro_avaria_pessoa_widget.dart'
     show SiniastroAvariaPessoaWidget;
 export 'foto_sinistro_terceiro/foto_sinistro_terceiro_widget.dart'
     show FotoSinistroTerceiroWidget;
-export 'lancamento_de_combustivel/lancamento_de_combustivel_widget.dart'
-    show LancamentoDeCombustivelWidget;
 export 'foto_abastecimento_odometro/foto_abastecimento_odometro_widget.dart'
     show FotoAbastecimentoOdometroWidget;
+export 'lancamento_de_combustivel/lancamento_de_combustivel_widget.dart'
+    show LancamentoDeCombustivelWidget;
 export 'foto_abastecimento_cupomfiscal/foto_abastecimento_cupomfiscal_widget.dart'
     show FotoAbastecimentoCupomfiscalWidget;
 export 'foto_abastecimento_visordabomba/foto_abastecimento_visordabomba_widget.dart'

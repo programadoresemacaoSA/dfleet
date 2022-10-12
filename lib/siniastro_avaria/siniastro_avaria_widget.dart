@@ -136,7 +136,6 @@ class _SiniastroAvariaWidgetState extends State<SiniastroAvariaWidget> {
                       alignment: AlignmentDirectional(0, 1),
                       child: Container(
                         width: MediaQuery.of(context).size.width,
-                        height: MediaQuery.of(context).size.height * 1,
                         decoration: BoxDecoration(
                           color: Color(0xFF033F5D),
                           boxShadow: [
@@ -1462,43 +1461,45 @@ class _SiniastroAvariaWidgetState extends State<SiniastroAvariaWidget> {
                                       child: Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             5, 0, 0, 0),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          children: [
-                                            FlutterFlowIconButton(
-                                              borderColor: Colors.transparent,
-                                              borderRadius: 30,
-                                              borderWidth: 1,
-                                              buttonSize: 60,
-                                              icon: Icon(
-                                                Icons.person_add_rounded,
-                                                color: Color(0xFFF8F8F8),
-                                                size: 40,
+                                        child: SingleChildScrollView(
+                                          child: Column(
+                                            mainAxisSize: MainAxisSize.max,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            children: [
+                                              FlutterFlowIconButton(
+                                                borderColor: Colors.transparent,
+                                                borderRadius: 30,
+                                                borderWidth: 1,
+                                                buttonSize: 60,
+                                                icon: Icon(
+                                                  Icons.person_add_rounded,
+                                                  color: Color(0xFFF8F8F8),
+                                                  size: 40,
+                                                ),
+                                                onPressed: () async {
+                                                  await Navigator.push(
+                                                    context,
+                                                    MaterialPageRoute(
+                                                      builder: (context) =>
+                                                          SiniastroAvariaPessoaWidget(),
+                                                    ),
+                                                  );
+                                                },
                                               ),
-                                              onPressed: () async {
-                                                await Navigator.push(
-                                                  context,
-                                                  MaterialPageRoute(
-                                                    builder: (context) =>
-                                                        SiniastroAvariaPessoaWidget(),
-                                                  ),
-                                                );
-                                              },
-                                            ),
-                                            Text(
-                                              'P. Envolvida',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        color:
-                                                            Color(0xFFF8F8F8),
-                                                      ),
-                                            ),
-                                          ],
+                                              Text(
+                                                'P. Envolvida',
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText1
+                                                        .override(
+                                                          fontFamily: 'Poppins',
+                                                          color:
+                                                              Color(0xFFF8F8F8),
+                                                        ),
+                                              ),
+                                            ],
+                                          ),
                                         ),
                                       ),
                                     ),
@@ -1516,41 +1517,44 @@ class _SiniastroAvariaWidgetState extends State<SiniastroAvariaWidget> {
                                               ),
                                             );
                                           },
-                                          child: Column(
-                                            mainAxisSize: MainAxisSize.max,
-                                            children: [
-                                              FlutterFlowIconButton(
-                                                borderColor: Colors.transparent,
-                                                borderRadius: 30,
-                                                borderWidth: 1,
-                                                buttonSize: 60,
-                                                icon: Icon(
-                                                  Icons.electric_car_sharp,
-                                                  color: Color(0xFFF8F8F8),
-                                                  size: 40,
+                                          child: SingleChildScrollView(
+                                            child: Column(
+                                              mainAxisSize: MainAxisSize.max,
+                                              children: [
+                                                FlutterFlowIconButton(
+                                                  borderColor:
+                                                      Colors.transparent,
+                                                  borderRadius: 30,
+                                                  borderWidth: 1,
+                                                  buttonSize: 60,
+                                                  icon: Icon(
+                                                    Icons.electric_car_sharp,
+                                                    color: Color(0xFFF8F8F8),
+                                                    size: 40,
+                                                  ),
+                                                  onPressed: () async {
+                                                    await Navigator.push(
+                                                      context,
+                                                      MaterialPageRoute(
+                                                        builder: (context) =>
+                                                            SiniastroAvariaVeiculoTerceiroWidget(),
+                                                      ),
+                                                    );
+                                                  },
                                                 ),
-                                                onPressed: () async {
-                                                  await Navigator.push(
-                                                    context,
-                                                    MaterialPageRoute(
-                                                      builder: (context) =>
-                                                          SiniastroAvariaVeiculoTerceiroWidget(),
-                                                    ),
-                                                  );
-                                                },
-                                              ),
-                                              Text(
-                                                'V. Envolvido',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyText1
-                                                        .override(
-                                                          fontFamily: 'Poppins',
-                                                          color:
-                                                              Color(0xFFF8F8F8),
-                                                        ),
-                                              ),
-                                            ],
+                                                Text(
+                                                  'V. Envolvido',
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Poppins',
+                                                        color:
+                                                            Color(0xFFF8F8F8),
+                                                      ),
+                                                ),
+                                              ],
+                                            ),
                                           ),
                                         ),
                                       ),
