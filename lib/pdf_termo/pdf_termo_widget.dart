@@ -28,7 +28,7 @@ class _PdfTermoWidgetState extends State<PdfTermoWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16, 8, 16, 0),
+                padding: EdgeInsetsDirectional.fromSTEB(16, 25, 16, 0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [

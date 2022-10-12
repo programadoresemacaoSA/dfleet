@@ -27,44 +27,46 @@ class _ConfiguracoesWidgetState extends State<ConfiguracoesWidget> {
     return Scaffold(
       key: scaffoldKey,
       backgroundColor: Color(0xFF033F5D),
-      appBar: AppBar(
-        backgroundColor: Color(0xFF033F5D),
-        automaticallyImplyLeading: false,
-        leading: FlutterFlowIconButton(
-          borderColor: Colors.transparent,
-          borderRadius: 30,
-          borderWidth: 1,
-          buttonSize: 60,
-          icon: Icon(
-            Icons.arrow_back_rounded,
-            color: Colors.white,
-            size: 40,
-          ),
-          onPressed: () async {
-            await Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => HomeappWidget(),
-              ),
-            );
-          },
-        ),
-        title: Text(
-          'Configurações',
-          style: FlutterFlowTheme.of(context).title2.override(
-                fontFamily: 'Lexend Deca',
-                color: Color(0xFFF8F8F8),
-                fontSize: 22,
-                fontWeight: FontWeight.bold,
-              ),
-        ),
-        actions: [],
-        centerTitle: false,
-        elevation: 0,
-      ),
       body: Column(
         mainAxisSize: MainAxisSize.max,
         children: [
+          Padding(
+            padding: EdgeInsetsDirectional.fromSTEB(0, 25, 0, 0),
+            child: Row(
+              mainAxisSize: MainAxisSize.max,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                FlutterFlowIconButton(
+                  borderColor: Colors.transparent,
+                  borderRadius: 30,
+                  borderWidth: 1,
+                  buttonSize: 60,
+                  icon: Icon(
+                    Icons.arrow_back_rounded,
+                    color: Colors.white,
+                    size: 40,
+                  ),
+                  onPressed: () async {
+                    await Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => HomeappWidget(),
+                      ),
+                    );
+                  },
+                ),
+                Text(
+                  'Configurações',
+                  style: FlutterFlowTheme.of(context).title2.override(
+                        fontFamily: 'Lexend Deca',
+                        color: Color(0xFFF8F8F8),
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                      ),
+                ),
+              ],
+            ),
+          ),
           Padding(
             padding: EdgeInsetsDirectional.fromSTEB(20, 0, 20, 0),
             child: Row(

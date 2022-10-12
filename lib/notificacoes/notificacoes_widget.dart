@@ -2,6 +2,7 @@ import '../flutter_flow/flutter_flow_icon_button.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
+import '../homeapp/homeapp_widget.dart';
 import '../jornada_de_trabalho/jornada_de_trabalho_widget.dart';
 import '../notificacao_detalhes/notificacao_detalhes_widget.dart';
 import 'package:flutter/material.dart';
@@ -30,7 +31,7 @@ class _NotificacoesWidgetState extends State<NotificacoesWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16, 3, 16, 0),
+                padding: EdgeInsetsDirectional.fromSTEB(16, 25, 16, 0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -449,8 +450,14 @@ class _NotificacoesWidgetState extends State<NotificacoesWidget> {
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         0, 0, 0, 20),
                                     child: FFButtonWidget(
-                                      onPressed: () {
-                                        print('Button pressed ...');
+                                      onPressed: () async {
+                                        await Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                HomeappWidget(),
+                                          ),
+                                        );
                                       },
                                       text: 'Sair',
                                       icon: Icon(

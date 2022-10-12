@@ -286,7 +286,7 @@ class _SiniastroAvariaWidgetState extends State<SiniastroAvariaWidget> {
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  10, 10, 120, 0),
+                                                  10, 10, 0, 0),
                                           child: Text(
                                             'Horário',
                                             style: FlutterFlowTheme.of(context)

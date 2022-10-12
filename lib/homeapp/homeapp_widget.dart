@@ -41,7 +41,7 @@ class _HomeappWidgetState extends State<HomeappWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16, 15, 16, 0),
+                padding: EdgeInsetsDirectional.fromSTEB(16, 25, 16, 0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -162,8 +162,13 @@ class _HomeappWidgetState extends State<HomeappWidget> {
                               color: Color(0xFFF8F8F8),
                               size: 30,
                             ),
-                            onPressed: () {
-                              print('IconButton pressed ...');
+                            onPressed: () async {
+                              await Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => NotificacoesWidget(),
+                                ),
+                              );
                             },
                           ),
                         ),

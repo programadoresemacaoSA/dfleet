@@ -140,7 +140,7 @@ class _LancamentoDeCombustivelWidgetState
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(16, 8, 16, 0),
+                      padding: EdgeInsetsDirectional.fromSTEB(16, 25, 16, 0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -664,7 +664,7 @@ class _LancamentoDeCombustivelWidgetState
                                               EdgeInsetsDirectional.fromSTEB(
                                                   10, 10, 0, 0),
                                           child: Text(
-                                            'Tipo de abastecimento*',
+                                            'Tipo  abastecimento*',
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyText1
                                                 .override(
