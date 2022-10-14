@@ -509,7 +509,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                                 .override(
                                                   fontFamily: 'Outfit',
                                                   color: Colors.white,
-                                                  fontSize: 16,
+                                                  fontSize: 14,
                                                   fontWeight: FontWeight.w600,
                                                 ),
                                           ),
@@ -560,7 +560,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                                 .override(
                                                   fontFamily: 'Outfit',
                                                   color: Colors.white,
-                                                  fontSize: 16,
+                                                  fontSize: 14,
                                                   fontWeight: FontWeight.w600,
                                                 ),
                                           ),
@@ -606,7 +606,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                               .override(
                                                 fontFamily: 'Outfit',
                                                 color: Colors.white,
-                                                fontSize: 15,
+                                                fontSize: 14,
                                                 fontWeight: FontWeight.w600,
                                               ),
                                         ),
@@ -666,7 +666,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                                       .override(
                                                         fontFamily: 'Outfit',
                                                         color: Colors.white,
-                                                        fontSize: 16,
+                                                        fontSize: 14,
                                                         fontWeight:
                                                             FontWeight.w600,
                                                       ),
@@ -720,7 +720,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                                       .override(
                                                         fontFamily: 'Outfit',
                                                         color: Colors.white,
-                                                        fontSize: 16,
+                                                        fontSize: 14,
                                                         fontWeight:
                                                             FontWeight.w600,
                                                       ),
@@ -770,7 +770,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                                 .override(
                                                   fontFamily: 'Outfit',
                                                   color: Colors.white,
-                                                  fontSize: 16,
+                                                  fontSize: 14,
                                                   fontWeight: FontWeight.w600,
                                                 ),
                                           ),
@@ -831,7 +831,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                                       .override(
                                                         fontFamily: 'Outfit',
                                                         color: Colors.white,
-                                                        fontSize: 16,
+                                                        fontSize: 14,
                                                         fontWeight:
                                                             FontWeight.w600,
                                                       ),
@@ -885,7 +885,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                                       .override(
                                                         fontFamily: 'Outfit',
                                                         color: Colors.white,
-                                                        fontSize: 16,
+                                                        fontSize: 14,
                                                         fontWeight:
                                                             FontWeight.w600,
                                                       ),
@@ -996,7 +996,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                                       .override(
                                                         fontFamily: 'Outfit',
                                                         color: Colors.white,
-                                                        fontSize: 16,
+                                                        fontSize: 14,
                                                         fontWeight:
                                                             FontWeight.w600,
                                                       ),
