@@ -80,7 +80,6 @@ class _ChecklistRealizadosWidgetState extends State<ChecklistRealizadosWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
                   child: Container(
                     width: MediaQuery.of(context).size.width,
-                    height: 600,
                     decoration: BoxDecoration(
                       color: Color(0xFF033F5D),
                       boxShadow: [
@@ -517,14 +516,14 @@ class _ChecklistRealizadosWidgetState extends State<ChecklistRealizadosWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 50, 0, 0),
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 50, 0, 40),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Expanded(
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 95, 25, 0),
+                                      0, 95, 25, 30),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
                                     crossAxisAlignment: CrossAxisAlignment.end,

@@ -1496,6 +1496,7 @@ class _SiniastroAvariaWidgetState extends State<SiniastroAvariaWidget> {
                                                           fontFamily: 'Poppins',
                                                           color:
                                                               Color(0xFFF8F8F8),
+                                                          fontSize: 12,
                                                         ),
                                               ),
                                             ],
@@ -1551,6 +1552,7 @@ class _SiniastroAvariaWidgetState extends State<SiniastroAvariaWidget> {
                                                         fontFamily: 'Poppins',
                                                         color:
                                                             Color(0xFFF8F8F8),
+                                                        fontSize: 12,
                                                       ),
                                                 ),
                                               ],

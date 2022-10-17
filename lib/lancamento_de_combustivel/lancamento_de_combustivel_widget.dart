@@ -83,15 +83,15 @@ class _LancamentoDeCombustivelWidgetState
     ),
   };
   String? dropDownValue1;
-  TextEditingController? textController2;
-  TextEditingController? textController3;
   String? dropDownValue2;
+  TextEditingController? textController1;
+  TextEditingController? textController2;
   String? dropDownValue3;
   String? dropDownValue4;
+  String? dropDownValue5;
+  TextEditingController? textController3;
   TextEditingController? textController4;
   TextEditingController? textController5;
-  TextEditingController? textController6;
-  TextEditingController? textController1;
   final formKey = GlobalKey<FormState>();
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -110,7 +110,6 @@ class _LancamentoDeCombustivelWidgetState
     textController3 = TextEditingController();
     textController4 = TextEditingController();
     textController5 = TextEditingController();
-    textController6 = TextEditingController();
   }
 
   @override
@@ -120,7 +119,6 @@ class _LancamentoDeCombustivelWidgetState
     textController3?.dispose();
     textController4?.dispose();
     textController5?.dispose();
-    textController6?.dispose();
     super.dispose();
   }
 
@@ -221,54 +219,28 @@ class _LancamentoDeCombustivelWidgetState
                           Column(
                             mainAxisSize: MainAxisSize.max,
                             children: [
-                              Container(
-                                width: 100,
-                                decoration: BoxDecoration(),
-                                child: Container(
-                                  width: double.infinity,
-                                  child: TextFormField(
-                                    controller: textController1,
-                                    autofocus: true,
-                                    obscureText: false,
-                                    decoration: InputDecoration(
-                                      hintText: '[Some hint text...]',
-                                      hintStyle: FlutterFlowTheme.of(context)
-                                          .bodyText2,
-                                      enabledBorder: UnderlineInputBorder(
-                                        borderSide: BorderSide(
-                                          color: Color(0x00000000),
-                                          width: 1,
-                                        ),
-                                        borderRadius: BorderRadius.circular(10),
-                                      ),
-                                      focusedBorder: UnderlineInputBorder(
-                                        borderSide: BorderSide(
-                                          color: Color(0x00000000),
-                                          width: 1,
-                                        ),
-                                        borderRadius: BorderRadius.circular(10),
-                                      ),
-                                      errorBorder: UnderlineInputBorder(
-                                        borderSide: BorderSide(
-                                          color: Color(0x00000000),
-                                          width: 1,
-                                        ),
-                                        borderRadius: BorderRadius.circular(10),
-                                      ),
-                                      focusedErrorBorder: UnderlineInputBorder(
-                                        borderSide: BorderSide(
-                                          color: Color(0x00000000),
-                                          width: 1,
-                                        ),
-                                        borderRadius: BorderRadius.circular(10),
-                                      ),
-                                      filled: true,
-                                      fillColor: Colors.white,
+                              FlutterFlowDropDown(
+                                options: ['Option 1'],
+                                onChanged: (val) =>
+                                    setState(() => dropDownValue1 = val),
+                                width: 110,
+                                height:
+                                    MediaQuery.of(context).size.height * 0.05,
+                                textStyle: FlutterFlowTheme.of(context)
+                                    .bodyText1
+                                    .override(
+                                      fontFamily: 'Poppins',
+                                      color: Colors.black,
+                                      fontSize: 12,
                                     ),
-                                    style:
-                                        FlutterFlowTheme.of(context).bodyText1,
-                                  ),
-                                ),
+                                fillColor: Colors.white,
+                                elevation: 2,
+                                borderColor: Colors.transparent,
+                                borderWidth: 0,
+                                borderRadius: 0,
+                                margin: EdgeInsetsDirectional.fromSTEB(
+                                    12, 4, 12, 4),
+                                hidesUnderline: true,
                               ),
                             ],
                           ),
@@ -285,7 +257,7 @@ class _LancamentoDeCombustivelWidgetState
                                         .bodyText1
                                         .override(
                                           fontFamily: 'Poppins',
-                                          color: Colors.white,
+                                          color: Color(0xFFFFCD00),
                                         ),
                                   ),
                                   Text(
@@ -294,7 +266,7 @@ class _LancamentoDeCombustivelWidgetState
                                         .bodyText1
                                         .override(
                                           fontFamily: 'Poppins',
-                                          color: Colors.white,
+                                          color: Color(0xFFFFCD00),
                                         ),
                                   ),
                                 ],
@@ -310,7 +282,6 @@ class _LancamentoDeCombustivelWidgetState
                         padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
                         child: Container(
                           width: MediaQuery.of(context).size.width,
-                          height: MediaQuery.of(context).size.height * 0.8,
                           decoration: BoxDecoration(
                             color: Color(0xFF033F5D),
                             boxShadow: [
@@ -375,7 +346,7 @@ class _LancamentoDeCombustivelWidgetState
                                               child: Container(
                                                 width: double.infinity,
                                                 child: TextFormField(
-                                                  controller: textController2,
+                                                  controller: textController1,
                                                   autofocus: true,
                                                   obscureText: false,
                                                   decoration: InputDecoration(
@@ -489,7 +460,7 @@ class _LancamentoDeCombustivelWidgetState
                                                 child: Container(
                                                   width: double.infinity,
                                                   child: TextFormField(
-                                                    controller: textController3,
+                                                    controller: textController2,
                                                     autofocus: true,
                                                     obscureText: false,
                                                     decoration: InputDecoration(
@@ -619,7 +590,7 @@ class _LancamentoDeCombustivelWidgetState
                                           child: FlutterFlowDropDown(
                                             options: ['Option 1'],
                                             onChanged: (val) => setState(
-                                                () => dropDownValue1 = val),
+                                                () => dropDownValue2 = val),
                                             width: double.infinity,
                                             height: MediaQuery.of(context)
                                                     .size
@@ -678,9 +649,11 @@ class _LancamentoDeCombustivelWidgetState
                                               EdgeInsetsDirectional.fromSTEB(
                                                   8, 8, 4, 0),
                                           child: FlutterFlowDropDown(
-                                            options: ['Option 1'],
+                                            initialOption: dropDownValue3 ??=
+                                                'Normal',
+                                            options: ['Normal', ''],
                                             onChanged: (val) => setState(
-                                                () => dropDownValue2 = val),
+                                                () => dropDownValue3 = val),
                                             width: double.infinity,
                                             height: MediaQuery.of(context)
                                                     .size
@@ -732,7 +705,7 @@ class _LancamentoDeCombustivelWidgetState
                                           child: FlutterFlowDropDown(
                                             options: ['Option 1'],
                                             onChanged: (val) => setState(
-                                                () => dropDownValue3 = val),
+                                                () => dropDownValue4 = val),
                                             width: double.infinity,
                                             height: MediaQuery.of(context)
                                                     .size
@@ -746,7 +719,7 @@ class _LancamentoDeCombustivelWidgetState
                                                       color: Colors.black,
                                                       fontSize: 12,
                                                     ),
-                                            hintText: 'forma de pagamento',
+                                            hintText: 'forma pagamento',
                                             fillColor: Colors.white,
                                             elevation: 2,
                                             borderColor: Colors.transparent,
@@ -789,7 +762,7 @@ class _LancamentoDeCombustivelWidgetState
                                             child: FlutterFlowDropDown(
                                               options: ['Option 1'],
                                               onChanged: (val) => setState(
-                                                  () => dropDownValue4 = val),
+                                                  () => dropDownValue5 = val),
                                               width: double.infinity,
                                               height: MediaQuery.of(context)
                                                       .size
@@ -847,7 +820,7 @@ class _LancamentoDeCombustivelWidgetState
                                                 child: Container(
                                                   width: double.infinity,
                                                   child: TextFormField(
-                                                    controller: textController4,
+                                                    controller: textController3,
                                                     autofocus: true,
                                                     obscureText: false,
                                                     decoration: InputDecoration(
@@ -1016,7 +989,7 @@ class _LancamentoDeCombustivelWidgetState
                                               child: Container(
                                                 width: double.infinity,
                                                 child: TextFormField(
-                                                  controller: textController5,
+                                                  controller: textController4,
                                                   autofocus: true,
                                                   obscureText: false,
                                                   decoration: InputDecoration(
@@ -1131,7 +1104,7 @@ class _LancamentoDeCombustivelWidgetState
                                               child: Container(
                                                 width: double.infinity,
                                                 child: TextFormField(
-                                                  controller: textController6,
+                                                  controller: textController5,
                                                   autofocus: true,
                                                   obscureText: false,
                                                   decoration: InputDecoration(
@@ -1277,7 +1250,7 @@ class _LancamentoDeCombustivelWidgetState
                                             },
                                             child: Container(
                                               width: 100,
-                                              height: 90,
+                                              height: 80,
                                               decoration: BoxDecoration(
                                                 color: Color(0xFFF1F4F8),
                                                 borderRadius:
@@ -1295,7 +1268,7 @@ class _LancamentoDeCombustivelWidgetState
                                                     Icon(
                                                       Icons.photo_camera,
                                                       color: Color(0xFF242424),
-                                                      size: 40,
+                                                      size: 34,
                                                     ),
                                                     Text(
                                                       'Odometro',
@@ -1309,7 +1282,7 @@ class _LancamentoDeCombustivelWidgetState
                                                                 'Outfit',
                                                             color: Color(
                                                                 0xFF101213),
-                                                            fontSize: 15,
+                                                            fontSize: 12,
                                                             fontWeight:
                                                                 FontWeight.w600,
                                                           ),
@@ -1323,25 +1296,102 @@ class _LancamentoDeCombustivelWidgetState
                                         ),
                                       ],
                                     ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          10, 0, 0, 0),
-                                      child: Column(
-                                        mainAxisSize: MainAxisSize.max,
-                                        children: [
-                                          InkWell(
+                                    Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        InkWell(
+                                          onTap: () async {
+                                            await Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (context) =>
+                                                    FotoAbastecimentoCupomfiscalWidget(),
+                                              ),
+                                            );
+                                          },
+                                          child: Container(
+                                            width: 100,
+                                            height: 80,
+                                            decoration: BoxDecoration(
+                                              color: Color(0xFFF1F4F8),
+                                              borderRadius:
+                                                  BorderRadius.circular(15),
+                                            ),
+                                            child: Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(12, 12, 12, 12),
+                                              child: Column(
+                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                children: [
+                                                  InkWell(
+                                                    onTap: () async {
+                                                      await Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(
+                                                          builder: (context) =>
+                                                              FotoAbastecimentoCupomfiscalWidget(),
+                                                        ),
+                                                      );
+                                                    },
+                                                    child: Icon(
+                                                      Icons.photo_camera,
+                                                      color: Color(0xFF242424),
+                                                      size: 34,
+                                                    ),
+                                                  ),
+                                                  Padding(
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(
+                                                                0, 0, 0, 4),
+                                                    child: Text(
+                                                      'Cupom Fiscal',
+                                                      textAlign:
+                                                          TextAlign.center,
+                                                      style: FlutterFlowTheme
+                                                              .of(context)
+                                                          .title1
+                                                          .override(
+                                                            fontFamily:
+                                                                'Outfit',
+                                                            color: Color(
+                                                                0xFF101213),
+                                                            fontSize: 12,
+                                                            fontWeight:
+                                                                FontWeight.w600,
+                                                          ),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                        ).animateOnPageLoad(animationsMap[
+                                            'containerOnPageLoadAnimation2']!),
+                                      ],
+                                    ),
+                                    Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  15, 0, 0, 0),
+                                          child: InkWell(
                                             onTap: () async {
                                               await Navigator.push(
                                                 context,
                                                 MaterialPageRoute(
                                                   builder: (context) =>
-                                                      FotoAbastecimentoCupomfiscalWidget(),
+                                                      FotoAbastecimentoVisordabombaWidget(),
                                                 ),
                                               );
                                             },
                                             child: Container(
                                               width: 100,
-                                              height: 90,
+                                              height: 80,
                                               decoration: BoxDecoration(
                                                 color: Color(0xFFF1F4F8),
                                                 borderRadius:
@@ -1356,22 +1406,10 @@ class _LancamentoDeCombustivelWidgetState
                                                   mainAxisAlignment:
                                                       MainAxisAlignment.center,
                                                   children: [
-                                                    InkWell(
-                                                      onTap: () async {
-                                                        await Navigator.push(
-                                                          context,
-                                                          MaterialPageRoute(
-                                                            builder: (context) =>
-                                                                FotoAbastecimentoCupomfiscalWidget(),
-                                                          ),
-                                                        );
-                                                      },
-                                                      child: Icon(
-                                                        Icons.photo_camera,
-                                                        color:
-                                                            Color(0xFF242424),
-                                                        size: 44,
-                                                      ),
+                                                    Icon(
+                                                      Icons.photo_camera,
+                                                      color: Color(0xFF242424),
+                                                      size: 34,
                                                     ),
                                                     Padding(
                                                       padding:
@@ -1379,7 +1417,7 @@ class _LancamentoDeCombustivelWidgetState
                                                               .fromSTEB(
                                                                   0, 0, 0, 4),
                                                       child: Text(
-                                                        'Cupom Fiscal',
+                                                        'Visor Bomba',
                                                         textAlign:
                                                             TextAlign.center,
                                                         style:
@@ -1391,7 +1429,7 @@ class _LancamentoDeCombustivelWidgetState
                                                                       'Outfit',
                                                                   color: Color(
                                                                       0xFF101213),
-                                                                  fontSize: 13,
+                                                                  fontSize: 12,
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w600,
@@ -1403,94 +1441,16 @@ class _LancamentoDeCombustivelWidgetState
                                               ),
                                             ),
                                           ).animateOnPageLoad(animationsMap[
-                                              'containerOnPageLoadAnimation2']!),
-                                        ],
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          10, 0, 0, 0),
-                                      child: Column(
-                                        mainAxisSize: MainAxisSize.max,
-                                        children: [
-                                          Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    15, 0, 0, 0),
-                                            child: InkWell(
-                                              onTap: () async {
-                                                await Navigator.push(
-                                                  context,
-                                                  MaterialPageRoute(
-                                                    builder: (context) =>
-                                                        FotoAbastecimentoVisordabombaWidget(),
-                                                  ),
-                                                );
-                                              },
-                                              child: Container(
-                                                width: 100,
-                                                height: 90,
-                                                decoration: BoxDecoration(
-                                                  color: Color(0xFFF1F4F8),
-                                                  borderRadius:
-                                                      BorderRadius.circular(15),
-                                                ),
-                                                child: Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(12, 12, 12, 12),
-                                                  child: Column(
-                                                    mainAxisSize:
-                                                        MainAxisSize.max,
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment
-                                                            .center,
-                                                    children: [
-                                                      Icon(
-                                                        Icons.photo_camera,
-                                                        color:
-                                                            Color(0xFF242424),
-                                                        size: 44,
-                                                      ),
-                                                      Padding(
-                                                        padding:
-                                                            EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                    0, 0, 0, 4),
-                                                        child: Text(
-                                                          'Visor \nBomba',
-                                                          textAlign:
-                                                              TextAlign.center,
-                                                          style: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .title1
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Outfit',
-                                                                color: Color(
-                                                                    0xFF101213),
-                                                                fontSize: 13,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .w600,
-                                                              ),
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                ),
-                                              ),
-                                            ).animateOnPageLoad(animationsMap[
-                                                'containerOnPageLoadAnimation3']!),
-                                          ),
-                                        ],
-                                      ),
+                                              'containerOnPageLoadAnimation3']!),
+                                        ),
+                                      ],
                                     ),
                                   ],
                                 ),
                               ),
                               Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 25, 0, 0),
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    0, 25, 0, 30),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   mainAxisAlignment: MainAxisAlignment.center,

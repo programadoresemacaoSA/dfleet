@@ -399,7 +399,7 @@ class _TermosWidgetState extends State<TermosWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 160, 0, 0),
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 220, 0, 0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.end,

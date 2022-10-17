@@ -88,7 +88,7 @@ class _FotoCupomViagemWidgetState extends State<FotoCupomViagemWidget> {
               padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
               child: Container(
                 width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height * 1,
+                height: MediaQuery.of(context).size.height * 0.85,
                 decoration: BoxDecoration(
                   color: Color(0xFF033F5D),
                   boxShadow: [
@@ -275,7 +275,7 @@ class _FotoCupomViagemWidgetState extends State<FotoCupomViagemWidget> {
                                         ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyText1,
-                                        maxLines: 5,
+                                        maxLines: 4,
                                       ),
                                     ),
                                   ),

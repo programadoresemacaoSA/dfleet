@@ -86,7 +86,7 @@ class _ItemChecklistDocumentosWidgetState
               padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
               child: Container(
                 width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height * 1,
+                height: MediaQuery.of(context).size.height * 0.85,
                 decoration: BoxDecoration(
                   color: Color(0xFF033F5D),
                   boxShadow: [
@@ -129,132 +129,138 @@ class _ItemChecklistDocumentosWidgetState
                           ],
                         ),
                       ),
-                      Row(
-                        mainAxisSize: MainAxisSize.max,
-                        children: [
-                          Expanded(
-                            child: Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(16, 0, 16, 0),
-                              child: Container(
-                                width: double.infinity,
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  boxShadow: [
-                                    BoxShadow(
-                                      blurRadius: 7,
-                                      color: Color(0x2F1D2429),
-                                      offset: Offset(0, 3),
-                                    )
-                                  ],
-                                  borderRadius: BorderRadius.circular(8),
-                                ),
-                                child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      12, 12, 12, 12),
-                                  child: Column(
-                                    mainAxisSize: MainAxisSize.max,
-                                    children: [
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 4, 0, 0),
-                                        child: Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceEvenly,
-                                          children: [
-                                            FlutterFlowRadioButton(
-                                              options: ['Bom'].toList(),
-                                              onChanged: (val) => setState(() =>
-                                                  radioButtonValue1 = val),
-                                              optionHeight: 25,
-                                              textStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        color: Colors.black,
-                                                      ),
-                                              buttonPosition:
-                                                  RadioButtonPosition.left,
-                                              direction: Axis.vertical,
-                                              radioButtonColor: Colors.blue,
-                                              inactiveRadioButtonColor:
-                                                  Color(0x8A000000),
-                                              toggleable: false,
-                                              horizontalAlignment:
-                                                  WrapAlignment.start,
-                                              verticalAlignment:
-                                                  WrapCrossAlignment.start,
-                                            ),
-                                            FlutterFlowRadioButton(
-                                              options: ['Ruim'].toList(),
-                                              onChanged: (val) async {
-                                                setState(() =>
-                                                    radioButtonValue2 = val);
-                                                await Navigator.push(
-                                                  context,
-                                                  MaterialPageRoute(
-                                                    builder: (context) =>
-                                                        ItemChecklistFotoWidget(),
-                                                  ),
-                                                );
-                                              },
-                                              optionHeight: 25,
-                                              textStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        color: Colors.black,
-                                                      ),
-                                              buttonPosition:
-                                                  RadioButtonPosition.left,
-                                              direction: Axis.vertical,
-                                              radioButtonColor: Colors.blue,
-                                              inactiveRadioButtonColor:
-                                                  Color(0x8A000000),
-                                              toggleable: false,
-                                              horizontalAlignment:
-                                                  WrapAlignment.start,
-                                              verticalAlignment:
-                                                  WrapCrossAlignment.start,
-                                            ),
-                                            FlutterFlowRadioButton(
-                                              options:
-                                                  ['Não se aplica'].toList(),
-                                              onChanged: (val) => setState(() =>
-                                                  radioButtonValue3 = val),
-                                              optionHeight: 25,
-                                              textStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        color: Colors.black,
-                                                      ),
-                                              buttonPosition:
-                                                  RadioButtonPosition.left,
-                                              direction: Axis.vertical,
-                                              radioButtonColor: Colors.blue,
-                                              inactiveRadioButtonColor:
-                                                  Color(0x8A000000),
-                                              toggleable: false,
-                                              horizontalAlignment:
-                                                  WrapAlignment.start,
-                                              verticalAlignment:
-                                                  WrapCrossAlignment.start,
-                                            ),
-                                          ],
-                                        ),
-                                      ),
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Expanded(
+                              child: Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    16, 0, 16, 0),
+                                child: Container(
+                                  width: double.infinity,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    boxShadow: [
+                                      BoxShadow(
+                                        blurRadius: 7,
+                                        color: Color(0x2F1D2429),
+                                        offset: Offset(0, 3),
+                                      )
                                     ],
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        12, 12, 12, 12),
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0, 4, 0, 0),
+                                          child: Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.spaceEvenly,
+                                            children: [
+                                              FlutterFlowRadioButton(
+                                                options: ['Bom'].toList(),
+                                                onChanged: (val) => setState(
+                                                    () => radioButtonValue1 =
+                                                        val),
+                                                optionHeight: 25,
+                                                textStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText1
+                                                        .override(
+                                                          fontFamily: 'Poppins',
+                                                          color: Colors.black,
+                                                        ),
+                                                buttonPosition:
+                                                    RadioButtonPosition.left,
+                                                direction: Axis.vertical,
+                                                radioButtonColor: Colors.blue,
+                                                inactiveRadioButtonColor:
+                                                    Color(0x8A000000),
+                                                toggleable: false,
+                                                horizontalAlignment:
+                                                    WrapAlignment.start,
+                                                verticalAlignment:
+                                                    WrapCrossAlignment.start,
+                                              ),
+                                              FlutterFlowRadioButton(
+                                                options: ['Ruim'].toList(),
+                                                onChanged: (val) async {
+                                                  setState(() =>
+                                                      radioButtonValue2 = val);
+                                                  await Navigator.push(
+                                                    context,
+                                                    MaterialPageRoute(
+                                                      builder: (context) =>
+                                                          ItemChecklistFotoWidget(),
+                                                    ),
+                                                  );
+                                                },
+                                                optionHeight: 25,
+                                                textStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText1
+                                                        .override(
+                                                          fontFamily: 'Poppins',
+                                                          color: Colors.black,
+                                                        ),
+                                                buttonPosition:
+                                                    RadioButtonPosition.left,
+                                                direction: Axis.vertical,
+                                                radioButtonColor: Colors.blue,
+                                                inactiveRadioButtonColor:
+                                                    Color(0x8A000000),
+                                                toggleable: true,
+                                                horizontalAlignment:
+                                                    WrapAlignment.start,
+                                                verticalAlignment:
+                                                    WrapCrossAlignment.start,
+                                              ),
+                                              FlutterFlowRadioButton(
+                                                options:
+                                                    ['Não se aplica'].toList(),
+                                                onChanged: (val) => setState(
+                                                    () => radioButtonValue3 =
+                                                        val),
+                                                optionHeight: 25,
+                                                textStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText1
+                                                        .override(
+                                                          fontFamily: 'Poppins',
+                                                          color: Colors.black,
+                                                        ),
+                                                buttonPosition:
+                                                    RadioButtonPosition.left,
+                                                direction: Axis.vertical,
+                                                radioButtonColor: Colors.blue,
+                                                inactiveRadioButtonColor:
+                                                    Color(0x8A000000),
+                                                toggleable: false,
+                                                horizontalAlignment:
+                                                    WrapAlignment.start,
+                                                verticalAlignment:
+                                                    WrapCrossAlignment.start,
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                       Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
@@ -567,51 +573,80 @@ class _ItemChecklistDocumentosWidgetState
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 20),
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 250, 0, 20),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.end,
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
-                            Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(0, 0, 25, 0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  FFButtonWidget(
-                                    onPressed: () async {
-                                      await Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) =>
-                                              ItemChecklistWidget(),
-                                        ),
-                                      );
-                                    },
-                                    text: 'Sair',
-                                    icon: Icon(
-                                      Icons.exit_to_app_rounded,
-                                      size: 15,
-                                    ),
-                                    options: FFButtonOptions(
-                                      width: 130,
-                                      height: 40,
-                                      color: Color(0xFFAF0000),
-                                      textStyle: FlutterFlowTheme.of(context)
-                                          .subtitle2
-                                          .override(
-                                            fontFamily: 'Poppins',
-                                            color: Colors.white,
-                                          ),
-                                      borderSide: BorderSide(
-                                        color: Colors.transparent,
-                                        width: 1,
+                            Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                FFButtonWidget(
+                                  onPressed: () async {
+                                    await Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) =>
+                                            ItemChecklistWidget(),
                                       ),
-                                      borderRadius: BorderRadius.circular(8),
+                                    );
+                                  },
+                                  text: 'Salvar',
+                                  options: FFButtonOptions(
+                                    width: 130,
+                                    height: 40,
+                                    color: Color(0xFF118021),
+                                    textStyle: FlutterFlowTheme.of(context)
+                                        .subtitle2
+                                        .override(
+                                          fontFamily: 'Poppins',
+                                          color: Colors.white,
+                                        ),
+                                    borderSide: BorderSide(
+                                      color: Colors.transparent,
+                                      width: 1,
                                     ),
+                                    borderRadius: BorderRadius.circular(8),
                                   ),
-                                ],
-                              ),
+                                ),
+                              ],
+                            ),
+                            Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                FFButtonWidget(
+                                  onPressed: () async {
+                                    await Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) =>
+                                            ItemChecklistWidget(),
+                                      ),
+                                    );
+                                  },
+                                  text: 'Sair',
+                                  icon: Icon(
+                                    Icons.exit_to_app_rounded,
+                                    size: 15,
+                                  ),
+                                  options: FFButtonOptions(
+                                    width: 130,
+                                    height: 40,
+                                    color: Color(0xFFAF0000),
+                                    textStyle: FlutterFlowTheme.of(context)
+                                        .subtitle2
+                                        .override(
+                                          fontFamily: 'Poppins',
+                                          color: Colors.white,
+                                        ),
+                                    borderSide: BorderSide(
+                                      color: Colors.transparent,
+                                      width: 1,
+                                    ),
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                ),
+                              ],
                             ),
                           ],
                         ),

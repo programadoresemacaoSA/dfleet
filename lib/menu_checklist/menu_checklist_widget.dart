@@ -78,7 +78,6 @@ class _MenuChecklistWidgetState extends State<MenuChecklistWidget> {
                 padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
                 child: Container(
                   width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.height * 1,
                   decoration: BoxDecoration(
                     color: Color(0xFF033F5D),
                     boxShadow: [
@@ -159,8 +158,14 @@ class _MenuChecklistWidgetState extends State<MenuChecklistWidget> {
                                                 color: Color(0xFF033F5D),
                                                 size: 80,
                                               ),
-                                              onPressed: () {
-                                                print('IconButton pressed ...');
+                                              onPressed: () async {
+                                                await Navigator.push(
+                                                  context,
+                                                  MaterialPageRoute(
+                                                    builder: (context) =>
+                                                        ChecklistWidget(),
+                                                  ),
+                                                );
                                               },
                                             ),
                                             Padding(
@@ -171,19 +176,33 @@ class _MenuChecklistWidgetState extends State<MenuChecklistWidget> {
                                                 crossAxisAlignment:
                                                     CrossAxisAlignment.center,
                                                 children: [
-                                                  Text(
-                                                    'Check list pendente',
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .subtitle1
-                                                        .override(
-                                                          fontFamily: 'Outfit',
-                                                          color:
-                                                              Color(0xFF033F5D),
-                                                          fontSize: 18,
-                                                          fontWeight:
-                                                              FontWeight.normal,
+                                                  InkWell(
+                                                    onTap: () async {
+                                                      await Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(
+                                                          builder: (context) =>
+                                                              ChecklistWidget(),
                                                         ),
+                                                      );
+                                                    },
+                                                    child: Text(
+                                                      'Check list pendente',
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .subtitle1
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Outfit',
+                                                                color: Color(
+                                                                    0xFF033F5D),
+                                                                fontSize: 18,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .normal,
+                                                              ),
+                                                    ),
                                                   ),
                                                 ],
                                               ),
@@ -219,19 +238,33 @@ class _MenuChecklistWidgetState extends State<MenuChecklistWidget> {
                                                   alignment:
                                                       AlignmentDirectional(
                                                           0, 0),
-                                                  child: Text(
-                                                    'visualizar',
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyText1
-                                                        .override(
-                                                          fontFamily: 'Outfit',
-                                                          color:
-                                                              Color(0xFF242424),
-                                                          fontSize: 20,
-                                                          fontWeight:
-                                                              FontWeight.normal,
+                                                  child: InkWell(
+                                                    onTap: () async {
+                                                      await Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(
+                                                          builder: (context) =>
+                                                              ChecklistWidget(),
                                                         ),
+                                                      );
+                                                    },
+                                                    child: Text(
+                                                      'visualizar',
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyText1
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Outfit',
+                                                                color: Color(
+                                                                    0xFF242424),
+                                                                fontSize: 20,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .normal,
+                                                              ),
+                                                    ),
                                                   ),
                                                 ),
                                               ),
@@ -301,8 +334,14 @@ class _MenuChecklistWidgetState extends State<MenuChecklistWidget> {
                                               color: Color(0xFF033F5D),
                                               size: 80,
                                             ),
-                                            onPressed: () {
-                                              print('IconButton pressed ...');
+                                            onPressed: () async {
+                                              await Navigator.push(
+                                                context,
+                                                MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      ChecklistRealizadosWidget(),
+                                                ),
+                                              );
                                             },
                                           ),
                                           Padding(
@@ -316,19 +355,30 @@ class _MenuChecklistWidgetState extends State<MenuChecklistWidget> {
                                               crossAxisAlignment:
                                                   CrossAxisAlignment.center,
                                               children: [
-                                                Text(
-                                                  'Check list realizado',
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .subtitle1
-                                                      .override(
-                                                        fontFamily: 'Outfit',
-                                                        color:
-                                                            Color(0xFF033F5D),
-                                                        fontSize: 18,
-                                                        fontWeight:
-                                                            FontWeight.normal,
+                                                InkWell(
+                                                  onTap: () async {
+                                                    await Navigator.push(
+                                                      context,
+                                                      MaterialPageRoute(
+                                                        builder: (context) =>
+                                                            ChecklistRealizadosWidget(),
                                                       ),
+                                                    );
+                                                  },
+                                                  child: Text(
+                                                    'Check list realizado',
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .subtitle1
+                                                        .override(
+                                                          fontFamily: 'Outfit',
+                                                          color:
+                                                              Color(0xFF033F5D),
+                                                          fontSize: 18,
+                                                          fontWeight:
+                                                              FontWeight.normal,
+                                                        ),
+                                                  ),
                                                 ),
                                               ],
                                             ),
@@ -365,18 +415,29 @@ class _MenuChecklistWidgetState extends State<MenuChecklistWidget> {
                                                 ),
                                                 alignment:
                                                     AlignmentDirectional(0, 0),
-                                                child: Text(
-                                                  'Visualizar',
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily: 'Outfit',
-                                                        color: Colors.white,
-                                                        fontSize: 20,
-                                                        fontWeight:
-                                                            FontWeight.normal,
+                                                child: InkWell(
+                                                  onTap: () async {
+                                                    await Navigator.push(
+                                                      context,
+                                                      MaterialPageRoute(
+                                                        builder: (context) =>
+                                                            ChecklistRealizadosWidget(),
                                                       ),
+                                                    );
+                                                  },
+                                                  child: Text(
+                                                    'Visualizar',
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyText1
+                                                        .override(
+                                                          fontFamily: 'Outfit',
+                                                          color: Colors.white,
+                                                          fontSize: 20,
+                                                          fontWeight:
+                                                              FontWeight.normal,
+                                                        ),
+                                                  ),
                                                 ),
                                               ),
                                             ),
@@ -390,52 +451,56 @@ class _MenuChecklistWidgetState extends State<MenuChecklistWidget> {
                             ),
                           ],
                         ),
-                        Row(
-                          mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.end,
-                          crossAxisAlignment: CrossAxisAlignment.end,
-                          children: [
-                            Column(
-                              mainAxisSize: MainAxisSize.max,
-                              children: [
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 0, 25, 0),
-                                  child: FFButtonWidget(
-                                    onPressed: () async {
-                                      await Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) => HomeappWidget(),
-                                        ),
-                                      );
-                                    },
-                                    text: 'Sair',
-                                    icon: Icon(
-                                      Icons.exit_to_app_rounded,
-                                      size: 15,
-                                    ),
-                                    options: FFButtonOptions(
-                                      width: 130,
-                                      height: 40,
-                                      color: Color(0xFFAF0000),
-                                      textStyle: FlutterFlowTheme.of(context)
-                                          .subtitle2
-                                          .override(
-                                            fontFamily: 'Poppins',
-                                            color: Colors.white,
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 50),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children: [
+                              Column(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0, 0, 25, 0),
+                                    child: FFButtonWidget(
+                                      onPressed: () async {
+                                        await Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                HomeappWidget(),
                                           ),
-                                      borderSide: BorderSide(
-                                        color: Colors.transparent,
-                                        width: 1,
+                                        );
+                                      },
+                                      text: 'Sair',
+                                      icon: Icon(
+                                        Icons.exit_to_app_rounded,
+                                        size: 15,
                                       ),
-                                      borderRadius: BorderRadius.circular(8),
+                                      options: FFButtonOptions(
+                                        width: 130,
+                                        height: 40,
+                                        color: Color(0xFFAF0000),
+                                        textStyle: FlutterFlowTheme.of(context)
+                                            .subtitle2
+                                            .override(
+                                              fontFamily: 'Poppins',
+                                              color: Colors.white,
+                                            ),
+                                        borderSide: BorderSide(
+                                          color: Colors.transparent,
+                                          width: 1,
+                                        ),
+                                        borderRadius: BorderRadius.circular(8),
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
-                            ),
-                          ],
+                                ],
+                              ),
+                            ],
+                          ),
                         ),
                       ],
                     ),

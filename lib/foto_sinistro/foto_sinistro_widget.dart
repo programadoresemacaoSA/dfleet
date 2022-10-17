@@ -75,7 +75,7 @@ class _FotoSinistroWidgetState extends State<FotoSinistroWidget> {
               padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
               child: Container(
                 width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height * 1,
+                height: MediaQuery.of(context).size.height * 0.85,
                 decoration: BoxDecoration(
                   color: Color(0xFF033F5D),
                   boxShadow: [
@@ -110,11 +110,11 @@ class _FotoSinistroWidgetState extends State<FotoSinistroWidget> {
                                     borderColor: Colors.transparent,
                                     borderRadius: 30,
                                     borderWidth: 1,
-                                    buttonSize: 100,
+                                    buttonSize: 70,
                                     icon: FaIcon(
                                       FontAwesomeIcons.camera,
                                       color: Colors.white,
-                                      size: 70,
+                                      size: 50,
                                     ),
                                     onPressed: () {
                                       print('IconButton pressed ...');
@@ -148,8 +148,8 @@ class _FotoSinistroWidgetState extends State<FotoSinistroWidget> {
                                     10, 0, 10, 0),
                                 child: Image.network(
                                   'https://picsum.photos/seed/792/600',
-                                  width: 100,
-                                  height: 100,
+                                  width: 90,
+                                  height: 90,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -158,8 +158,8 @@ class _FotoSinistroWidgetState extends State<FotoSinistroWidget> {
                                     10, 0, 10, 0),
                                 child: Image.network(
                                   'https://picsum.photos/seed/792/600',
-                                  width: 100,
-                                  height: 100,
+                                  width: 90,
+                                  height: 90,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -168,8 +168,8 @@ class _FotoSinistroWidgetState extends State<FotoSinistroWidget> {
                                     10, 0, 10, 0),
                                 child: Image.network(
                                   'https://picsum.photos/seed/792/600',
-                                  width: 100,
-                                  height: 100,
+                                  width: 90,
+                                  height: 90,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -190,8 +190,8 @@ class _FotoSinistroWidgetState extends State<FotoSinistroWidget> {
                                     10, 0, 10, 0),
                                 child: Image.network(
                                   'https://picsum.photos/seed/792/600',
-                                  width: 100,
-                                  height: 100,
+                                  width: 90,
+                                  height: 90,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -200,8 +200,8 @@ class _FotoSinistroWidgetState extends State<FotoSinistroWidget> {
                                     10, 0, 10, 0),
                                 child: Image.network(
                                   'https://picsum.photos/seed/792/600',
-                                  width: 100,
-                                  height: 100,
+                                  width: 90,
+                                  height: 90,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -210,8 +210,8 @@ class _FotoSinistroWidgetState extends State<FotoSinistroWidget> {
                                     10, 0, 10, 0),
                                 child: Image.network(
                                   'https://picsum.photos/seed/792/600',
-                                  width: 100,
-                                  height: 100,
+                                  width: 90,
+                                  height: 90,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -232,8 +232,8 @@ class _FotoSinistroWidgetState extends State<FotoSinistroWidget> {
                                     10, 0, 10, 0),
                                 child: Image.network(
                                   'https://picsum.photos/seed/792/600',
-                                  width: 100,
-                                  height: 100,
+                                  width: 90,
+                                  height: 90,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -242,8 +242,8 @@ class _FotoSinistroWidgetState extends State<FotoSinistroWidget> {
                                     10, 0, 10, 0),
                                 child: Image.network(
                                   'https://picsum.photos/seed/792/600',
-                                  width: 100,
-                                  height: 100,
+                                  width: 90,
+                                  height: 90,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -252,8 +252,8 @@ class _FotoSinistroWidgetState extends State<FotoSinistroWidget> {
                                     10, 0, 10, 0),
                                 child: Image.network(
                                   'https://picsum.photos/seed/792/600',
-                                  width: 100,
-                                  height: 100,
+                                  width: 90,
+                                  height: 90,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -262,7 +262,7 @@ class _FotoSinistroWidgetState extends State<FotoSinistroWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 25, 0, 0),
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 150, 0, 0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,

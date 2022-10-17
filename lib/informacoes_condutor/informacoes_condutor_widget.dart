@@ -202,17 +202,42 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.asset(
-                      'assets/images/744984.png',
-                      width: 80,
-                      height: 140,
-                      fit: BoxFit.contain,
+                    Column(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 10, 0),
+                          child: FFButtonWidget(
+                            onPressed: () {
+                              print('Button pressed ...');
+                            },
+                            text: '1º',
+                            options: FFButtonOptions(
+                              width: 60,
+                              height: 50,
+                              color: FlutterFlowTheme.of(context).primaryColor,
+                              textStyle: FlutterFlowTheme.of(context)
+                                  .subtitle2
+                                  .override(
+                                    fontFamily: 'PT Sans',
+                                    color: Colors.white,
+                                    fontSize: 35,
+                                  ),
+                              borderSide: BorderSide(
+                                color: Colors.white,
+                                width: 1,
+                              ),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                     Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Text(
-                          '1º Lugar\nParabens!\nVocê obteve o\n melhor ranking',
+                          'Parabéns!\nVocê obteve o  melhor ranking',
                           style:
                               FlutterFlowTheme.of(context).bodyText1.override(
                                     fontFamily: 'Poppins',
@@ -229,6 +254,7 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                 padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
                 child: Container(
                   width: MediaQuery.of(context).size.width,
+                  height: MediaQuery.of(context).size.height * 0.85,
                   decoration: BoxDecoration(
                     color: Color(0xFF033F5D),
                     boxShadow: [
@@ -265,7 +291,7 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                                       width: 150,
                                       height:
                                           MediaQuery.of(context).size.height *
-                                              0.15,
+                                              0.13,
                                       decoration: BoxDecoration(
                                         color: Colors.white,
                                         boxShadow: [
@@ -283,7 +309,7 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    0, 20, 0, 0),
+                                                    0, 10, 0, 0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment:
@@ -369,7 +395,7 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                                       width: 150,
                                       height:
                                           MediaQuery.of(context).size.height *
-                                              0.15,
+                                              0.13,
                                       decoration: BoxDecoration(
                                         color: Colors.white,
                                         boxShadow: [
@@ -387,7 +413,7 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    0, 20, 0, 0),
+                                                    0, 10, 0, 0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment:
@@ -478,7 +504,7 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                                   child: Container(
                                     width: 150,
                                     height: MediaQuery.of(context).size.height *
-                                        0.15,
+                                        0.13,
                                     decoration: BoxDecoration(
                                       color: Colors.white,
                                       boxShadow: [
@@ -496,7 +522,7 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0, 20, 0, 0),
+                                                  0, 10, 0, 0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             mainAxisAlignment:
@@ -580,7 +606,7 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                                   child: Container(
                                     width: 150,
                                     height: MediaQuery.of(context).size.height *
-                                        0.15,
+                                        0.13,
                                     decoration: BoxDecoration(
                                       color: Colors.white,
                                       boxShadow: [
@@ -598,7 +624,7 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0, 20, 0, 0),
+                                                  0, 10, 0, 0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             mainAxisAlignment:
@@ -687,7 +713,7 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                                   child: Container(
                                     width: 150,
                                     height: MediaQuery.of(context).size.height *
-                                        0.15,
+                                        0.13,
                                     decoration: BoxDecoration(
                                       color: Colors.white,
                                       boxShadow: [
@@ -705,7 +731,7 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0, 20, 0, 0),
+                                                  0, 10, 0, 0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             mainAxisAlignment:
@@ -789,7 +815,7 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                                   child: Container(
                                     width: 150,
                                     height: MediaQuery.of(context).size.height *
-                                        0.15,
+                                        0.13,
                                     decoration: BoxDecoration(
                                       color: Colors.white,
                                       boxShadow: [
@@ -807,7 +833,7 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0, 20, 0, 0),
+                                                  0, 10, 0, 0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             mainAxisAlignment:
@@ -1082,51 +1108,54 @@ class _InformacoesCondutorWidgetState extends State<InformacoesCondutorWidget>
                         ).animateOnPageLoad(
                             animationsMap['containerOnPageLoadAnimation8']!),
                       ),
-                      Row(
-                        mainAxisSize: MainAxisSize.max,
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: [
-                          Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 0, 15, 15),
-                            child: Column(
-                              mainAxisSize: MainAxisSize.max,
-                              children: [
-                                FFButtonWidget(
-                                  onPressed: () async {
-                                    await Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) => HomeappWidget(),
-                                      ),
-                                    );
-                                  },
-                                  text: 'Sair',
-                                  icon: Icon(
-                                    Icons.exit_to_app_rounded,
-                                    size: 15,
-                                  ),
-                                  options: FFButtonOptions(
-                                    width: 130,
-                                    height: 40,
-                                    color: Color(0xFFAF0000),
-                                    textStyle: FlutterFlowTheme.of(context)
-                                        .subtitle2
-                                        .override(
-                                          fontFamily: 'Poppins',
-                                          color: Colors.white,
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 20),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.max,
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: [
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(0, 0, 15, 15),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  FFButtonWidget(
+                                    onPressed: () async {
+                                      await Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => HomeappWidget(),
                                         ),
-                                    borderSide: BorderSide(
-                                      color: Colors.transparent,
-                                      width: 1,
+                                      );
+                                    },
+                                    text: 'Sair',
+                                    icon: Icon(
+                                      Icons.exit_to_app_rounded,
+                                      size: 15,
                                     ),
-                                    borderRadius: BorderRadius.circular(8),
+                                    options: FFButtonOptions(
+                                      width: 130,
+                                      height: 40,
+                                      color: Color(0xFFAF0000),
+                                      textStyle: FlutterFlowTheme.of(context)
+                                          .subtitle2
+                                          .override(
+                                            fontFamily: 'Poppins',
+                                            color: Colors.white,
+                                          ),
+                                      borderSide: BorderSide(
+                                        color: Colors.transparent,
+                                        width: 1,
+                                      ),
+                                      borderRadius: BorderRadius.circular(8),
+                                    ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ],
                   ),

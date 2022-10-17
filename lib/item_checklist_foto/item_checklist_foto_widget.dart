@@ -90,7 +90,6 @@ class _ItemChecklistFotoWidgetState extends State<ItemChecklistFotoWidget> {
               padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
               child: Container(
                 width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height * 1,
                 decoration: BoxDecoration(
                   color: Color(0xFF033F5D),
                   boxShadow: [
@@ -125,11 +124,11 @@ class _ItemChecklistFotoWidgetState extends State<ItemChecklistFotoWidget> {
                                     borderColor: Colors.transparent,
                                     borderRadius: 30,
                                     borderWidth: 1,
-                                    buttonSize: 100,
+                                    buttonSize: 70,
                                     icon: FaIcon(
                                       FontAwesomeIcons.camera,
                                       color: Colors.white,
-                                      size: 70,
+                                      size: 50,
                                     ),
                                     onPressed: () {
                                       print('IconButton pressed ...');
@@ -163,8 +162,8 @@ class _ItemChecklistFotoWidgetState extends State<ItemChecklistFotoWidget> {
                                     10, 0, 10, 0),
                                 child: Image.network(
                                   'https://picsum.photos/seed/792/600',
-                                  width: 100,
-                                  height: 100,
+                                  width: 90,
+                                  height: 90,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -173,8 +172,8 @@ class _ItemChecklistFotoWidgetState extends State<ItemChecklistFotoWidget> {
                                     10, 0, 10, 0),
                                 child: Image.network(
                                   'https://picsum.photos/seed/792/600',
-                                  width: 100,
-                                  height: 100,
+                                  width: 90,
+                                  height: 90,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -183,50 +182,8 @@ class _ItemChecklistFotoWidgetState extends State<ItemChecklistFotoWidget> {
                                     10, 0, 10, 0),
                                 child: Image.network(
                                   'https://picsum.photos/seed/792/600',
-                                  width: 100,
-                                  height: 100,
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 25, 0, 0),
-                        child: SingleChildScrollView(
-                          scrollDirection: Axis.horizontal,
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            crossAxisAlignment: CrossAxisAlignment.end,
-                            children: [
-                              Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    10, 0, 10, 0),
-                                child: Image.network(
-                                  'https://picsum.photos/seed/792/600',
-                                  width: 100,
-                                  height: 100,
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                              Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    10, 0, 10, 0),
-                                child: Image.network(
-                                  'https://picsum.photos/seed/792/600',
-                                  width: 100,
-                                  height: 100,
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                              Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    10, 0, 10, 0),
-                                child: Image.network(
-                                  'https://picsum.photos/seed/792/600',
-                                  width: 100,
-                                  height: 100,
+                                  width: 90,
+                                  height: 90,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -247,8 +204,8 @@ class _ItemChecklistFotoWidgetState extends State<ItemChecklistFotoWidget> {
                                     10, 0, 10, 0),
                                 child: Image.network(
                                   'https://picsum.photos/seed/792/600',
-                                  width: 100,
-                                  height: 100,
+                                  width: 90,
+                                  height: 90,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -257,8 +214,8 @@ class _ItemChecklistFotoWidgetState extends State<ItemChecklistFotoWidget> {
                                     10, 0, 10, 0),
                                 child: Image.network(
                                   'https://picsum.photos/seed/792/600',
-                                  width: 100,
-                                  height: 100,
+                                  width: 90,
+                                  height: 90,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -267,8 +224,50 @@ class _ItemChecklistFotoWidgetState extends State<ItemChecklistFotoWidget> {
                                     10, 0, 10, 0),
                                 child: Image.network(
                                   'https://picsum.photos/seed/792/600',
-                                  width: 100,
-                                  height: 100,
+                                  width: 90,
+                                  height: 90,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 25, 0, 0),
+                        child: SingleChildScrollView(
+                          scrollDirection: Axis.horizontal,
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children: [
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    10, 0, 10, 0),
+                                child: Image.network(
+                                  'https://picsum.photos/seed/792/600',
+                                  width: 90,
+                                  height: 90,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    10, 0, 10, 0),
+                                child: Image.network(
+                                  'https://picsum.photos/seed/792/600',
+                                  width: 90,
+                                  height: 90,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    10, 0, 10, 0),
+                                child: Image.network(
+                                  'https://picsum.photos/seed/792/600',
+                                  width: 90,
+                                  height: 90,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -363,7 +362,7 @@ class _ItemChecklistFotoWidgetState extends State<ItemChecklistFotoWidget> {
                                           ),
                                           style: FlutterFlowTheme.of(context)
                                               .bodyText1,
-                                          maxLines: 5,
+                                          maxLines: 4,
                                         ),
                                       ),
                                     ),
@@ -375,7 +374,7 @@ class _ItemChecklistFotoWidgetState extends State<ItemChecklistFotoWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 25, 0, 0),
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 25, 0, 30),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,

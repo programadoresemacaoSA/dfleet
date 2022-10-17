@@ -1517,7 +1517,8 @@ class _LancamentoDeViagemWidgetState extends State<LancamentoDeViagemWidget>
                                 ),
                                 Row(
                                   mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
                                   children: [
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(

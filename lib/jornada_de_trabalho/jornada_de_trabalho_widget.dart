@@ -333,7 +333,6 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                 padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
                 child: Container(
                   width: MediaQuery.of(context).size.width,
-                  height: 800,
                   decoration: BoxDecoration(
                     color: Color(0xFF033F5D),
                     boxShadow: [
@@ -423,202 +422,169 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                         ],
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 25, 0, 12),
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 15, 0, 0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text(
-                              'Inicio jornada',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText1
-                                  .override(
-                                    fontFamily: 'Poppins',
-                                    color: Color(0xFF4AFF00),
-                                  ),
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(0, 0, 5, 0),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Container(
+                                    width:
+                                        MediaQuery.of(context).size.width * 0.3,
+                                    height: 115,
+                                    decoration: BoxDecoration(
+                                      color: Color(0xFF018120),
+                                      borderRadius: BorderRadius.circular(24),
+                                    ),
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          12, 12, 12, 12),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          Icon(
+                                            Icons.departure_board_sharp,
+                                            color: Colors.white,
+                                            size: 44,
+                                          ),
+                                          Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0, 12, 0, 4),
+                                            child: Text(
+                                              'Inicio de viagem',
+                                              textAlign: TextAlign.center,
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .title1
+                                                      .override(
+                                                        fontFamily: 'Outfit',
+                                                        color: Colors.white,
+                                                        fontSize: 14,
+                                                        fontWeight:
+                                                            FontWeight.w600,
+                                                      ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ).animateOnPageLoad(animationsMap[
+                                      'containerOnPageLoadAnimation1']!),
+                                ],
+                              ),
                             ),
-                            Text(
-                              '10:56',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText1
-                                  .override(
-                                    fontFamily: 'Poppins',
-                                    color: Color(0xFF4AFF00),
-                                  ),
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(0, 0, 5, 0),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Container(
+                                    width:
+                                        MediaQuery.of(context).size.width * 0.3,
+                                    height: 115,
+                                    decoration: BoxDecoration(
+                                      color: Color(0xFF018120),
+                                      borderRadius: BorderRadius.circular(24),
+                                    ),
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          12, 12, 12, 12),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          Icon(
+                                            Icons.car_repair,
+                                            color: Colors.white,
+                                            size: 44,
+                                          ),
+                                          Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0, 12, 0, 4),
+                                            child: Text(
+                                              'Manobra',
+                                              textAlign: TextAlign.center,
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .title1
+                                                      .override(
+                                                        fontFamily: 'Outfit',
+                                                        color: Colors.white,
+                                                        fontSize: 14,
+                                                        fontWeight:
+                                                            FontWeight.w600,
+                                                      ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ).animateOnPageLoad(animationsMap[
+                                      'containerOnPageLoadAnimation2']!),
+                                ],
+                              ),
                             ),
-                            Text(
-                              'Fim jornada',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText1
-                                  .override(
-                                    fontFamily: 'Poppins',
-                                    color: Color(0xFFFFCD00),
+                            Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Container(
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.3,
+                                  height: 115,
+                                  decoration: BoxDecoration(
+                                    color: Color(0xFF018120),
+                                    borderRadius: BorderRadius.circular(24),
                                   ),
-                            ),
-                            Text(
-                              '17:56',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText1
-                                  .override(
-                                    fontFamily: 'Poppins',
-                                    color: Color(0xFFFFCD00),
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        12, 12, 12, 12),
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        FaIcon(
+                                          FontAwesomeIcons.solidStopCircle,
+                                          color: Colors.white,
+                                          size: 44,
+                                        ),
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0, 12, 0, 4),
+                                          child: Text(
+                                            'Parada',
+                                            textAlign: TextAlign.center,
+                                            style: FlutterFlowTheme.of(context)
+                                                .title1
+                                                .override(
+                                                  fontFamily: 'Outfit',
+                                                  color: Colors.white,
+                                                  fontSize: 14,
+                                                  fontWeight: FontWeight.w600,
+                                                ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
                                   ),
+                                ).animateOnPageLoad(animationsMap[
+                                    'containerOnPageLoadAnimation3']!),
+                              ],
                             ),
                           ],
                         ),
-                      ),
-                      Row(
-                        mainAxisSize: MainAxisSize.max,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(0, 0, 5, 0),
-                            child: Column(
-                              mainAxisSize: MainAxisSize.max,
-                              children: [
-                                Container(
-                                  width:
-                                      MediaQuery.of(context).size.width * 0.3,
-                                  height: 130,
-                                  decoration: BoxDecoration(
-                                    color: Color(0xFF018120),
-                                    borderRadius: BorderRadius.circular(24),
-                                  ),
-                                  child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        12, 12, 12, 12),
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: [
-                                        Icon(
-                                          Icons.departure_board_sharp,
-                                          color: Colors.white,
-                                          size: 44,
-                                        ),
-                                        Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0, 12, 0, 4),
-                                          child: Text(
-                                            'Inicio de viagem',
-                                            textAlign: TextAlign.center,
-                                            style: FlutterFlowTheme.of(context)
-                                                .title1
-                                                .override(
-                                                  fontFamily: 'Outfit',
-                                                  color: Colors.white,
-                                                  fontSize: 14,
-                                                  fontWeight: FontWeight.w600,
-                                                ),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ).animateOnPageLoad(animationsMap[
-                                    'containerOnPageLoadAnimation1']!),
-                              ],
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(0, 0, 5, 0),
-                            child: Column(
-                              mainAxisSize: MainAxisSize.max,
-                              children: [
-                                Container(
-                                  width:
-                                      MediaQuery.of(context).size.width * 0.3,
-                                  height: 130,
-                                  decoration: BoxDecoration(
-                                    color: Color(0xFF018120),
-                                    borderRadius: BorderRadius.circular(24),
-                                  ),
-                                  child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        12, 12, 12, 12),
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: [
-                                        Icon(
-                                          Icons.car_repair,
-                                          color: Colors.white,
-                                          size: 44,
-                                        ),
-                                        Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0, 12, 0, 4),
-                                          child: Text(
-                                            'Manobra',
-                                            textAlign: TextAlign.center,
-                                            style: FlutterFlowTheme.of(context)
-                                                .title1
-                                                .override(
-                                                  fontFamily: 'Outfit',
-                                                  color: Colors.white,
-                                                  fontSize: 14,
-                                                  fontWeight: FontWeight.w600,
-                                                ),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ).animateOnPageLoad(animationsMap[
-                                    'containerOnPageLoadAnimation2']!),
-                              ],
-                            ),
-                          ),
-                          Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Container(
-                                width: MediaQuery.of(context).size.width * 0.3,
-                                height: 130,
-                                decoration: BoxDecoration(
-                                  color: Color(0xFF018120),
-                                  borderRadius: BorderRadius.circular(24),
-                                ),
-                                child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      12, 12, 12, 12),
-                                  child: Column(
-                                    mainAxisSize: MainAxisSize.max,
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      Icon(
-                                        Icons.build_outlined,
-                                        color: Colors.white,
-                                        size: 44,
-                                      ),
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 12, 0, 4),
-                                        child: Text(
-                                          'Manutenção',
-                                          textAlign: TextAlign.center,
-                                          style: FlutterFlowTheme.of(context)
-                                              .title1
-                                              .override(
-                                                fontFamily: 'Outfit',
-                                                color: Colors.white,
-                                                fontSize: 14,
-                                                fontWeight: FontWeight.w600,
-                                              ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ).animateOnPageLoad(animationsMap[
-                                  'containerOnPageLoadAnimation3']!),
-                            ],
-                          ),
-                        ],
                       ),
                       Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
@@ -635,7 +601,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                   Container(
                                     width:
                                         MediaQuery.of(context).size.width * 0.3,
-                                    height: 130,
+                                    height: 115,
                                     decoration: BoxDecoration(
                                       color: Color(0xFF1390FF),
                                       borderRadius: BorderRadius.circular(24),
@@ -689,7 +655,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                   Container(
                                     width:
                                         MediaQuery.of(context).size.width * 0.3,
-                                    height: 130,
+                                    height: 115,
                                     decoration: BoxDecoration(
                                       color: Color(0xFF1390FF),
                                       borderRadius: BorderRadius.circular(24),
@@ -740,7 +706,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                 Container(
                                   width:
                                       MediaQuery.of(context).size.width * 0.3,
-                                  height: 130,
+                                  height: 115,
                                   decoration: BoxDecoration(
                                     color: Color(0xFF1390FF),
                                     borderRadius: BorderRadius.circular(24),
@@ -800,7 +766,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                   Container(
                                     width:
                                         MediaQuery.of(context).size.width * 0.3,
-                                    height: 130,
+                                    height: 115,
                                     decoration: BoxDecoration(
                                       color: Color(0xFF1390FF),
                                       borderRadius: BorderRadius.circular(24),
@@ -854,7 +820,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                   Container(
                                     width:
                                         MediaQuery.of(context).size.width * 0.3,
-                                    height: 130,
+                                    height: 115,
                                     decoration: BoxDecoration(
                                       color: Color(0xFF1390FF),
                                       borderRadius: BorderRadius.circular(24),
@@ -905,7 +871,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                 Container(
                                   width:
                                       MediaQuery.of(context).size.width * 0.3,
-                                  height: 130,
+                                  height: 115,
                                   decoration: BoxDecoration(
                                     color: Color(0xFF1390FF),
                                     borderRadius: BorderRadius.circular(24),
@@ -965,7 +931,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                   Container(
                                     width:
                                         MediaQuery.of(context).size.width * 0.3,
-                                    height: 130,
+                                    height: 115,
                                     decoration: BoxDecoration(
                                       color: Color(0xFF1390FF),
                                       borderRadius: BorderRadius.circular(24),
@@ -1014,7 +980,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 20),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.end,

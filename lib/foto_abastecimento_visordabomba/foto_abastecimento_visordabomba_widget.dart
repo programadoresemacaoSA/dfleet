@@ -93,7 +93,7 @@ class _FotoAbastecimentoVisordabombaWidgetState
               padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
               child: Container(
                 width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height * 1,
+                height: MediaQuery.of(context).size.height * 0.85,
                 decoration: BoxDecoration(
                   color: Color(0xFF033F5D),
                   boxShadow: [
@@ -194,7 +194,7 @@ class _FotoAbastecimentoVisordabombaWidgetState
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 25, 0, 0),
+                      padding: EdgeInsetsDirectional.fromSTEB(0, 150, 0, 0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
