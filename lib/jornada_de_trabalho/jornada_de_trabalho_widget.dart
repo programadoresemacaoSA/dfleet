@@ -381,7 +381,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                                 EdgeInsetsDirectional.fromSTEB(
                                                     0, 12, 0, 4),
                                             child: Text(
-                                              'Inicio de viagem',
+                                              'INICIO JORNADA',
                                               textAlign: TextAlign.center,
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -414,7 +414,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                         MediaQuery.of(context).size.width * 0.3,
                                     height: 115,
                                     decoration: BoxDecoration(
-                                      color: Color(0xFF018120),
+                                      color: Color(0xFF1390FF),
                                       borderRadius: BorderRadius.circular(24),
                                     ),
                                     child: Padding(
@@ -435,7 +435,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                                 EdgeInsetsDirectional.fromSTEB(
                                                     0, 12, 0, 4),
                                             child: Text(
-                                              'Manobra',
+                                              'MANOBRA',
                                               textAlign: TextAlign.center,
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -465,7 +465,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                       MediaQuery.of(context).size.width * 0.3,
                                   height: 115,
                                   decoration: BoxDecoration(
-                                    color: Color(0xFF018120),
+                                    color: Color(0xFF7B22DA),
                                     borderRadius: BorderRadius.circular(24),
                                   ),
                                   child: Padding(
@@ -486,7 +486,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0, 12, 0, 4),
                                           child: Text(
-                                            'Parada',
+                                            'PARADA',
                                             textAlign: TextAlign.center,
                                             style: FlutterFlowTheme.of(context)
                                                 .title1
@@ -546,7 +546,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                                 EdgeInsetsDirectional.fromSTEB(
                                                     0, 12, 0, 4),
                                             child: Text(
-                                              'Carga',
+                                              'CARGA',
                                               textAlign: TextAlign.center,
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -600,7 +600,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                                 EdgeInsetsDirectional.fromSTEB(
                                                     0, 12, 0, 4),
                                             child: Text(
-                                              'Descarga',
+                                              'DESCARGA',
                                               textAlign: TextAlign.center,
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -651,7 +651,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0, 12, 0, 4),
                                           child: Text(
-                                            'Espera',
+                                            'ESPERA',
                                             textAlign: TextAlign.center,
                                             style: FlutterFlowTheme.of(context)
                                                 .title1
@@ -711,7 +711,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                                 EdgeInsetsDirectional.fromSTEB(
                                                     0, 12, 0, 4),
                                             child: Text(
-                                              'Abastecer',
+                                              'ABASTECER',
                                               textAlign: TextAlign.center,
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -744,7 +744,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                         MediaQuery.of(context).size.width * 0.3,
                                     height: 115,
                                     decoration: BoxDecoration(
-                                      color: Color(0xFF1390FF),
+                                      color: Color(0xFFFF9513),
                                       borderRadius: BorderRadius.circular(24),
                                     ),
                                     child: Padding(
@@ -765,7 +765,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                                 EdgeInsetsDirectional.fromSTEB(
                                                     0, 12, 0, 4),
                                             child: Text(
-                                              'Refeição',
+                                              'REFEIÇÃO',
                                               textAlign: TextAlign.center,
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -795,7 +795,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                       MediaQuery.of(context).size.width * 0.3,
                                   height: 115,
                                   decoration: BoxDecoration(
-                                    color: Color(0xFF1390FF),
+                                    color: Color(0xFFAFAFAF),
                                     borderRadius: BorderRadius.circular(24),
                                   ),
                                   child: Padding(
@@ -816,7 +816,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0, 12, 0, 4),
                                           child: Text(
-                                            'Dscanso',
+                                            'DESCANSO',
                                             textAlign: TextAlign.center,
                                             style: FlutterFlowTheme.of(context)
                                                 .title1
@@ -852,10 +852,10 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                 children: [
                                   Container(
                                     width:
-                                        MediaQuery.of(context).size.width * 0.3,
+                                        MediaQuery.of(context).size.width * 0.9,
                                     height: 115,
                                     decoration: BoxDecoration(
-                                      color: Color(0xFF1390FF),
+                                      color: Color(0xFFB10000),
                                       borderRadius: BorderRadius.circular(24),
                                     ),
                                     child: Padding(
@@ -876,7 +876,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                                 EdgeInsetsDirectional.fromSTEB(
                                                     0, 12, 0, 4),
                                             child: Text(
-                                              'Fim de jornada',
+                                              'FIM DE JORNADA',
                                               textAlign: TextAlign.center,
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -916,7 +916,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                 children: [
                                   Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        0, 20, 25, 0),
+                                        0, 10, 25, 0),
                                     child: FFButtonWidget(
                                       onPressed: () async {
                                         await Navigator.push(
