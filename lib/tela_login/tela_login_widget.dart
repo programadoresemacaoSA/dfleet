@@ -390,7 +390,7 @@ class _TelaLoginWidgetState extends State<TelaLoginWidget> {
                                       options: FFButtonOptions(
                                         width: 130,
                                         height: 40,
-                                        color: Color(0xFF242424),
+                                        color: Color(0xFF033F5D),
                                         textStyle: FlutterFlowTheme.of(context)
                                             .subtitle2
                                             .override(

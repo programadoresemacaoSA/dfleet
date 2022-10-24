@@ -31,7 +31,7 @@ class _InformacoesJornadaDeTrabalhoWidgetState
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16, 25, 16, 0),
+                padding: EdgeInsetsDirectional.fromSTEB(10, 25, 10, 0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -47,14 +47,14 @@ class _InformacoesJornadaDeTrabalhoWidgetState
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Text(
-                                'Informações\nJornada de trabalho',
+                                'Informações Jornada de trabalho',
                                 textAlign: TextAlign.center,
                                 style: FlutterFlowTheme.of(context)
                                     .title3
                                     .override(
                                       fontFamily: 'Lexend Deca',
                                       color: Colors.white,
-                                      fontSize: 20,
+                                      fontSize: 18,
                                       fontWeight: FontWeight.bold,
                                     ),
                               ),
@@ -448,11 +448,15 @@ class _InformacoesJornadaDeTrabalhoWidgetState
                                         ),
                                       );
                                     },
-                                    text: 'Sair',
+                                    text: 'Voltar',
+                                    icon: Icon(
+                                      Icons.arrow_back,
+                                      size: 15,
+                                    ),
                                     options: FFButtonOptions(
                                       width: 130,
                                       height: 40,
-                                      color: Color(0xFFAF0000),
+                                      color: Color(0xFF167AAF),
                                       textStyle: FlutterFlowTheme.of(context)
                                           .subtitle2
                                           .override(

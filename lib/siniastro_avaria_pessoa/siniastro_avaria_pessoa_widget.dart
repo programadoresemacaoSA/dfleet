@@ -1496,11 +1496,15 @@ class _SiniastroAvariaPessoaWidgetState
                                                       ),
                                                     );
                                                   },
-                                                  text: 'Sair',
+                                                  text: 'Voltar',
+                                                  icon: Icon(
+                                                    Icons.arrow_back,
+                                                    size: 15,
+                                                  ),
                                                   options: FFButtonOptions(
                                                     width: double.infinity,
                                                     height: 40,
-                                                    color: Color(0xFFAF0000),
+                                                    color: Color(0xFF167AAF),
                                                     textStyle: FlutterFlowTheme
                                                             .of(context)
                                                         .subtitle2

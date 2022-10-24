@@ -252,13 +252,13 @@ class _FotoAbastecimentoVisordabombaWidgetState
                                   },
                                   text: 'Sair',
                                   icon: Icon(
-                                    Icons.exit_to_app_rounded,
+                                    Icons.arrow_back,
                                     size: 15,
                                   ),
                                   options: FFButtonOptions(
                                     width: 130,
                                     height: 40,
-                                    color: Color(0xFFAF0000),
+                                    color: Color(0xFF167AAF),
                                     textStyle: FlutterFlowTheme.of(context)
                                         .subtitle2
                                         .override(

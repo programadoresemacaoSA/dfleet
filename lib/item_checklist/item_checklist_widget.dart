@@ -108,7 +108,8 @@ class _ItemChecklistWidgetState extends State<ItemChecklistWidget>
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     16, 8, 16, 12),
                                 child: Container(
-                                  width: double.infinity,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.9,
                                   decoration: BoxDecoration(
                                     color: Colors.white,
                                     boxShadow: [
@@ -226,9 +227,9 @@ class _ItemChecklistWidgetState extends State<ItemChecklistWidget>
                                 },
                                 child: Container(
                                   width:
-                                      MediaQuery.of(context).size.width * 0.4,
+                                      MediaQuery.of(context).size.width * 0.38,
                                   height:
-                                      MediaQuery.of(context).size.height * 0.16,
+                                      MediaQuery.of(context).size.height * 0.13,
                                   decoration: BoxDecoration(
                                     color: Color(0xFFF1F4F8),
                                     borderRadius: BorderRadius.circular(24),
@@ -244,12 +245,12 @@ class _ItemChecklistWidgetState extends State<ItemChecklistWidget>
                                         Icon(
                                           Icons.drive_file_move,
                                           color: Color(0xFF033F5D),
-                                          size: 44,
+                                          size: 35,
                                         ),
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0, 12, 0, 4),
+                                                  0, 5, 0, 4),
                                           child: Text(
                                             'Documentos',
                                             textAlign: TextAlign.center,
@@ -258,7 +259,7 @@ class _ItemChecklistWidgetState extends State<ItemChecklistWidget>
                                                 .override(
                                                   fontFamily: 'Outfit',
                                                   color: Color(0xFF033F5D),
-                                                  fontSize: 20,
+                                                  fontSize: 16,
                                                   fontWeight: FontWeight.w600,
                                                 ),
                                           ),
@@ -286,9 +287,9 @@ class _ItemChecklistWidgetState extends State<ItemChecklistWidget>
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Container(
-                                width: MediaQuery.of(context).size.width * 0.4,
+                                width: MediaQuery.of(context).size.width * 0.38,
                                 height:
-                                    MediaQuery.of(context).size.height * 0.16,
+                                    MediaQuery.of(context).size.height * 0.13,
                                 decoration: BoxDecoration(
                                   color: Color(0xFFF1F4F8),
                                   borderRadius: BorderRadius.circular(24),
@@ -303,11 +304,11 @@ class _ItemChecklistWidgetState extends State<ItemChecklistWidget>
                                       Icon(
                                         Icons.electric_car_sharp,
                                         color: Color(0xFF033F5D),
-                                        size: 44,
+                                        size: 35,
                                       ),
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
-                                            0, 12, 0, 4),
+                                            0, 5, 0, 4),
                                         child: Text(
                                           'Eletrica',
                                           textAlign: TextAlign.center,
@@ -316,7 +317,7 @@ class _ItemChecklistWidgetState extends State<ItemChecklistWidget>
                                               .override(
                                                 fontFamily: 'Outfit',
                                                 color: Color(0xFF033F5D),
-                                                fontSize: 20,
+                                                fontSize: 16,
                                                 fontWeight: FontWeight.w600,
                                               ),
                                         ),
@@ -352,9 +353,9 @@ class _ItemChecklistWidgetState extends State<ItemChecklistWidget>
                               children: [
                                 Container(
                                   width:
-                                      MediaQuery.of(context).size.width * 0.4,
+                                      MediaQuery.of(context).size.width * 0.38,
                                   height:
-                                      MediaQuery.of(context).size.height * 0.16,
+                                      MediaQuery.of(context).size.height * 0.13,
                                   decoration: BoxDecoration(
                                     color: Color(0xFFF1F4F8),
                                     borderRadius: BorderRadius.circular(24),
@@ -370,12 +371,12 @@ class _ItemChecklistWidgetState extends State<ItemChecklistWidget>
                                         Icon(
                                           Icons.insert_link,
                                           color: Color(0xFF033F5D),
-                                          size: 44,
+                                          size: 35,
                                         ),
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0, 12, 0, 4),
+                                                  0, 5, 0, 4),
                                           child: Text(
                                             'Instrumentos',
                                             textAlign: TextAlign.center,
@@ -384,7 +385,7 @@ class _ItemChecklistWidgetState extends State<ItemChecklistWidget>
                                                 .override(
                                                   fontFamily: 'Outfit',
                                                   color: Color(0xFF033F5D),
-                                                  fontSize: 20,
+                                                  fontSize: 16,
                                                   fontWeight: FontWeight.w600,
                                                 ),
                                           ),
@@ -412,9 +413,9 @@ class _ItemChecklistWidgetState extends State<ItemChecklistWidget>
                               children: [
                                 Container(
                                   width:
-                                      MediaQuery.of(context).size.width * 0.4,
+                                      MediaQuery.of(context).size.width * 0.38,
                                   height:
-                                      MediaQuery.of(context).size.height * 0.16,
+                                      MediaQuery.of(context).size.height * 0.13,
                                   decoration: BoxDecoration(
                                     color: Color(0xFFF1F4F8),
                                     borderRadius: BorderRadius.circular(24),
@@ -430,12 +431,12 @@ class _ItemChecklistWidgetState extends State<ItemChecklistWidget>
                                         Icon(
                                           Icons.cleaning_services,
                                           color: Color(0xFF033F5D),
-                                          size: 44,
+                                          size: 35,
                                         ),
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0, 12, 0, 4),
+                                                  0, 5, 0, 4),
                                           child: Text(
                                             'Limpeza',
                                             textAlign: TextAlign.center,
@@ -444,7 +445,7 @@ class _ItemChecklistWidgetState extends State<ItemChecklistWidget>
                                                 .override(
                                                   fontFamily: 'Outfit',
                                                   color: Color(0xFF033F5D),
-                                                  fontSize: 20,
+                                                  fontSize: 16,
                                                   fontWeight: FontWeight.w600,
                                                 ),
                                           ),
@@ -481,9 +482,9 @@ class _ItemChecklistWidgetState extends State<ItemChecklistWidget>
                               children: [
                                 Container(
                                   width:
-                                      MediaQuery.of(context).size.width * 0.4,
+                                      MediaQuery.of(context).size.width * 0.38,
                                   height:
-                                      MediaQuery.of(context).size.height * 0.16,
+                                      MediaQuery.of(context).size.height * 0.13,
                                   decoration: BoxDecoration(
                                     color: Color(0xFFF1F4F8),
                                     borderRadius: BorderRadius.circular(24),
@@ -499,7 +500,7 @@ class _ItemChecklistWidgetState extends State<ItemChecklistWidget>
                                         Icon(
                                           Icons.settings,
                                           color: Color(0xFF033F5D),
-                                          size: 44,
+                                          size: 35,
                                         ),
                                         Padding(
                                           padding:
@@ -513,7 +514,7 @@ class _ItemChecklistWidgetState extends State<ItemChecklistWidget>
                                                 .override(
                                                   fontFamily: 'Outfit',
                                                   color: Color(0xFF033F5D),
-                                                  fontSize: 20,
+                                                  fontSize: 16,
                                                   fontWeight: FontWeight.w600,
                                                 ),
                                           ),
@@ -541,9 +542,9 @@ class _ItemChecklistWidgetState extends State<ItemChecklistWidget>
                               children: [
                                 Container(
                                   width:
-                                      MediaQuery.of(context).size.width * 0.4,
+                                      MediaQuery.of(context).size.width * 0.38,
                                   height:
-                                      MediaQuery.of(context).size.height * 0.16,
+                                      MediaQuery.of(context).size.height * 0.13,
                                   decoration: BoxDecoration(
                                     color: Color(0xFFF1F4F8),
                                     borderRadius: BorderRadius.circular(24),
@@ -559,7 +560,7 @@ class _ItemChecklistWidgetState extends State<ItemChecklistWidget>
                                         Icon(
                                           Icons.security,
                                           color: Color(0xFF033F5D),
-                                          size: 44,
+                                          size: 35,
                                         ),
                                         Padding(
                                           padding:
@@ -573,7 +574,7 @@ class _ItemChecklistWidgetState extends State<ItemChecklistWidget>
                                                 .override(
                                                   fontFamily: 'Outfit',
                                                   color: Color(0xFF033F5D),
-                                                  fontSize: 20,
+                                                  fontSize: 16,
                                                   fontWeight: FontWeight.w600,
                                                 ),
                                           ),
@@ -613,10 +614,11 @@ class _ItemChecklistWidgetState extends State<ItemChecklistWidget>
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         25, 0, 25, 0),
                                     child: Container(
-                                      width: MediaQuery.of(context).size.width,
+                                      width: MediaQuery.of(context).size.width *
+                                          0.9,
                                       height:
                                           MediaQuery.of(context).size.height *
-                                              0.16,
+                                              0.15,
                                       decoration: BoxDecoration(
                                         color: Color(0xFFF1F4F8),
                                         borderRadius: BorderRadius.circular(24),
@@ -632,11 +634,11 @@ class _ItemChecklistWidgetState extends State<ItemChecklistWidget>
                                             Icon(
                                               Icons.threed_rotation,
                                               color: Color(0xFF033F5D),
-                                              size: 44,
+                                              size: 35,
                                             ),
                                             Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(0, 12, 0, 4),
+                                                  .fromSTEB(0, 5, 0, 4),
                                               child: Text(
                                                 'Visual',
                                                 textAlign: TextAlign.center,
@@ -647,7 +649,7 @@ class _ItemChecklistWidgetState extends State<ItemChecklistWidget>
                                                           fontFamily: 'Outfit',
                                                           color:
                                                               Color(0xFF033F5D),
-                                                          fontSize: 20,
+                                                          fontSize: 16,
                                                           fontWeight:
                                                               FontWeight.w600,
                                                         ),
@@ -704,15 +706,15 @@ class _ItemChecklistWidgetState extends State<ItemChecklistWidget>
                                             ),
                                           );
                                         },
-                                        text: 'Sair',
+                                        text: 'Voltar',
                                         icon: Icon(
-                                          Icons.exit_to_app_rounded,
+                                          Icons.arrow_back,
                                           size: 15,
                                         ),
                                         options: FFButtonOptions(
                                           width: 130,
                                           height: 40,
-                                          color: Color(0xFFAF0000),
+                                          color: Color(0xFF167AAF),
                                           textStyle:
                                               FlutterFlowTheme.of(context)
                                                   .subtitle2

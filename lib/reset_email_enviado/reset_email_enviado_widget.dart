@@ -114,38 +114,43 @@ class _ResetEmailEnviadoWidgetState extends State<ResetEmailEnviadoWidget>
                                     Column(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
-                                        FFButtonWidget(
-                                          onPressed: () async {
-                                            await Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                builder: (context) =>
-                                                    TelaLoginWidget(),
-                                              ),
-                                            );
-                                          },
-                                          text: 'Voltar ao login',
-                                          icon: Icon(
-                                            Icons.arrow_back,
-                                            size: 15,
-                                          ),
-                                          options: FFButtonOptions(
-                                            width: 220,
-                                            height: 40,
-                                            color: Color(0xFF033F5D),
-                                            textStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .subtitle2
-                                                    .override(
-                                                      fontFamily: 'Poppins',
-                                                      color: Colors.white,
-                                                    ),
-                                            borderSide: BorderSide(
-                                              color: Colors.transparent,
-                                              width: 1,
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0, 25, 0, 0),
+                                          child: FFButtonWidget(
+                                            onPressed: () async {
+                                              await Navigator.push(
+                                                context,
+                                                MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      TelaLoginWidget(),
+                                                ),
+                                              );
+                                            },
+                                            text: 'Voltar ao login',
+                                            icon: Icon(
+                                              Icons.arrow_back,
+                                              size: 15,
                                             ),
-                                            borderRadius:
-                                                BorderRadius.circular(25),
+                                            options: FFButtonOptions(
+                                              width: 220,
+                                              height: 40,
+                                              color: Color(0xFF167AAF),
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Poppins',
+                                                        color: Colors.white,
+                                                      ),
+                                              borderSide: BorderSide(
+                                                color: Colors.transparent,
+                                                width: 1,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(25),
+                                            ),
                                           ),
                                         ),
                                       ],

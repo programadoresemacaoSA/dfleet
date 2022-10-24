@@ -147,7 +147,7 @@ class _NotificacaoDetalhesWidgetState extends State<NotificacaoDetalhesWidget>
                                             options: FFButtonOptions(
                                               width: 240,
                                               height: 40,
-                                              color: Color(0xFF033F5D),
+                                              color: Color(0xFF167AAF),
                                               textStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .subtitle2

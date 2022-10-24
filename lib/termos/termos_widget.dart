@@ -399,11 +399,11 @@ class _TermosWidgetState extends State<TermosWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 220, 0, 0),
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 190, 0, 0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.end,
-                            crossAxisAlignment: CrossAxisAlignment.end,
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Expanded(
                                 child: SingleChildScrollView(
@@ -425,15 +425,15 @@ class _TermosWidgetState extends State<TermosWidget> {
                                               ),
                                             );
                                           },
-                                          text: 'Sair',
+                                          text: 'Voltar',
                                           icon: Icon(
-                                            Icons.exit_to_app_rounded,
+                                            Icons.arrow_back,
                                             size: 15,
                                           ),
                                           options: FFButtonOptions(
                                             width: 130,
                                             height: 40,
-                                            color: Color(0xFFAF0000),
+                                            color: Color(0xFF167AAF),
                                             textStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .subtitle2

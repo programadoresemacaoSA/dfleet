@@ -1422,73 +1422,123 @@ class _SiniastroAvariaWidgetState extends State<SiniastroAvariaWidget> {
                                   mainAxisSize: MainAxisSize.max,
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Expanded(
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            10, 0, 0, 0),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          10, 0, 0, 0),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        children: [
+                                          FFButtonWidget(
+                                            onPressed: () {
+                                              print('Button pressed ...');
+                                            },
+                                            text: 'Salvar',
+                                            options: FFButtonOptions(
+                                              width: 80,
+                                              height: 40,
+                                              color: Color(0xFF018120),
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .subtitle2
+                                                      .override(
+                                                        fontFamily: 'Poppins',
+                                                        color: Colors.white,
+                                                      ),
+                                              borderSide: BorderSide(
+                                                color: Colors.transparent,
+                                                width: 1,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(8),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          5, 0, 8, 0),
+                                      child: SingleChildScrollView(
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
                                           children: [
-                                            FFButtonWidget(
-                                              onPressed: () {
-                                                print('Button pressed ...');
-                                              },
-                                              text: 'Salvar',
-                                              options: FFButtonOptions(
-                                                width: double.infinity,
-                                                height: 40,
-                                                color: Color(0xFF018120),
-                                                textStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .subtitle2
-                                                        .override(
-                                                          fontFamily: 'Poppins',
-                                                          color: Colors.white,
-                                                        ),
-                                                borderSide: BorderSide(
-                                                  color: Colors.transparent,
-                                                  width: 1,
-                                                ),
-                                                borderRadius:
-                                                    BorderRadius.circular(8),
+                                            FlutterFlowIconButton(
+                                              borderColor: Colors.transparent,
+                                              borderRadius: 30,
+                                              borderWidth: 1,
+                                              buttonSize: 50,
+                                              icon: Icon(
+                                                Icons.person_add_rounded,
+                                                color: Color(0xFFF8F8F8),
+                                                size: 30,
                                               ),
+                                              onPressed: () async {
+                                                await Navigator.push(
+                                                  context,
+                                                  MaterialPageRoute(
+                                                    builder: (context) =>
+                                                        SiniastroAvariaPessoaWidget(),
+                                                  ),
+                                                );
+                                              },
+                                            ),
+                                            Text(
+                                              'P. Envolvida',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Poppins',
+                                                        color:
+                                                            Color(0xFFF8F8F8),
+                                                        fontSize: 12,
+                                                      ),
                                             ),
                                           ],
                                         ),
                                       ),
                                     ),
-                                    Expanded(
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            5, 0, 0, 0),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          5, 0, 5, 0),
+                                      child: InkWell(
+                                        onTap: () async {
+                                          await Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                              builder: (context) =>
+                                                  SiniastroAvariaVeiculoTerceiroWidget(),
+                                            ),
+                                          );
+                                        },
                                         child: SingleChildScrollView(
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.center,
                                             children: [
                                               FlutterFlowIconButton(
                                                 borderColor: Colors.transparent,
                                                 borderRadius: 30,
                                                 borderWidth: 1,
-                                                buttonSize: 60,
+                                                buttonSize: 50,
                                                 icon: Icon(
-                                                  Icons.person_add_rounded,
+                                                  Icons.electric_car_sharp,
                                                   color: Color(0xFFF8F8F8),
-                                                  size: 40,
+                                                  size: 30,
                                                 ),
                                                 onPressed: () async {
                                                   await Navigator.push(
                                                     context,
                                                     MaterialPageRoute(
                                                       builder: (context) =>
-                                                          SiniastroAvariaPessoaWidget(),
+                                                          SiniastroAvariaVeiculoTerceiroWidget(),
                                                     ),
                                                   );
                                                 },
                                               ),
                                               Text(
-                                                'P. Envolvida',
+                                                'V. Envolvido',
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyText1
@@ -1500,63 +1550,6 @@ class _SiniastroAvariaWidgetState extends State<SiniastroAvariaWidget> {
                                                         ),
                                               ),
                                             ],
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    Expanded(
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            2, 0, 5, 0),
-                                        child: InkWell(
-                                          onTap: () async {
-                                            await Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                builder: (context) =>
-                                                    SiniastroAvariaVeiculoTerceiroWidget(),
-                                              ),
-                                            );
-                                          },
-                                          child: SingleChildScrollView(
-                                            child: Column(
-                                              mainAxisSize: MainAxisSize.max,
-                                              children: [
-                                                FlutterFlowIconButton(
-                                                  borderColor:
-                                                      Colors.transparent,
-                                                  borderRadius: 30,
-                                                  borderWidth: 1,
-                                                  buttonSize: 60,
-                                                  icon: Icon(
-                                                    Icons.electric_car_sharp,
-                                                    color: Color(0xFFF8F8F8),
-                                                    size: 40,
-                                                  ),
-                                                  onPressed: () async {
-                                                    await Navigator.push(
-                                                      context,
-                                                      MaterialPageRoute(
-                                                        builder: (context) =>
-                                                            SiniastroAvariaVeiculoTerceiroWidget(),
-                                                      ),
-                                                    );
-                                                  },
-                                                ),
-                                                Text(
-                                                  'V. Envolvido',
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        color:
-                                                            Color(0xFFF8F8F8),
-                                                        fontSize: 12,
-                                                      ),
-                                                ),
-                                              ],
-                                            ),
                                           ),
                                         ),
                                       ),
@@ -1583,17 +1576,22 @@ class _SiniastroAvariaWidgetState extends State<SiniastroAvariaWidget> {
                                                   ),
                                                 );
                                               },
-                                              text: 'Sair',
+                                              text: 'Voltar',
+                                              icon: Icon(
+                                                Icons.arrow_back,
+                                                size: 15,
+                                              ),
                                               options: FFButtonOptions(
                                                 width: double.infinity,
                                                 height: 40,
-                                                color: Color(0xFFAF0000),
+                                                color: Color(0xFF167AAF),
                                                 textStyle:
                                                     FlutterFlowTheme.of(context)
                                                         .subtitle2
                                                         .override(
                                                           fontFamily: 'Poppins',
                                                           color: Colors.white,
+                                                          fontSize: 14,
                                                         ),
                                                 borderSide: BorderSide(
                                                   color: Colors.transparent,

@@ -196,83 +196,101 @@ class _ResetDeSenhaWidgetState extends State<ResetDeSenhaWidget> {
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              FFButtonWidget(
-                                onPressed: () async {
-                                  await Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) =>
-                                          ResetEmailEnviadoWidget(),
-                                    ),
-                                  );
-                                },
-                                text: 'Enviar',
-                                options: FFButtonOptions(
-                                  width: 320,
-                                  height: 50,
-                                  color: Color(0xFF242424),
-                                  textStyle: FlutterFlowTheme.of(context)
-                                      .subtitle2
-                                      .override(
-                                        fontFamily: 'Outfit',
-                                        color: Colors.white,
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.w500,
+                              Expanded(
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0, 8, 10, 44),
+                                      child: FFButtonWidget(
+                                        onPressed: () async {
+                                          await Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                              builder: (context) =>
+                                                  ResetEmailEnviadoWidget(),
+                                            ),
+                                          );
+                                        },
+                                        text: 'Enviar',
+                                        options: FFButtonOptions(
+                                          width: 150,
+                                          height: 40,
+                                          color: Color(0xFF033F5D),
+                                          textStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .subtitle2
+                                                  .override(
+                                                    fontFamily: 'Outfit',
+                                                    color: Colors.white,
+                                                    fontSize: 18,
+                                                    fontWeight: FontWeight.w500,
+                                                  ),
+                                          elevation: 2,
+                                          borderSide: BorderSide(
+                                            color: Color(0xFF167AAF),
+                                            width: 1,
+                                          ),
+                                        ),
                                       ),
-                                  elevation: 2,
-                                  borderSide: BorderSide(
-                                    color: Colors.transparent,
-                                    width: 1,
-                                  ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          10, 8, 0, 44),
+                                      child: FFButtonWidget(
+                                        onPressed: () async {
+                                          await Navigator.push(
+                                            context,
+                                            PageTransition(
+                                              type: PageTransitionType
+                                                  .topToBottom,
+                                              duration:
+                                                  Duration(milliseconds: 5),
+                                              reverseDuration:
+                                                  Duration(milliseconds: 5),
+                                              child: TelaLoginWidget(),
+                                            ),
+                                          );
+                                        },
+                                        text: 'Sair',
+                                        icon: Icon(
+                                          Icons.arrow_back,
+                                          size: 15,
+                                        ),
+                                        options: FFButtonOptions(
+                                          width: double.infinity,
+                                          height: 40,
+                                          color: Color(0xFFB10000),
+                                          textStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .subtitle2
+                                                  .override(
+                                                    fontFamily: 'Lexend Deca',
+                                                    color: Colors.white,
+                                                    fontSize: 16,
+                                                    fontWeight: FontWeight.w500,
+                                                  ),
+                                          elevation: 0,
+                                          borderSide: BorderSide(
+                                            color: Colors.transparent,
+                                            width: 1,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               ),
                             ],
-                          ),
-                        ),
-                        Divider(
-                          height: 2,
-                          thickness: 2,
-                          indent: 20,
-                          endIndent: 20,
-                          color: Color(0xFFE0E3E7),
-                        ),
-                        Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 44),
-                          child: FFButtonWidget(
-                            onPressed: () async {
-                              await Navigator.push(
-                                context,
-                                PageTransition(
-                                  type: PageTransitionType.topToBottom,
-                                  duration: Duration(milliseconds: 5),
-                                  reverseDuration: Duration(milliseconds: 5),
-                                  child: TelaLoginWidget(),
-                                ),
-                              );
-                            },
-                            text: 'Voltar a tela de login',
-                            icon: Icon(
-                              Icons.arrow_back,
-                              size: 15,
-                            ),
-                            options: FFButtonOptions(
-                              width: 230,
-                              height: 40,
-                              color: Color(0xFF018120),
-                              textStyle: FlutterFlowTheme.of(context)
-                                  .subtitle2
-                                  .override(
-                                    fontFamily: 'Lexend Deca',
-                                    color: Colors.white,
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                              elevation: 0,
-                              borderSide: BorderSide(
-                                color: Colors.transparent,
-                                width: 1,
-                              ),
-                            ),
                           ),
                         ),
                       ],

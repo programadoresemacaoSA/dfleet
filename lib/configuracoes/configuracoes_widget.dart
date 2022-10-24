@@ -71,37 +71,37 @@ class _ConfiguracoesWidgetState extends State<ConfiguracoesWidget> {
             ),
             Padding(
               padding: EdgeInsetsDirectional.fromSTEB(12, 12, 12, 0),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(12),
-                child: SwitchListTile.adaptive(
-                  value: switchListTileValue1 ??= true,
-                  onChanged: (newValue) =>
-                      setState(() => switchListTileValue1 = newValue),
-                  title: Text(
-                    'Mostrar número da frota ao insvés da placa',
-                    style: FlutterFlowTheme.of(context).title3.override(
-                          fontFamily: 'Lexend Deca',
-                          color: Color(0xFF033F5D),
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                        ),
-                  ),
-                  subtitle: Text(
-                    'Pressione ao lado para habilitar',
-                    style: FlutterFlowTheme.of(context).bodyText2.override(
-                          fontFamily: 'Lexend Deca',
-                          color: Color(0xFF95A1AC),
-                          fontSize: 14,
-                          fontWeight: FontWeight.normal,
-                        ),
-                  ),
-                  tileColor: Colors.white,
-                  activeColor: Color(0xFF018120),
-                  activeTrackColor: Color(0x8ADBDBDB),
-                  dense: false,
-                  controlAffinity: ListTileControlAffinity.trailing,
-                  contentPadding:
-                      EdgeInsetsDirectional.fromSTEB(24, 12, 24, 12),
+              child: SwitchListTile.adaptive(
+                value: switchListTileValue1 ??= true,
+                onChanged: (newValue) async {
+                  setState(() => switchListTileValue1 = newValue!);
+                },
+                title: Text(
+                  'Mostrar número da frota ao insvés da placa',
+                  style: FlutterFlowTheme.of(context).title3.override(
+                        fontFamily: 'Lexend Deca',
+                        color: Color(0xFF033F5D),
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                ),
+                subtitle: Text(
+                  'Pressione ao lado para habilitar',
+                  style: FlutterFlowTheme.of(context).bodyText2.override(
+                        fontFamily: 'Lexend Deca',
+                        color: Color(0xFF95A1AC),
+                        fontSize: 14,
+                        fontWeight: FontWeight.normal,
+                      ),
+                ),
+                tileColor: Colors.white,
+                activeColor: Color(0xFF018120),
+                activeTrackColor: Color(0x8ADBDBDB),
+                dense: false,
+                controlAffinity: ListTileControlAffinity.trailing,
+                contentPadding: EdgeInsetsDirectional.fromSTEB(24, 12, 24, 12),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
                 ),
               ),
             ),
@@ -109,8 +109,9 @@ class _ConfiguracoesWidgetState extends State<ConfiguracoesWidget> {
               padding: EdgeInsetsDirectional.fromSTEB(12, 0, 12, 0),
               child: SwitchListTile.adaptive(
                 value: switchListTileValue2 ??= false,
-                onChanged: (newValue) =>
-                    setState(() => switchListTileValue2 = newValue),
+                onChanged: (newValue) async {
+                  setState(() => switchListTileValue2 = newValue!);
+                },
                 title: Text(
                   'Limpeza automatica a cada 30 dias',
                   style: FlutterFlowTheme.of(context).title3.override(
@@ -141,8 +142,9 @@ class _ConfiguracoesWidgetState extends State<ConfiguracoesWidget> {
               padding: EdgeInsetsDirectional.fromSTEB(12, 0, 12, 0),
               child: SwitchListTile.adaptive(
                 value: switchListTileValue3 ??= false,
-                onChanged: (newValue) =>
-                    setState(() => switchListTileValue3 = newValue),
+                onChanged: (newValue) async {
+                  setState(() => switchListTileValue3 = newValue!);
+                },
                 title: Text(
                   'Usar teclado numérico de fogo',
                   style: FlutterFlowTheme.of(context).title3.override(
@@ -173,8 +175,9 @@ class _ConfiguracoesWidgetState extends State<ConfiguracoesWidget> {
               padding: EdgeInsetsDirectional.fromSTEB(12, 0, 12, 0),
               child: SwitchListTile.adaptive(
                 value: switchListTileValue4 ??= true,
-                onChanged: (newValue) =>
-                    setState(() => switchListTileValue4 = newValue),
+                onChanged: (newValue) async {
+                  setState(() => switchListTileValue4 = newValue!);
+                },
                 title: Text(
                   'Usar teclado numérico para pesquisar frota',
                   style: FlutterFlowTheme.of(context).title3.override(
@@ -205,8 +208,9 @@ class _ConfiguracoesWidgetState extends State<ConfiguracoesWidget> {
               padding: EdgeInsetsDirectional.fromSTEB(12, 0, 12, 0),
               child: SwitchListTile.adaptive(
                 value: switchListTileValue5 ??= false,
-                onChanged: (newValue) =>
-                    setState(() => switchListTileValue5 = newValue),
+                onChanged: (newValue) async {
+                  setState(() => switchListTileValue5 = newValue!);
+                },
                 title: Text(
                   'Conexão de dados Online',
                   style: FlutterFlowTheme.of(context).title3.override(
@@ -237,8 +241,9 @@ class _ConfiguracoesWidgetState extends State<ConfiguracoesWidget> {
               padding: EdgeInsetsDirectional.fromSTEB(12, 0, 12, 0),
               child: SwitchListTile.adaptive(
                 value: switchListTileValue6 ??= true,
-                onChanged: (newValue) =>
-                    setState(() => switchListTileValue6 = newValue),
+                onChanged: (newValue) async {
+                  setState(() => switchListTileValue6 = newValue!);
+                },
                 title: Text(
                   'Usar camera',
                   style: FlutterFlowTheme.of(context).title3.override(
@@ -269,8 +274,9 @@ class _ConfiguracoesWidgetState extends State<ConfiguracoesWidget> {
               padding: EdgeInsetsDirectional.fromSTEB(12, 0, 12, 0),
               child: SwitchListTile.adaptive(
                 value: switchListTileValue7 ??= true,
-                onChanged: (newValue) =>
-                    setState(() => switchListTileValue7 = newValue),
+                onChanged: (newValue) async {
+                  setState(() => switchListTileValue7 = newValue!);
+                },
                 title: Text(
                   'Localização',
                   style: FlutterFlowTheme.of(context).title3.override(

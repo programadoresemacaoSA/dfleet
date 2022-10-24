@@ -781,13 +781,13 @@ class _HomeappWidgetState extends State<HomeappWidget> {
                                 },
                                 text: 'Sair',
                                 icon: Icon(
-                                  Icons.exit_to_app,
+                                  Icons.arrow_back,
                                   size: 15,
                                 ),
                                 options: FFButtonOptions(
                                   width: 150,
                                   height: 40,
-                                  color: Color(0xFFAF0000),
+                                  color: Color(0xFF167AAF),
                                   textStyle: FlutterFlowTheme.of(context)
                                       .subtitle2
                                       .override(
