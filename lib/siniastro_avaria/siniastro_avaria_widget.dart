@@ -285,7 +285,7 @@ class _SiniastroAvariaWidgetState extends State<SiniastroAvariaWidget> {
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  10, 10, 0, 0),
+                                                  0, 10, 0, 0),
                                           child: Text(
                                             'Horário',
                                             style: FlutterFlowTheme.of(context)
@@ -402,12 +402,12 @@ class _SiniastroAvariaWidgetState extends State<SiniastroAvariaWidget> {
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
                                       crossAxisAlignment:
-                                          CrossAxisAlignment.center,
+                                          CrossAxisAlignment.start,
                                       children: [
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0, 10, 0, 0),
+                                                  8, 10, 0, 0),
                                           child: Text(
                                             'Tipo de acidente',
                                             style: FlutterFlowTheme.of(context)
@@ -460,7 +460,7 @@ class _SiniastroAvariaWidgetState extends State<SiniastroAvariaWidget> {
                                       mainAxisAlignment:
                                           MainAxisAlignment.start,
                                       crossAxisAlignment:
-                                          CrossAxisAlignment.center,
+                                          CrossAxisAlignment.start,
                                       children: [
                                         Padding(
                                           padding:
@@ -860,11 +860,13 @@ class _SiniastroAvariaWidgetState extends State<SiniastroAvariaWidget> {
                                     Expanded(
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    20, 0, 0, 0),
+                                                    8, 0, 0, 0),
                                             child: Text(
                                               'Responsabilidade',
                                               style:
@@ -913,21 +915,17 @@ class _SiniastroAvariaWidgetState extends State<SiniastroAvariaWidget> {
                                     Expanded(
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
-                                          Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    50, 0, 0, 0),
-                                            child: Text(
-                                              'Tipo de avaria',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        color: Colors.white,
-                                                      ),
-                                            ),
+                                          Text(
+                                            'Tipo de avaria',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyText1
+                                                .override(
+                                                  fontFamily: 'Poppins',
+                                                  color: Colors.white,
+                                                ),
                                           ),
                                           Padding(
                                             padding:
@@ -975,11 +973,13 @@ class _SiniastroAvariaWidgetState extends State<SiniastroAvariaWidget> {
                                     Expanded(
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    20, 0, 0, 0),
+                                                    8, 0, 0, 0),
                                             child: Text(
                                               'Tipo de pista',
                                               style:
@@ -1028,21 +1028,17 @@ class _SiniastroAvariaWidgetState extends State<SiniastroAvariaWidget> {
                                     Expanded(
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
-                                          Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    50, 0, 0, 0),
-                                            child: Text(
-                                              'Dia da semana',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        color: Colors.white,
-                                                      ),
-                                            ),
+                                          Text(
+                                            'Dia da semana',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyText1
+                                                .override(
+                                                  fontFamily: 'Poppins',
+                                                  color: Colors.white,
+                                                ),
                                           ),
                                           Padding(
                                             padding:
@@ -1090,11 +1086,13 @@ class _SiniastroAvariaWidgetState extends State<SiniastroAvariaWidget> {
                                     Expanded(
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    20, 0, 0, 0),
+                                                    8, 0, 0, 0),
                                             child: Text(
                                               'Situação do veiculo',
                                               style:
@@ -1146,21 +1144,15 @@ class _SiniastroAvariaWidgetState extends State<SiniastroAvariaWidget> {
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
                                         children: [
-                                          Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    20, 0, 0, 0),
-                                            child: Text(
-                                              'Situação da pessoa',
-                                              textAlign: TextAlign.start,
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        color: Colors.white,
-                                                      ),
-                                            ),
+                                          Text(
+                                            'Situação da pessoa',
+                                            textAlign: TextAlign.start,
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyText1
+                                                .override(
+                                                  fontFamily: 'Poppins',
+                                                  color: Colors.white,
+                                                ),
                                           ),
                                           Padding(
                                             padding:
@@ -1208,11 +1200,13 @@ class _SiniastroAvariaWidgetState extends State<SiniastroAvariaWidget> {
                                     Expanded(
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    20, 0, 0, 0),
+                                                    10, 0, 0, 0),
                                             child: Text(
                                               'Tipo de causa do acidente',
                                               style:
@@ -1271,10 +1265,12 @@ class _SiniastroAvariaWidgetState extends State<SiniastroAvariaWidget> {
                                       child: SingleChildScrollView(
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
                                           children: [
                                             Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(20, 0, 0, 0),
+                                                  .fromSTEB(8, 0, 0, 0),
                                               child: Text(
                                                 'Observações:',
                                                 style:

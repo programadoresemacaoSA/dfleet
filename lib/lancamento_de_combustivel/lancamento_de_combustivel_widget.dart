@@ -203,6 +203,7 @@ class _LancamentoDeCombustivelWidgetState
                                 EdgeInsetsDirectional.fromSTEB(15, 0, 0, 0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
                                   'Placa:',
@@ -690,11 +691,13 @@ class _LancamentoDeCombustivelWidgetState
                                     Expanded(
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    0, 10, 0, 0),
+                                                    3, 10, 0, 0),
                                             child: Text(
                                               'Forma de pagamento*',
                                               style:
@@ -753,17 +756,23 @@ class _LancamentoDeCombustivelWidgetState
                                       Expanded(
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
                                           children: [
-                                            Text(
-                                              'Tipo de combustivel*',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        color: Colors.white,
-                                                        fontSize: 12,
-                                                      ),
+                                            Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(8, 0, 0, 0),
+                                              child: Text(
+                                                'Tipo de combustivel*',
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText1
+                                                        .override(
+                                                          fontFamily: 'Poppins',
+                                                          color: Colors.white,
+                                                          fontSize: 12,
+                                                        ),
+                                              ),
                                             ),
                                             Padding(
                                               padding: EdgeInsetsDirectional
@@ -802,17 +811,23 @@ class _LancamentoDeCombustivelWidgetState
                                       Expanded(
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
                                           children: [
-                                            Text(
-                                              'Qtde. Litros',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        color: Colors.white,
-                                                        fontSize: 12,
-                                                      ),
+                                            Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(3, 0, 0, 0),
+                                              child: Text(
+                                                'Qtde. Litros',
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText1
+                                                        .override(
+                                                          fontFamily: 'Poppins',
+                                                          color: Colors.white,
+                                                          fontSize: 12,
+                                                        ),
+                                              ),
                                             ),
                                             Padding(
                                               padding: EdgeInsetsDirectional
@@ -942,165 +957,102 @@ class _LancamentoDeCombustivelWidgetState
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
-                                      Column(
-                                        mainAxisSize: MainAxisSize.max,
-                                        children: [
-                                          Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    20, 0, 0, 0),
-                                            child: Text(
-                                              'Valor do litro',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        color: Colors.white,
-                                                        fontSize: 12,
-                                                      ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                      Column(
-                                        mainAxisSize: MainAxisSize.max,
-                                        children: [
-                                          Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    120, 0, 0, 0),
-                                            child: Text(
-                                              'Valor total',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyText1
-                                                      .override(
-                                                        fontFamily: 'Poppins',
-                                                        color: Colors.white,
-                                                        fontSize: 12,
-                                                      ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 8, 0, 0),
-                                  child: Row(
-                                    mainAxisSize: MainAxisSize.max,
-                                    children: [
                                       Expanded(
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
                                           children: [
-                                            Container(
-                                              width: double.infinity,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.05,
-                                              decoration: BoxDecoration(),
-                                              child: Padding(
-                                                padding: EdgeInsetsDirectional
-                                                    .fromSTEB(8, 0, 4, 0),
-                                                child: Container(
-                                                  width: double.infinity,
-                                                  child: TextFormField(
-                                                    controller: textController4,
-                                                    autofocus: true,
-                                                    obscureText: false,
-                                                    decoration: InputDecoration(
-                                                      hintText: 'R\$',
-                                                      hintStyle:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyText2,
-                                                      enabledBorder:
-                                                          UnderlineInputBorder(
-                                                        borderSide: BorderSide(
-                                                          color:
-                                                              Color(0x00000000),
-                                                          width: 1,
+                                            Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(8, 0, 0, 0),
+                                              child: SelectionArea(
+                                                  child: Text(
+                                                'Valor do litro',
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText1
+                                                        .override(
+                                                          fontFamily: 'Poppins',
+                                                          color: Colors.white,
                                                         ),
-                                                        borderRadius:
-                                                            const BorderRadius
-                                                                .only(
-                                                          topLeft:
-                                                              Radius.circular(
-                                                                  4.0),
-                                                          topRight:
-                                                              Radius.circular(
-                                                                  4.0),
-                                                        ),
-                                                      ),
-                                                      focusedBorder:
-                                                          UnderlineInputBorder(
-                                                        borderSide: BorderSide(
-                                                          color:
-                                                              Color(0x00000000),
-                                                          width: 1,
-                                                        ),
-                                                        borderRadius:
-                                                            const BorderRadius
-                                                                .only(
-                                                          topLeft:
-                                                              Radius.circular(
-                                                                  4.0),
-                                                          topRight:
-                                                              Radius.circular(
-                                                                  4.0),
-                                                        ),
-                                                      ),
-                                                      errorBorder:
-                                                          UnderlineInputBorder(
-                                                        borderSide: BorderSide(
-                                                          color:
-                                                              Color(0x00000000),
-                                                          width: 1,
-                                                        ),
-                                                        borderRadius:
-                                                            const BorderRadius
-                                                                .only(
-                                                          topLeft:
-                                                              Radius.circular(
-                                                                  4.0),
-                                                          topRight:
-                                                              Radius.circular(
-                                                                  4.0),
-                                                        ),
-                                                      ),
-                                                      focusedErrorBorder:
-                                                          UnderlineInputBorder(
-                                                        borderSide: BorderSide(
-                                                          color:
-                                                              Color(0x00000000),
-                                                          width: 1,
-                                                        ),
-                                                        borderRadius:
-                                                            const BorderRadius
-                                                                .only(
-                                                          topLeft:
-                                                              Radius.circular(
-                                                                  4.0),
-                                                          topRight:
-                                                              Radius.circular(
-                                                                  4.0),
-                                                        ),
-                                                      ),
-                                                      filled: true,
-                                                      fillColor: Colors.white,
+                                              )),
+                                            ),
+                                            Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(8, 0, 4, 0),
+                                              child: TextFormField(
+                                                controller: textController4,
+                                                autofocus: true,
+                                                obscureText: false,
+                                                decoration: InputDecoration(
+                                                  hintText: 'R\$',
+                                                  hintStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyText2,
+                                                  enabledBorder:
+                                                      UnderlineInputBorder(
+                                                    borderSide: BorderSide(
+                                                      color: Color(0x00000000),
+                                                      width: 1,
                                                     ),
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyText1,
-                                                    keyboardType:
-                                                        TextInputType.number,
+                                                    borderRadius:
+                                                        const BorderRadius.only(
+                                                      topLeft:
+                                                          Radius.circular(4.0),
+                                                      topRight:
+                                                          Radius.circular(4.0),
+                                                    ),
                                                   ),
+                                                  focusedBorder:
+                                                      UnderlineInputBorder(
+                                                    borderSide: BorderSide(
+                                                      color: Color(0x00000000),
+                                                      width: 1,
+                                                    ),
+                                                    borderRadius:
+                                                        const BorderRadius.only(
+                                                      topLeft:
+                                                          Radius.circular(4.0),
+                                                      topRight:
+                                                          Radius.circular(4.0),
+                                                    ),
+                                                  ),
+                                                  errorBorder:
+                                                      UnderlineInputBorder(
+                                                    borderSide: BorderSide(
+                                                      color: Color(0x00000000),
+                                                      width: 1,
+                                                    ),
+                                                    borderRadius:
+                                                        const BorderRadius.only(
+                                                      topLeft:
+                                                          Radius.circular(4.0),
+                                                      topRight:
+                                                          Radius.circular(4.0),
+                                                    ),
+                                                  ),
+                                                  focusedErrorBorder:
+                                                      UnderlineInputBorder(
+                                                    borderSide: BorderSide(
+                                                      color: Color(0x00000000),
+                                                      width: 1,
+                                                    ),
+                                                    borderRadius:
+                                                        const BorderRadius.only(
+                                                      topLeft:
+                                                          Radius.circular(4.0),
+                                                      topRight:
+                                                          Radius.circular(4.0),
+                                                    ),
+                                                  ),
+                                                  filled: true,
+                                                  fillColor: Colors.white,
                                                 ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText1,
                                               ),
                                             ),
                                           ],
@@ -1112,109 +1064,96 @@ class _LancamentoDeCombustivelWidgetState
                                           crossAxisAlignment:
                                               CrossAxisAlignment.start,
                                           children: [
-                                            Container(
-                                              width: double.infinity,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  0.05,
-                                              decoration: BoxDecoration(),
-                                              child: Padding(
-                                                padding: EdgeInsetsDirectional
-                                                    .fromSTEB(4, 0, 8, 0),
-                                                child: Container(
-                                                  width: double.infinity,
-                                                  child: TextFormField(
-                                                    controller: textController5,
-                                                    autofocus: true,
-                                                    obscureText: false,
-                                                    decoration: InputDecoration(
-                                                      hintText:
-                                                          '[Some hint text...]',
-                                                      hintStyle:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyText2,
-                                                      enabledBorder:
-                                                          UnderlineInputBorder(
-                                                        borderSide: BorderSide(
-                                                          color:
-                                                              Color(0x00000000),
-                                                          width: 1,
+                                            Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(3, 0, 0, 0),
+                                              child: SelectionArea(
+                                                  child: Text(
+                                                'Valor total',
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText1
+                                                        .override(
+                                                          fontFamily: 'Poppins',
+                                                          color: Colors.white,
                                                         ),
-                                                        borderRadius:
-                                                            const BorderRadius
-                                                                .only(
-                                                          topLeft:
-                                                              Radius.circular(
-                                                                  4.0),
-                                                          topRight:
-                                                              Radius.circular(
-                                                                  4.0),
-                                                        ),
-                                                      ),
-                                                      focusedBorder:
-                                                          UnderlineInputBorder(
-                                                        borderSide: BorderSide(
-                                                          color:
-                                                              Color(0x00000000),
-                                                          width: 1,
-                                                        ),
-                                                        borderRadius:
-                                                            const BorderRadius
-                                                                .only(
-                                                          topLeft:
-                                                              Radius.circular(
-                                                                  4.0),
-                                                          topRight:
-                                                              Radius.circular(
-                                                                  4.0),
-                                                        ),
-                                                      ),
-                                                      errorBorder:
-                                                          UnderlineInputBorder(
-                                                        borderSide: BorderSide(
-                                                          color:
-                                                              Color(0x00000000),
-                                                          width: 1,
-                                                        ),
-                                                        borderRadius:
-                                                            const BorderRadius
-                                                                .only(
-                                                          topLeft:
-                                                              Radius.circular(
-                                                                  4.0),
-                                                          topRight:
-                                                              Radius.circular(
-                                                                  4.0),
-                                                        ),
-                                                      ),
-                                                      focusedErrorBorder:
-                                                          UnderlineInputBorder(
-                                                        borderSide: BorderSide(
-                                                          color:
-                                                              Color(0x00000000),
-                                                          width: 1,
-                                                        ),
-                                                        borderRadius:
-                                                            const BorderRadius
-                                                                .only(
-                                                          topLeft:
-                                                              Radius.circular(
-                                                                  4.0),
-                                                          topRight:
-                                                              Radius.circular(
-                                                                  4.0),
-                                                        ),
-                                                      ),
-                                                      filled: true,
-                                                      fillColor: Colors.white,
+                                              )),
+                                            ),
+                                            Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(4, 0, 0, 0),
+                                              child: TextFormField(
+                                                controller: textController5,
+                                                autofocus: true,
+                                                obscureText: false,
+                                                decoration: InputDecoration(
+                                                  hintText: 'R\$',
+                                                  hintStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyText2,
+                                                  enabledBorder:
+                                                      UnderlineInputBorder(
+                                                    borderSide: BorderSide(
+                                                      color: Color(0x00000000),
+                                                      width: 1,
                                                     ),
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyText1,
+                                                    borderRadius:
+                                                        const BorderRadius.only(
+                                                      topLeft:
+                                                          Radius.circular(4.0),
+                                                      topRight:
+                                                          Radius.circular(4.0),
+                                                    ),
                                                   ),
+                                                  focusedBorder:
+                                                      UnderlineInputBorder(
+                                                    borderSide: BorderSide(
+                                                      color: Color(0x00000000),
+                                                      width: 1,
+                                                    ),
+                                                    borderRadius:
+                                                        const BorderRadius.only(
+                                                      topLeft:
+                                                          Radius.circular(4.0),
+                                                      topRight:
+                                                          Radius.circular(4.0),
+                                                    ),
+                                                  ),
+                                                  errorBorder:
+                                                      UnderlineInputBorder(
+                                                    borderSide: BorderSide(
+                                                      color: Color(0x00000000),
+                                                      width: 1,
+                                                    ),
+                                                    borderRadius:
+                                                        const BorderRadius.only(
+                                                      topLeft:
+                                                          Radius.circular(4.0),
+                                                      topRight:
+                                                          Radius.circular(4.0),
+                                                    ),
+                                                  ),
+                                                  focusedErrorBorder:
+                                                      UnderlineInputBorder(
+                                                    borderSide: BorderSide(
+                                                      color: Color(0x00000000),
+                                                      width: 1,
+                                                    ),
+                                                    borderRadius:
+                                                        const BorderRadius.only(
+                                                      topLeft:
+                                                          Radius.circular(4.0),
+                                                      topRight:
+                                                          Radius.circular(4.0),
+                                                    ),
+                                                  ),
+                                                  filled: true,
+                                                  fillColor: Colors.white,
                                                 ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyText1,
                                               ),
                                             ),
                                           ],

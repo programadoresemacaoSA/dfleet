@@ -637,11 +637,13 @@ class _LancamentoDeViagemWidgetState extends State<LancamentoDeViagemWidget>
                                     Expanded(
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    0, 10, 0, 0),
+                                                    8, 10, 0, 0),
                                             child: Text(
                                               'Endereço',
                                               style:
@@ -760,11 +762,13 @@ class _LancamentoDeViagemWidgetState extends State<LancamentoDeViagemWidget>
                                     Expanded(
                                       child: Column(
                                         mainAxisSize: MainAxisSize.min,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    0, 10, 120, 0),
+                                                    3, 10, 120, 0),
                                             child: Text(
                                               'UF',
                                               style:
@@ -864,11 +868,13 @@ class _LancamentoDeViagemWidgetState extends State<LancamentoDeViagemWidget>
                                     Expanded(
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    0, 10, 0, 0),
+                                                    8, 10, 0, 0),
                                             child: Text(
                                               'Cidade',
                                               style:
@@ -914,6 +920,8 @@ class _LancamentoDeViagemWidgetState extends State<LancamentoDeViagemWidget>
                                     Expanded(
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Padding(
                                             padding:
@@ -969,11 +977,13 @@ class _LancamentoDeViagemWidgetState extends State<LancamentoDeViagemWidget>
                                     Expanded(
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    0, 10, 0, 0),
+                                                    8, 10, 0, 0),
                                             child: Text(
                                               'Valor da compra',
                                               style:
@@ -1071,6 +1081,8 @@ class _LancamentoDeViagemWidgetState extends State<LancamentoDeViagemWidget>
                                     Expanded(
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Padding(
                                             padding:
@@ -1264,7 +1276,7 @@ class _LancamentoDeViagemWidgetState extends State<LancamentoDeViagemWidget>
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    10, 10, 0, 0),
+                                                    0, 10, 0, 0),
                                             child: Text(
                                               'Horario da compra',
                                               style:
@@ -1390,10 +1402,12 @@ class _LancamentoDeViagemWidgetState extends State<LancamentoDeViagemWidget>
                                         child: SingleChildScrollView(
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
                                             children: [
                                               Padding(
                                                 padding: EdgeInsetsDirectional
-                                                    .fromSTEB(20, 0, 0, 0),
+                                                    .fromSTEB(8, 0, 0, 0),
                                                 child: Text(
                                                   'Observações:',
                                                   style: FlutterFlowTheme.of(

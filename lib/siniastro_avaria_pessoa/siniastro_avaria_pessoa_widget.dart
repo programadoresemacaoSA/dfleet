@@ -286,7 +286,7 @@ class _SiniastroAvariaPessoaWidgetState
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  10, 10, 120, 0),
+                                                  3, 10, 120, 0),
                                           child: Text(
                                             'CPF',
                                             style: FlutterFlowTheme.of(context)
@@ -403,12 +403,12 @@ class _SiniastroAvariaPessoaWidgetState
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
                                       crossAxisAlignment:
-                                          CrossAxisAlignment.center,
+                                          CrossAxisAlignment.start,
                                       children: [
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0, 10, 0, 0),
+                                                  8, 10, 0, 0),
                                           child: Text(
                                             'Tipo de acidente',
                                             style: FlutterFlowTheme.of(context)
@@ -464,12 +464,12 @@ class _SiniastroAvariaPessoaWidgetState
                                       mainAxisAlignment:
                                           MainAxisAlignment.start,
                                       crossAxisAlignment:
-                                          CrossAxisAlignment.center,
+                                          CrossAxisAlignment.start,
                                       children: [
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0, 10, 120, 0),
+                                                  3, 10, 120, 0),
                                           child: Text(
                                             'Placa',
                                             style: FlutterFlowTheme.of(context)
@@ -867,11 +867,13 @@ class _SiniastroAvariaPessoaWidgetState
                                     Expanded(
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    20, 0, 0, 0),
+                                                    8, 0, 0, 0),
                                             child: Text(
                                               'Responsabilidade',
                                               style:
@@ -920,11 +922,13 @@ class _SiniastroAvariaPessoaWidgetState
                                     Expanded(
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    50, 0, 0, 0),
+                                                    3, 0, 0, 0),
                                             child: Text(
                                               'Tipo de avaria',
                                               style:
@@ -982,11 +986,13 @@ class _SiniastroAvariaPessoaWidgetState
                                     Expanded(
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    20, 0, 0, 0),
+                                                    8, 0, 0, 0),
                                             child: Text(
                                               'Tipo de pista',
                                               style:
@@ -1035,11 +1041,13 @@ class _SiniastroAvariaPessoaWidgetState
                                     Expanded(
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    50, 0, 0, 0),
+                                                    3, 0, 0, 0),
                                             child: Text(
                                               'Dia da semana',
                                               style:
@@ -1097,11 +1105,13 @@ class _SiniastroAvariaPessoaWidgetState
                                     Expanded(
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    20, 0, 0, 0),
+                                                    8, 0, 0, 0),
                                             child: Text(
                                               'Situação do veiculo',
                                               style:
@@ -1156,7 +1166,7 @@ class _SiniastroAvariaPessoaWidgetState
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    20, 0, 0, 0),
+                                                    3, 0, 0, 0),
                                             child: Text(
                                               'Situação da pessoa',
                                               textAlign: TextAlign.start,
@@ -1215,11 +1225,13 @@ class _SiniastroAvariaPessoaWidgetState
                                     Expanded(
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    20, 0, 0, 0),
+                                                    8, 0, 0, 0),
                                             child: Text(
                                               'Tipo de causa do acidente',
                                               style:
@@ -1278,10 +1290,12 @@ class _SiniastroAvariaPessoaWidgetState
                                       child: SingleChildScrollView(
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
                                           children: [
                                             Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(20, 0, 0, 0),
+                                                  .fromSTEB(8, 0, 0, 0),
                                               child: Text(
                                                 'Observações:',
                                                 style:

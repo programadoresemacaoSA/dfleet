@@ -280,7 +280,7 @@ class _SiniastroAvariaVeiculoTerceiroWidgetState
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  10, 10, 0, 0),
+                                                  3, 10, 0, 0),
                                           child: Text(
                                             'Horário',
                                             style: FlutterFlowTheme.of(context)
@@ -449,12 +449,12 @@ class _SiniastroAvariaVeiculoTerceiroWidgetState
                                       mainAxisAlignment:
                                           MainAxisAlignment.start,
                                       crossAxisAlignment:
-                                          CrossAxisAlignment.center,
+                                          CrossAxisAlignment.start,
                                       children: [
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0, 10, 120, 0),
+                                                  3, 10, 120, 0),
                                           child: Text(
                                             'Placa',
                                             style: FlutterFlowTheme.of(context)
@@ -574,7 +574,7 @@ class _SiniastroAvariaVeiculoTerceiroWidgetState
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0, 8, 0, 5),
+                                                  3, 8, 0, 5),
                                           child: Text(
                                             'Modelo',
                                             style: FlutterFlowTheme.of(context)
@@ -694,11 +694,13 @@ class _SiniastroAvariaVeiculoTerceiroWidgetState
                                     Expanded(
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    20, 0, 0, 0),
+                                                    8, 0, 0, 0),
                                             child: Text(
                                               'Responsabilidade',
                                               style:
@@ -811,11 +813,13 @@ class _SiniastroAvariaVeiculoTerceiroWidgetState
                                     Expanded(
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    20, 0, 0, 0),
+                                                    8, 0, 0, 0),
                                             child: Text(
                                               'Situação do veiculo',
                                               style:
@@ -870,7 +874,7 @@ class _SiniastroAvariaVeiculoTerceiroWidgetState
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    20, 0, 0, 0),
+                                                    3, 0, 0, 0),
                                             child: Text(
                                               'Tipo de avaria',
                                               textAlign: TextAlign.start,
@@ -990,7 +994,7 @@ class _SiniastroAvariaVeiculoTerceiroWidgetState
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    20, 0, 0, 0),
+                                                    3, 0, 0, 0),
                                             child: Text(
                                               'Cidade',
                                               textAlign: TextAlign.start,
@@ -1050,10 +1054,12 @@ class _SiniastroAvariaVeiculoTerceiroWidgetState
                                       child: SingleChildScrollView(
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
                                           children: [
                                             Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(20, 0, 0, 0),
+                                                  .fromSTEB(8, 0, 0, 0),
                                               child: Text(
                                                 'Observações:',
                                                 style:
