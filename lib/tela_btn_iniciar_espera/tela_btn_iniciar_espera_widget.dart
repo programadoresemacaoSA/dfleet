@@ -1,3 +1,4 @@
+import '../flutter_flow/flutter_flow_drop_down.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
@@ -16,6 +17,7 @@ class TelaBtnIniciarEsperaWidget extends StatefulWidget {
 
 class _TelaBtnIniciarEsperaWidgetState
     extends State<TelaBtnIniciarEsperaWidget> {
+  String? dropDownValue;
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
@@ -44,7 +46,7 @@ class _TelaBtnIniciarEsperaWidgetState
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Text(
-                              'Inicio de espera',
+                              'Inicio de parada',
                               style:
                                   FlutterFlowTheme.of(context).title3.override(
                                         fontFamily: 'Lexend Deca',
@@ -64,7 +66,7 @@ class _TelaBtnIniciarEsperaWidgetState
                 padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
                 child: Container(
                   width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.height * 0.85,
+                  height: MediaQuery.of(context).size.height * 0.75,
                   decoration: BoxDecoration(
                     color: Color(0xFF033F5D),
                     boxShadow: [
@@ -96,7 +98,7 @@ class _TelaBtnIniciarEsperaWidgetState
                                 child: Container(
                                   width: double.infinity,
                                   height:
-                                      MediaQuery.of(context).size.height * 0.55,
+                                      MediaQuery.of(context).size.height * 0.62,
                                   decoration: BoxDecoration(
                                     color:
                                         FlutterFlowTheme.of(context).lineColor,
@@ -110,17 +112,273 @@ class _TelaBtnIniciarEsperaWidgetState
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment: CrossAxisAlignment.end,
                                     children: [
-                                      SelectionArea(
-                                          child: Text(
-                                        '00:00:00',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyText1
-                                            .override(
-                                              fontFamily: 'Poppins',
-                                              fontSize: 60,
+                                      Expanded(
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.end,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.center,
+                                          children: [
+                                            Row(
+                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.center,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.end,
+                                              children: [
+                                                Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(0, 0, 0, 15),
+                                                  child: SelectionArea(
+                                                      child: Text(
+                                                    'Segunda',
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyText1
+                                                        .override(
+                                                          fontFamily: 'Poppins',
+                                                          fontSize: 16,
+                                                        ),
+                                                  )),
+                                                ),
+                                                Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(0, 0, 0, 15),
+                                                  child: SelectionArea(
+                                                      child: Text(
+                                                    ',',
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyText1
+                                                        .override(
+                                                          fontFamily: 'Poppins',
+                                                          fontSize: 20,
+                                                        ),
+                                                  )),
+                                                ),
+                                                Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(0, 0, 5, 15),
+                                                  child: SelectionArea(
+                                                      child: Text(
+                                                    '31',
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyText1
+                                                        .override(
+                                                          fontFamily: 'Poppins',
+                                                          fontSize: 16,
+                                                        ),
+                                                  )),
+                                                ),
+                                                Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(0, 0, 5, 15),
+                                                  child: SelectionArea(
+                                                      child: Text(
+                                                    'de',
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyText1
+                                                        .override(
+                                                          fontFamily: 'Poppins',
+                                                          fontSize: 16,
+                                                        ),
+                                                  )),
+                                                ),
+                                                Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(0, 0, 5, 15),
+                                                  child: SelectionArea(
+                                                      child: Text(
+                                                    'Outubro',
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyText1
+                                                        .override(
+                                                          fontFamily: 'Poppins',
+                                                          fontSize: 16,
+                                                        ),
+                                                  )),
+                                                ),
+                                                Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(0, 0, 5, 15),
+                                                  child: SelectionArea(
+                                                      child: Text(
+                                                    'de',
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyText1
+                                                        .override(
+                                                          fontFamily: 'Poppins',
+                                                          fontSize: 16,
+                                                        ),
+                                                  )),
+                                                ),
+                                                Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(0, 0, 10, 15),
+                                                  child: SelectionArea(
+                                                      child: Text(
+                                                    '2022',
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyText1
+                                                        .override(
+                                                          fontFamily: 'Poppins',
+                                                          fontSize: 16,
+                                                        ),
+                                                  )),
+                                                ),
+                                              ],
                                             ),
-                                      )),
+                                            Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(0, 2, 0, 80),
+                                              child: Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  SelectionArea(
+                                                      child: Text(
+                                                    '15:56',
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyText1
+                                                        .override(
+                                                          fontFamily: 'Poppins',
+                                                          fontSize: 60,
+                                                        ),
+                                                  )),
+                                                ],
+                                              ),
+                                            ),
+                                            Row(
+                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.center,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: [
+                                                Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(0, 0, 0, 5),
+                                                  child: SelectionArea(
+                                                      child: Text(
+                                                    'MOTIO DA ESPERA',
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyText1
+                                                        .override(
+                                                          fontFamily: 'Poppins',
+                                                          fontSize: 16,
+                                                        ),
+                                                  )),
+                                                ),
+                                              ],
+                                            ),
+                                            Expanded(
+                                              child: Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  FlutterFlowDropDown(
+                                                    options: [
+                                                      'ACIDENTE',
+                                                      'MANUTENÇÃO NA ESTRADA',
+                                                      'CLIMA'
+                                                    ],
+                                                    onChanged: (val) =>
+                                                        setState(() =>
+                                                            dropDownValue =
+                                                                val),
+                                                    width:
+                                                        MediaQuery.of(context)
+                                                                .size
+                                                                .width *
+                                                            0.8,
+                                                    height: 50,
+                                                    textStyle: FlutterFlowTheme
+                                                            .of(context)
+                                                        .bodyText1
+                                                        .override(
+                                                          fontFamily: 'Poppins',
+                                                          color: Colors.black,
+                                                        ),
+                                                    hintText:
+                                                        'Seleciona o motivo da espera',
+                                                    fillColor: Colors.white,
+                                                    elevation: 2,
+                                                    borderColor:
+                                                        Colors.transparent,
+                                                    borderWidth: 0,
+                                                    borderRadius: 0,
+                                                    margin:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(
+                                                                12, 4, 12, 4),
+                                                    hidesUnderline: true,
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                            Row(
+                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.center,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.end,
+                                              children: [
+                                                SelectionArea(
+                                                    child: Text(
+                                                  '00:00:00',
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyText1
+                                                      .override(
+                                                        fontFamily: 'Poppins',
+                                                        fontSize: 60,
+                                                      ),
+                                                )),
+                                              ],
+                                            ),
+                                            Row(
+                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.center,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: [
+                                                Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(0, 0, 0, 15),
+                                                  child: SelectionArea(
+                                                      child: Text(
+                                                    'Cronometro',
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyText1
+                                                        .override(
+                                                          fontFamily: 'Poppins',
+                                                          fontSize: 16,
+                                                        ),
+                                                  )),
+                                                ),
+                                              ],
+                                            ),
+                                          ],
+                                        ),
+                                      ),
                                     ],
                                   ),
                                 ),

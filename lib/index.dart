@@ -54,19 +54,7 @@ export 'detalhes_jornada_descricao/detalhes_jornada_descricao_widget.dart'
     show DetalhesJornadaDescricaoWidget;
 export 'tela_btn_iniciar_jornada/tela_btn_iniciar_jornada_widget.dart'
     show TelaBtnIniciarJornadaWidget;
-export 'tela_btn_iniciar_manobra/tela_btn_iniciar_manobra_widget.dart'
-    show TelaBtnIniciarManobraWidget;
 export 'tela_btn_iniciar_parada/tela_btn_iniciar_parada_widget.dart'
     show TelaBtnIniciarParadaWidget;
-export 'tela_btn_iniciar_carga/tela_btn_iniciar_carga_widget.dart'
-    show TelaBtnIniciarCargaWidget;
-export 'tela_btn_iniciar_descarga/tela_btn_iniciar_descarga_widget.dart'
-    show TelaBtnIniciarDescargaWidget;
 export 'tela_btn_iniciar_espera/tela_btn_iniciar_espera_widget.dart'
     show TelaBtnIniciarEsperaWidget;
-export 'tela_btn_iniciar_abastecer/tela_btn_iniciar_abastecer_widget.dart'
-    show TelaBtnIniciarAbastecerWidget;
-export 'tela_btn_iniciar_refeicao/tela_btn_iniciar_refeicao_widget.dart'
-    show TelaBtnIniciarRefeicaoWidget;
-export 'tela_btn_iniciar_descanso/tela_btn_iniciar_descanso_widget.dart'
-    show TelaBtnIniciarDescansoWidget;

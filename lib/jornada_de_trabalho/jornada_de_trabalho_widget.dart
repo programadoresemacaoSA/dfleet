@@ -5,15 +5,9 @@ import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
 import '../homeapp/homeapp_widget.dart';
 import '../informacoes_jornada_de_trabalho/informacoes_jornada_de_trabalho_widget.dart';
-import '../tela_btn_iniciar_abastecer/tela_btn_iniciar_abastecer_widget.dart';
-import '../tela_btn_iniciar_carga/tela_btn_iniciar_carga_widget.dart';
-import '../tela_btn_iniciar_descanso/tela_btn_iniciar_descanso_widget.dart';
-import '../tela_btn_iniciar_descarga/tela_btn_iniciar_descarga_widget.dart';
 import '../tela_btn_iniciar_espera/tela_btn_iniciar_espera_widget.dart';
 import '../tela_btn_iniciar_jornada/tela_btn_iniciar_jornada_widget.dart';
-import '../tela_btn_iniciar_manobra/tela_btn_iniciar_manobra_widget.dart';
 import '../tela_btn_iniciar_parada/tela_btn_iniciar_parada_widget.dart';
-import '../tela_btn_iniciar_refeicao/tela_btn_iniciar_refeicao_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -428,57 +422,47 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
-                                  InkWell(
-                                    onTap: () async {
-                                      await Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) =>
-                                              TelaBtnIniciarManobraWidget(),
-                                        ),
-                                      );
-                                    },
-                                    child: Container(
-                                      width: MediaQuery.of(context).size.width *
-                                          0.3,
-                                      height: 115,
-                                      decoration: BoxDecoration(
-                                        color: Color(0xFF1390FF),
-                                        borderRadius: BorderRadius.circular(24),
-                                      ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            12, 12, 12, 12),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          children: [
-                                            Icon(
-                                              Icons.car_repair,
-                                              color: Colors.white,
-                                              size: 44,
+                                  Container(
+                                    width:
+                                        MediaQuery.of(context).size.width * 0.3,
+                                    height: 115,
+                                    decoration: BoxDecoration(
+                                      color: Color(0xFF1390FF),
+                                      borderRadius: BorderRadius.circular(24),
+                                    ),
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          12, 12, 12, 12),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          Icon(
+                                            Icons.car_repair,
+                                            color: Colors.white,
+                                            size: 44,
+                                          ),
+                                          Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0, 12, 0, 4),
+                                            child: Text(
+                                              'MANOBRA',
+                                              textAlign: TextAlign.center,
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .title1
+                                                      .override(
+                                                        fontFamily: 'Outfit',
+                                                        color: Colors.white,
+                                                        fontSize: 14,
+                                                        fontWeight:
+                                                            FontWeight.w600,
+                                                      ),
                                             ),
-                                            Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(0, 12, 0, 4),
-                                              child: Text(
-                                                'MANOBRA',
-                                                textAlign: TextAlign.center,
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .title1
-                                                        .override(
-                                                          fontFamily: 'Outfit',
-                                                          color: Colors.white,
-                                                          fontSize: 14,
-                                                          fontWeight:
-                                                              FontWeight.w600,
-                                                        ),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
+                                          ),
+                                        ],
                                       ),
                                     ),
                                   ).animateOnPageLoad(animationsMap[
@@ -562,57 +546,47 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
-                                  InkWell(
-                                    onTap: () async {
-                                      await Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) =>
-                                              TelaBtnIniciarCargaWidget(),
-                                        ),
-                                      );
-                                    },
-                                    child: Container(
-                                      width: MediaQuery.of(context).size.width *
-                                          0.3,
-                                      height: 115,
-                                      decoration: BoxDecoration(
-                                        color: Color(0xFF1390FF),
-                                        borderRadius: BorderRadius.circular(24),
-                                      ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            12, 12, 12, 12),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          children: [
-                                            FaIcon(
-                                              FontAwesomeIcons.dollyFlatbed,
-                                              color: Colors.white,
-                                              size: 44,
+                                  Container(
+                                    width:
+                                        MediaQuery.of(context).size.width * 0.3,
+                                    height: 115,
+                                    decoration: BoxDecoration(
+                                      color: Color(0xFF1390FF),
+                                      borderRadius: BorderRadius.circular(24),
+                                    ),
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          12, 12, 12, 12),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          FaIcon(
+                                            FontAwesomeIcons.dollyFlatbed,
+                                            color: Colors.white,
+                                            size: 44,
+                                          ),
+                                          Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0, 12, 0, 4),
+                                            child: Text(
+                                              'CARGA',
+                                              textAlign: TextAlign.center,
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .title1
+                                                      .override(
+                                                        fontFamily: 'Outfit',
+                                                        color: Colors.white,
+                                                        fontSize: 14,
+                                                        fontWeight:
+                                                            FontWeight.w600,
+                                                      ),
                                             ),
-                                            Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(0, 12, 0, 4),
-                                              child: Text(
-                                                'CARGA',
-                                                textAlign: TextAlign.center,
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .title1
-                                                        .override(
-                                                          fontFamily: 'Outfit',
-                                                          color: Colors.white,
-                                                          fontSize: 14,
-                                                          fontWeight:
-                                                              FontWeight.w600,
-                                                        ),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
+                                          ),
+                                        ],
                                       ),
                                     ),
                                   ).animateOnPageLoad(animationsMap[
@@ -626,57 +600,47 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
-                                  InkWell(
-                                    onTap: () async {
-                                      await Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) =>
-                                              TelaBtnIniciarDescargaWidget(),
-                                        ),
-                                      );
-                                    },
-                                    child: Container(
-                                      width: MediaQuery.of(context).size.width *
-                                          0.3,
-                                      height: 115,
-                                      decoration: BoxDecoration(
-                                        color: Color(0xFF1390FF),
-                                        borderRadius: BorderRadius.circular(24),
-                                      ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            12, 12, 12, 12),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          children: [
-                                            FaIcon(
-                                              FontAwesomeIcons.dolly,
-                                              color: Colors.white,
-                                              size: 44,
+                                  Container(
+                                    width:
+                                        MediaQuery.of(context).size.width * 0.3,
+                                    height: 115,
+                                    decoration: BoxDecoration(
+                                      color: Color(0xFF1390FF),
+                                      borderRadius: BorderRadius.circular(24),
+                                    ),
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          12, 12, 12, 12),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          FaIcon(
+                                            FontAwesomeIcons.dolly,
+                                            color: Colors.white,
+                                            size: 44,
+                                          ),
+                                          Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0, 12, 0, 4),
+                                            child: Text(
+                                              'DESCARGA',
+                                              textAlign: TextAlign.center,
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .title1
+                                                      .override(
+                                                        fontFamily: 'Outfit',
+                                                        color: Colors.white,
+                                                        fontSize: 14,
+                                                        fontWeight:
+                                                            FontWeight.w600,
+                                                      ),
                                             ),
-                                            Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(0, 12, 0, 4),
-                                              child: Text(
-                                                'DESCARGA',
-                                                textAlign: TextAlign.center,
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .title1
-                                                        .override(
-                                                          fontFamily: 'Outfit',
-                                                          color: Colors.white,
-                                                          fontSize: 14,
-                                                          fontWeight:
-                                                              FontWeight.w600,
-                                                        ),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
+                                          ),
+                                        ],
                                       ),
                                     ),
                                   ).animateOnPageLoad(animationsMap[
@@ -702,7 +666,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                         MediaQuery.of(context).size.width * 0.3,
                                     height: 115,
                                     decoration: BoxDecoration(
-                                      color: Color(0xFF1390FF),
+                                      color: Color(0xFF10C0B3),
                                       borderRadius: BorderRadius.circular(24),
                                     ),
                                     child: Padding(
@@ -760,57 +724,47 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
-                                  InkWell(
-                                    onTap: () async {
-                                      await Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) =>
-                                              TelaBtnIniciarAbastecerWidget(),
-                                        ),
-                                      );
-                                    },
-                                    child: Container(
-                                      width: MediaQuery.of(context).size.width *
-                                          0.3,
-                                      height: 115,
-                                      decoration: BoxDecoration(
-                                        color: Color(0xFF1390FF),
-                                        borderRadius: BorderRadius.circular(24),
-                                      ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            12, 12, 12, 12),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          children: [
-                                            Icon(
-                                              Icons.ev_station,
-                                              color: Colors.white,
-                                              size: 44,
+                                  Container(
+                                    width:
+                                        MediaQuery.of(context).size.width * 0.3,
+                                    height: 115,
+                                    decoration: BoxDecoration(
+                                      color: Color(0xFF1390FF),
+                                      borderRadius: BorderRadius.circular(24),
+                                    ),
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          12, 12, 12, 12),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          Icon(
+                                            Icons.ev_station,
+                                            color: Colors.white,
+                                            size: 44,
+                                          ),
+                                          Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0, 12, 0, 4),
+                                            child: Text(
+                                              'ABASTECER',
+                                              textAlign: TextAlign.center,
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .title1
+                                                      .override(
+                                                        fontFamily: 'Outfit',
+                                                        color: Colors.white,
+                                                        fontSize: 14,
+                                                        fontWeight:
+                                                            FontWeight.w600,
+                                                      ),
                                             ),
-                                            Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(0, 12, 0, 4),
-                                              child: Text(
-                                                'ABASTECER',
-                                                textAlign: TextAlign.center,
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .title1
-                                                        .override(
-                                                          fontFamily: 'Outfit',
-                                                          color: Colors.white,
-                                                          fontSize: 14,
-                                                          fontWeight:
-                                                              FontWeight.w600,
-                                                        ),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
+                                          ),
+                                        ],
                                       ),
                                     ),
                                   ).animateOnPageLoad(animationsMap[
@@ -824,83 +778,12 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
-                                  InkWell(
-                                    onTap: () async {
-                                      await Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) =>
-                                              TelaBtnIniciarRefeicaoWidget(),
-                                        ),
-                                      );
-                                    },
-                                    child: Container(
-                                      width: MediaQuery.of(context).size.width *
-                                          0.3,
-                                      height: 115,
-                                      decoration: BoxDecoration(
-                                        color: Color(0xFFFF9513),
-                                        borderRadius: BorderRadius.circular(24),
-                                      ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            12, 12, 12, 12),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          children: [
-                                            Icon(
-                                              Icons.food_bank_outlined,
-                                              color: Colors.white,
-                                              size: 50,
-                                            ),
-                                            Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(0, 12, 0, 4),
-                                              child: Text(
-                                                'REFEIÇÃO',
-                                                textAlign: TextAlign.center,
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .title1
-                                                        .override(
-                                                          fontFamily: 'Outfit',
-                                                          color: Colors.white,
-                                                          fontSize: 14,
-                                                          fontWeight:
-                                                              FontWeight.w600,
-                                                        ),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                  ).animateOnPageLoad(animationsMap[
-                                      'containerOnPageLoadAnimation8']!),
-                                ],
-                              ),
-                            ),
-                            Column(
-                              mainAxisSize: MainAxisSize.max,
-                              children: [
-                                InkWell(
-                                  onTap: () async {
-                                    await Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) =>
-                                            TelaBtnIniciarDescansoWidget(),
-                                      ),
-                                    );
-                                  },
-                                  child: Container(
+                                  Container(
                                     width:
                                         MediaQuery.of(context).size.width * 0.3,
                                     height: 115,
                                     decoration: BoxDecoration(
-                                      color: Color(0xFFAFAFAF),
+                                      color: Color(0xFFFF9513),
                                       borderRadius: BorderRadius.circular(24),
                                     ),
                                     child: Padding(
@@ -912,16 +795,16 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                             MainAxisAlignment.center,
                                         children: [
                                           Icon(
-                                            Icons.airline_seat_individual_suite,
+                                            Icons.food_bank_outlined,
                                             color: Colors.white,
-                                            size: 44,
+                                            size: 50,
                                           ),
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
                                                     0, 12, 0, 4),
                                             child: Text(
-                                              'DESCANSO',
+                                              'REFEIÇÃO',
                                               textAlign: TextAlign.center,
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -929,7 +812,7 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                                       .override(
                                                         fontFamily: 'Outfit',
                                                         color: Colors.white,
-                                                        fontSize: 15,
+                                                        fontSize: 14,
                                                         fontWeight:
                                                             FontWeight.w600,
                                                       ),
@@ -937,6 +820,54 @@ class _JornadaDeTrabalhoWidgetState extends State<JornadaDeTrabalhoWidget>
                                           ),
                                         ],
                                       ),
+                                    ),
+                                  ).animateOnPageLoad(animationsMap[
+                                      'containerOnPageLoadAnimation8']!),
+                                ],
+                              ),
+                            ),
+                            Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Container(
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.3,
+                                  height: 115,
+                                  decoration: BoxDecoration(
+                                    color: Color(0xFFAFAFAF),
+                                    borderRadius: BorderRadius.circular(24),
+                                  ),
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        12, 12, 12, 12),
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Icon(
+                                          Icons.airline_seat_individual_suite,
+                                          color: Colors.white,
+                                          size: 44,
+                                        ),
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0, 12, 0, 4),
+                                          child: Text(
+                                            'DESCANSO',
+                                            textAlign: TextAlign.center,
+                                            style: FlutterFlowTheme.of(context)
+                                                .title1
+                                                .override(
+                                                  fontFamily: 'Outfit',
+                                                  color: Colors.white,
+                                                  fontSize: 15,
+                                                  fontWeight: FontWeight.w600,
+                                                ),
+                                          ),
+                                        ),
+                                      ],
                                     ),
                                   ),
                                 ).animateOnPageLoad(animationsMap[

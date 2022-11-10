@@ -17,6 +17,7 @@ class ClienteDfleetCall {
       headers: {},
       params: {},
       returnBody: true,
+      cache: false,
     );
   }
 }
